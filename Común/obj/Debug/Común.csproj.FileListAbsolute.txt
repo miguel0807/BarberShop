@@ -1,0 +1,6 @@
+C:\Users\malvarado\source\repos\BarberShop\Común\bin\Debug\Común.dll
+C:\Users\malvarado\source\repos\BarberShop\Común\bin\Debug\Común.pdb
+C:\Users\malvarado\source\repos\BarberShop\Común\obj\Debug\Común.csproj.AssemblyReference.cache
+C:\Users\malvarado\source\repos\BarberShop\Común\obj\Debug\Común.csproj.CoreCompileInputs.cache
+C:\Users\malvarado\source\repos\BarberShop\Común\obj\Debug\Común.dll
+C:\Users\malvarado\source\repos\BarberShop\Común\obj\Debug\Común.pdb

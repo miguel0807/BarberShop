@@ -1,0 +1,11 @@
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\bin\Debug\LógicaNegocio.dll
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\bin\Debug\LógicaNegocio.pdb
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\bin\Debug\AccesoDatos.dll
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\bin\Debug\Común.dll
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\bin\Debug\AccesoDatos.pdb
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\bin\Debug\Común.pdb
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\obj\Debug\LógicaNegocio.csproj.AssemblyReference.cache
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\obj\Debug\LógicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\obj\Debug\LógicaNegocio.csproj.CopyComplete
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\obj\Debug\LógicaNegocio.dll
+C:\Users\malvarado\source\repos\BarberShop\LógicaNegocio\obj\Debug\LógicaNegocio.pdb

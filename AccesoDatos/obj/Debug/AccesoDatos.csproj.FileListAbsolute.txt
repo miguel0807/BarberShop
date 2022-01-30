@@ -1,0 +1,9 @@
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\bin\Debug\AccesoDatos.dll
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\bin\Debug\AccesoDatos.pdb
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\bin\Debug\Común.dll
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\bin\Debug\Común.pdb
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\obj\Debug\AccesoDatos.csproj.AssemblyReference.cache
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\obj\Debug\AccesoDatos.csproj.CoreCompileInputs.cache
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\obj\Debug\AccesoDatos.csproj.CopyComplete
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\obj\Debug\AccesoDatos.dll
+C:\Users\malvarado\source\repos\BarberShop\AccesoDatos\obj\Debug\AccesoDatos.pdb
