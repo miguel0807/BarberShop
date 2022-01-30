@@ -80,9 +80,32 @@ namespace BarberShop
             lblPuesto.Text = DatosUsuario.Puesto;
         }
 
-        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        
+
+        private void abrirFormHijo(object formHijo)
+        {
+            if (this.PanelContenedor.Controls.Count > 0)
+            {
+                this.PanelContenedor.Controls.RemoveAt(0);
+            }
+
+            Form fh = formHijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PanelContenedor.Controls.Add(fh);
+            this.PanelContenedor.Tag = fh;
+            fh.Show();
+
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnIngresarDatos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new IngresarDatos());
         }
     }
 }
