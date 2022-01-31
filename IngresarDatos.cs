@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Común.Cache;
+using LógicaNegocio;
 
 namespace BarberShop
 {
@@ -15,6 +17,14 @@ namespace BarberShop
         public IngresarDatos()
         {
             InitializeComponent();
+        }
+
+        ModeladoIngresarDatos datosNegocio = new ModeladoIngresarDatos();
+
+        private void IngresarDatos_Load(object sender, EventArgs e)
+        {
+            cboBarbero.DataSource = datosNegocio.obtenerBarberos();
+            cboBarbero.DisplayMember = "Barbero";
         }
     }
 }

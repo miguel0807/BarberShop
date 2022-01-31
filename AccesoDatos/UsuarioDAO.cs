@@ -22,8 +22,8 @@ namespace AccesoDatos
                 using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                 {
                     comando.Connection = cn;
-                    comando.CommandText = "select*from Usuarios where id=@id and Contraseña=@Contraseña";
-                    comando.Parameters.AddWithValue("@id", usuario);
+                    comando.CommandText = "select*from Usuarios where Usuario=@usuario and Contraseña=@Contraseña";
+                    comando.Parameters.AddWithValue("@usuario", usuario);
                     comando.Parameters.AddWithValue("@Contraseña", contraseña);
                     comando.CommandType = CommandType.Text;
 
@@ -34,11 +34,11 @@ namespace AccesoDatos
                         while (lector.Read()) //Mientras haya información en el reader, la enviara a la capa Común para guardarla en el cache.
                         {
 
-                            DatosUsuario.Nombre = lector.GetString(1);
-                            DatosUsuario.Apellido = lector.GetString(2);
-                            DatosUsuario.Id = lector.GetString(3);
+                            DatosUsuario.Nombre = lector.GetString(3);
+                            DatosUsuario.Apellido = lector.GetString(4);
+                            DatosUsuario.Id = lector.GetString(1);
                             DatosUsuario.Puesto = lector.GetString(5);
-                            DatosUsuario.NivelUsuario = lector.GetInt32(6);
+                            DatosUsuario.Estado = lector.GetInt32(6);
                         }
                         return true;
                     }
@@ -67,6 +67,36 @@ namespace AccesoDatos
             {
 
             }
+        }
+
+        //Realiza una consulta a sql para obtener los datos de los barberos.
+        public DataTable consultarBarberos()
+        {
+
+            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            {
+                cn.Open(); //Se procede abrir la conexión SQL.
+
+                using (var comando = new SqlCommand()) //Establecemos un comando SQL.
+                {
+                    comando.Connection = cn;
+                    comando.CommandText = "select*from Barberos";
+                    comando.CommandType = CommandType.Text;
+
+                    DataTable datos = new DataTable();
+
+                    SqlDataAdapter adaptador = new SqlDataAdapter("ListaBarberos",cn); //Se ejecuta el comando.
+
+                    adaptador.Fill(datos);
+
+                    return datos;
+
+                }
+
+
+            }
+
+
         }
 
     }

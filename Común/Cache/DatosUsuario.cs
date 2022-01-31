@@ -13,7 +13,7 @@ namespace Común.Cache
         public static string Apellido { get; set; }
         public static string Puesto { get; set; }
         public static string Id { get; set; }
-        public static int NivelUsuario { get; set; }
+        public static int Estado { get; set; }
 
     }
 }
