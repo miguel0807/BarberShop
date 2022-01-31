@@ -11,11 +11,12 @@ namespace LógicaNegocio
 {
     public class ModeladoIngresarDatos
     {
-        UsuarioDAO datosUsuario = new UsuarioDAO();//Objeto para invocar la clase de objeto de acceso a Datos (UsuarioDAO).
+        
+        IngresarDatosDAO datos = new IngresarDatosDAO();//Objeto para invocar la clase de objeto de acceso a Datos (IngresarDatosDAO).
 
         public DataTable obtenerBarberos()
         {
-            return datosUsuario.consultarBarberos();
+            return datos.consultarBarberos();
         }
         
     }
