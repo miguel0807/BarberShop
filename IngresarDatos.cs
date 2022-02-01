@@ -25,6 +25,19 @@ namespace BarberShop
         {
             cboBarbero.DataSource = datosNegocio.obtenerBarberos();
             cboBarbero.DisplayMember = "Barbero";
+
+            
+            cboServicios.DataSource = datosNegocio.obtenerServicios();
+            cboServicios.DisplayMember = "Servicio";
+
+            cboMetodosPago.DataSource = datosNegocio.obtenerMetodoPago();
+            cboMetodosPago.DisplayMember = "MetodoPago";
+
+        }
+
+        private void cboServicios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtTotal.Text = datosNegocio.obtenerPrecio(cboServicios.Text).ToString();
         }
     }
 }

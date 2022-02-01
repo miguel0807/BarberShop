@@ -17,41 +17,46 @@ namespace AccesoDatos
 
             using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
-                cn.Open(); //Se procede abrir la conexión SQL.
-
-                using (var comando = new SqlCommand()) //Establecemos un comando SQL.
+                try
                 {
-                    comando.Connection = cn;
-                    comando.CommandText = "select*from Usuarios where Usuario=@usuario and Contraseña=@Contraseña";
-                    comando.Parameters.AddWithValue("@usuario", usuario);
-                    comando.Parameters.AddWithValue("@Contraseña", contraseña);
-                    comando.CommandType = CommandType.Text;
+                    cn.Open(); //Se procede abrir la conexión SQL.
 
-                    SqlDataReader lector = comando.ExecuteReader(); //Se ejecuta el comando.
-
-                    if (lector.HasRows) //Condicional si hay filas en el reader.
+                    using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
-                        while (lector.Read()) //Mientras haya información en el reader, la enviara a la capa Común para guardarla en el cache.
+                        comando.Connection = cn;
+                        comando.CommandText = "select*from Usuarios where Usuario=@usuario and Contraseña=@Contraseña";
+                        comando.Parameters.AddWithValue("@usuario", usuario);
+                        comando.Parameters.AddWithValue("@Contraseña", contraseña);
+                        comando.CommandType = CommandType.Text;
+
+                        SqlDataReader lector = comando.ExecuteReader(); //Se ejecuta el comando.
+
+                        if (lector.HasRows) //Condicional si hay filas en el reader.
                         {
+                            while (lector.Read()) //Mientras haya información en el reader, la enviara a la capa Común para guardarla en el cache.
+                            {
 
-                            DatosUsuario.Nombre = lector.GetString(3);
-                            DatosUsuario.Apellido = lector.GetString(4);
-                            DatosUsuario.Id = lector.GetString(1);
-                            DatosUsuario.Puesto = lector.GetString(5);
-                            DatosUsuario.Estado = lector.GetInt32(6);
+                                DatosUsuario.Nombre = lector.GetString(3);
+                                DatosUsuario.Apellido = lector.GetString(4);
+                                DatosUsuario.Id = lector.GetString(1);
+                                DatosUsuario.Puesto = lector.GetString(5);
+                                DatosUsuario.Estado = lector.GetInt32(6);
+                            }
+                            return true;
                         }
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
+                        else
+                        {
+                            return false;
+                        }
+
                     }
 
                 }
-
-
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }             
             }
-
 
         }
 

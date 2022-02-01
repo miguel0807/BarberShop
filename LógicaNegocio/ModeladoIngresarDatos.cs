@@ -18,6 +18,22 @@ namespace LógicaNegocio
         {
             return datos.consultarBarberos();
         }
+
+        public DataTable obtenerServicios()
+        {
+            return datos.consultarServicios();
+        }
+
+        public DataTable obtenerMetodoPago()
+        {
+            return datos.consultarMetodoPago();
+        }
+
+        public float obtenerPrecio(string servicio)
+        {
+            return ((float)datos.consultarPrecio(servicio));
+             
+        }
         
     }
 }
