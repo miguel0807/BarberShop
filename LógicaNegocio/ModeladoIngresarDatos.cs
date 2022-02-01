@@ -34,6 +34,11 @@ namespace LógicaNegocio
             return ((float)datos.consultarPrecio(servicio));
              
         }
+
+        public void insertarHistorial(string Barbero, string Servicio, int Precio, string MetodoPago, DateTime fecha)
+        {
+            datos.insertarDatosHistorial( Barbero, Servicio, Precio, MetodoPago, fecha);
+        }
         
     }
 }

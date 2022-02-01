@@ -169,6 +169,39 @@ namespace AccesoDatos
 
         }
 
+        //Inserta los datos en la tabla historial.
+        public void insertarDatosHistorial(string Barbero, string Servicio, int Precio, string MetodoPago, DateTime fecha)
+        {
+            
+            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            {
+                try
+                {
+                    cn.Open(); //Se procede abrir la conexión SQL.
+
+                    using (var comando = new SqlCommand()) //Establecemos un comando SQL.
+                    {
+                        comando.Connection = cn;
+                        comando.CommandText = "insert into Historial values(@Barbero,@Servicio,@Precio,@MetodoPago,@Fecha)";
+                        comando.Parameters.AddWithValue("@Barbero", Barbero);
+                        comando.Parameters.AddWithValue("@Servicio", Servicio);
+                        comando.Parameters.AddWithValue("@Precio", Precio);
+                        comando.Parameters.AddWithValue("@MetodoPago", MetodoPago);
+                        comando.Parameters.AddWithValue("@Fecha", fecha);
+
+                        comando.CommandType = CommandType.Text;
+                        comando.ExecuteNonQuery();                        
+                        
+                    }
+
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+
+        }
 
     }
 
