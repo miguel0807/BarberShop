@@ -11,8 +11,7 @@ namespace LógicaNegocio
 {
     public class ModeladoIngresarDatos
     {
-        
-        IngresarDatosDAO datos = new IngresarDatosDAO();//Objeto para invocar la clase de objeto de acceso a Datos (IngresarDatosDAO).
+        readonly IngresarDatosDAO datos = new IngresarDatosDAO();//Objeto para invocar la clase de objeto de acceso a Datos (IngresarDatosDAO).
 
         public DataTable obtenerBarberos()
         {

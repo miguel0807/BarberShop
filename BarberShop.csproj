@@ -51,6 +51,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Historial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historial.Designer.cs">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </Compile>
     <Compile Include="IngresarDatos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Historial.resx">
+      <DependentUpon>Historial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IngresarDatos.resx">
       <DependentUpon>IngresarDatos.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +129,8 @@
     <Content Include="Recursos\CerrarSesion.png" />
     <Content Include="Recursos\CerrarSesion2.png" />
     <Content Include="Recursos\Close.png" />
+    <Content Include="Recursos\Historial.png" />
+    <Content Include="Recursos\Historial2.png" />
     <Content Include="Recursos\Logo.jpg" />
     <Content Include="Recursos\logo2.jpeg" />
     <Content Include="Recursos\Maximizar.png" />

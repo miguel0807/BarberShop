@@ -107,5 +107,10 @@ namespace BarberShop
         {
             abrirFormHijo(new IngresarDatos());
         }
+
+        private void btnHistorial_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new Historial());
+        }
     }
 }

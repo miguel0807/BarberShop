@@ -10,7 +10,7 @@ namespace LógicaNegocio
 {
     public class ModeladoUsuario
     {
-        UsuarioDAO datosUsuario = new UsuarioDAO();//Objeto para invocar la clase de objeto de acceso a Datos (UsuarioDAO).
+        readonly UsuarioDAO datosUsuario = new UsuarioDAO();//Objeto para invocar la clase de objeto de acceso a Datos (UsuarioDAO).
 
         //Función que valida el usuario y la contraseña, si es valido devuelve un true.
         public bool LoginUsuario(string usuario, string contraseña)

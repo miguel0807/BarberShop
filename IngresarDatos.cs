@@ -19,7 +19,7 @@ namespace BarberShop
             InitializeComponent();
         }
 
-        ModeladoIngresarDatos datosNegocio = new ModeladoIngresarDatos();
+        readonly ModeladoIngresarDatos datosNegocio = new ModeladoIngresarDatos();
 
         private void IngresarDatos_Load(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace BarberShop
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             datosNegocio.insertarHistorial(cboBarbero.Text, cboServicios.Text,Convert.ToInt32(txtTotal.Text), cboMetodosPago.Text, DateTime.Now);
-            MessageBox.Show("Datos cargador correctamente.");
+            MessageBox.Show("Datos cargados correctamente.");
         }
     }
 }

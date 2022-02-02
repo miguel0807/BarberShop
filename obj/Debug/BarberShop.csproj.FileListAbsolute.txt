@@ -18,3 +18,4 @@ C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.exe
 C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.pdb
 C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.Principal.resources
 C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.IngresarDatos.resources
+C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.Historial.resources
