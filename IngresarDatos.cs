@@ -23,26 +23,26 @@ namespace BarberShop
 
         private void IngresarDatos_Load(object sender, EventArgs e)
         {
-            cboBarbero.DataSource = datosNegocio.obtenerBarberos();
+            cboBarbero.DataSource = datosNegocio.ObtenerBarberos();
             cboBarbero.DisplayMember = "Barbero";
 
             
-            cboServicios.DataSource = datosNegocio.obtenerServicios();
+            cboServicios.DataSource = datosNegocio.ObtenerServicios();
             cboServicios.DisplayMember = "Servicio";
 
-            cboMetodosPago.DataSource = datosNegocio.obtenerMetodoPago();
+            cboMetodosPago.DataSource = datosNegocio.ObtenerMetodoPago();
             cboMetodosPago.DisplayMember = "MetodoPago";
 
         }
 
         private void cboServicios_SelectedIndexChanged(object sender, EventArgs e)
         {
-            txtTotal.Text = datosNegocio.obtenerPrecio(cboServicios.Text).ToString();
+            txtTotal.Text = datosNegocio.ObtenerPrecio(cboServicios.Text).ToString();
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            datosNegocio.insertarHistorial(cboBarbero.Text, cboServicios.Text,Convert.ToInt32(txtTotal.Text), cboMetodosPago.Text, DateTime.Now);
+            datosNegocio.InsertarHistorial(cboBarbero.Text, cboServicios.Text,Convert.ToInt32(txtTotal.Text), cboMetodosPago.Text, DateTime.Now);
             MessageBox.Show("Datos cargados correctamente.");
         }
     }

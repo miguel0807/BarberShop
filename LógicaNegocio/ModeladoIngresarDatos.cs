@@ -13,30 +13,30 @@ namespace LógicaNegocio
     {
         readonly IngresarDatosDAO datos = new IngresarDatosDAO();//Objeto para invocar la clase de objeto de acceso a Datos (IngresarDatosDAO).
 
-        public DataTable obtenerBarberos()
+        public DataTable ObtenerBarberos()
         {
-            return datos.consultarBarberos();
+            return datos.ConsultarBarberos();
         }
 
-        public DataTable obtenerServicios()
+        public DataTable ObtenerServicios()
         {
-            return datos.consultarServicios();
+            return datos.ConsultarServicios();
         }
 
-        public DataTable obtenerMetodoPago()
+        public DataTable ObtenerMetodoPago()
         {
-            return datos.consultarMetodoPago();
+            return datos.ConsultarMetodoPago();
         }
 
-        public float obtenerPrecio(string servicio)
+        public float ObtenerPrecio(string servicio)
         {
-            return ((float)datos.consultarPrecio(servicio));
+            return ((float)datos.ConsultarPrecio(servicio));
              
         }
 
-        public void insertarHistorial(string Barbero, string Servicio, int Precio, string MetodoPago, DateTime fecha)
+        public void InsertarHistorial(string Barbero, string Servicio, int Precio, string MetodoPago, DateTime fecha)
         {
-            datos.insertarDatosHistorial( Barbero, Servicio, Precio, MetodoPago, fecha);
+            datos.InsertarDatosHistorial( Barbero, Servicio, Precio, MetodoPago, fecha);
         }
         
     }

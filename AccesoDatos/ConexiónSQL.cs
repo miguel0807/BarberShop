@@ -18,7 +18,7 @@ namespace AccesoDatos
         }
 
         //Obtiene la dirección del servidor en una clase heredada.
-        protected SqlConnection obtenerConexión()
+        protected SqlConnection ObtenerConexión()
         {
             return new SqlConnection(cadenaConexión);
         }

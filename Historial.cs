@@ -23,7 +23,7 @@ namespace BarberShop
 
         private void Historial_Load(object sender, EventArgs e)
         {
-            gunaDataGridView1.DataSource = datosNegocio.obtenerHistorial();
+            dataGridView1.DataSource = datosNegocio.ObtenerHistorial();
         }
     }
 }

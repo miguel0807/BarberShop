@@ -11,10 +11,10 @@ namespace AccesoDatos
 {
     public class HistorialDAO : ConexiónSQL
     {
-        public DataTable consultarHistorial()
+        public DataTable ConsultarHistorial()
         {
 
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {
@@ -23,8 +23,8 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select*from Historial";
-                        comando.CommandType = CommandType.Text;
+                        comando.CommandText = "CargarHistorial";
+                        comando.CommandType = CommandType.StoredProcedure;
 
                         DataTable datos = new DataTable();
 

@@ -15,7 +15,7 @@ namespace AccesoDatos
         public bool Login(string usuario, string contraseña)
         {
 
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {

@@ -12,10 +12,10 @@ namespace AccesoDatos
     public class IngresarDatosDAO : ConexiónSQL
     {
         //Realiza una consulta a sql para obtener los datos de los barberos.
-        public DataTable consultarBarberos()
+        public DataTable ConsultarBarberos()
         {
 
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {
@@ -50,10 +50,10 @@ namespace AccesoDatos
 
 
         //Realiza una consulta a sql para obtener los datos de los servicios.
-        public DataTable consultarServicios()
+        public DataTable ConsultarServicios()
         {
 
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {
@@ -86,10 +86,10 @@ namespace AccesoDatos
         }
 
         //Realiza una consulta a sql para obtener los datos de los metodos de pago.
-        public DataTable consultarMetodoPago()
+        public DataTable ConsultarMetodoPago()
         {
 
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {
@@ -124,10 +124,10 @@ namespace AccesoDatos
 
 
         //Realiza una consulta a sql para verificar si es el usuario y la contraseña son correctos.
-        public decimal consultarPrecio(string servicio)
+        public decimal ConsultarPrecio(string servicio)
         {
             decimal precio = 0;
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {
@@ -170,10 +170,10 @@ namespace AccesoDatos
         }
 
         //Inserta los datos en la tabla historial.
-        public void insertarDatosHistorial(string Barbero, string Servicio, int Precio, string MetodoPago, DateTime fecha)
+        public void InsertarDatosHistorial(string Barbero, string Servicio, int Precio, string MetodoPago, DateTime fecha)
         {
             
-            using (var cn = obtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
             {
                 try
                 {

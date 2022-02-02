@@ -13,9 +13,9 @@ namespace LógicaNegocio
     {
         readonly HistorialDAO datos = new HistorialDAO();//Objeto para invocar la clase de objeto de acceso a Datos (IngresarDatosDAO).
 
-        public DataTable obtenerHistorial()
+        public DataTable ObtenerHistorial()
         {
-            return datos.consultarHistorial();
+            return datos.ConsultarHistorial();
         }
     }
 }
