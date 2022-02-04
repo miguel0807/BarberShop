@@ -24,6 +24,7 @@ namespace BarberShop
         private void Historial_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = datosNegocio.ObtenerHistorial();
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
     }
 }

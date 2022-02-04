@@ -32,29 +32,29 @@ namespace BarberShop
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.PanelLateral = new System.Windows.Forms.Panel();
+            this.btnHistorial = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnCerrarSesion = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lineaDatos = new Guna.UI.WinForms.GunaSeparator();
             this.lblPuestoP = new Guna.UI.WinForms.GunaLabel();
             this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.lblPuesto = new Guna.UI.WinForms.GunaLabel();
             this.lblNombreP = new Guna.UI.WinForms.GunaLabel();
+            this.btnIngresarDatos = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panelDatos = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.picLogo = new Guna.UI.WinForms.GunaPictureBox();
             this.PanelSuperior = new System.Windows.Forms.Panel();
-            this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.btnMinimizar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRestaurar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnMaximizar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnCerrar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnMenu = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnHistorial = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnCerrarSesion = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnIngresarDatos = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.picLogo = new Guna.UI.WinForms.GunaPictureBox();
+            this.PanelContenedor = new System.Windows.Forms.Panel();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.PanelLateral.SuspendLayout();
             this.panelDatos.SuspendLayout();
-            this.PanelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.PanelSuperior.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelLateral
@@ -74,6 +74,73 @@ namespace BarberShop
             this.PanelLateral.Name = "PanelLateral";
             this.PanelLateral.Size = new System.Drawing.Size(291, 1050);
             this.PanelLateral.TabIndex = 0;
+            // 
+            // btnHistorial
+            // 
+            this.btnHistorial.AnimationHoverSpeed = 0.07F;
+            this.btnHistorial.AnimationSpeed = 0.03F;
+            this.btnHistorial.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnHistorial.BorderColor = System.Drawing.Color.Black;
+            this.btnHistorial.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnHistorial.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnHistorial.CheckedForeColor = System.Drawing.Color.White;
+            this.btnHistorial.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnHistorial.CheckedImage")));
+            this.btnHistorial.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.btnHistorial.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnHistorial.FocusedColor = System.Drawing.Color.Empty;
+            this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHistorial.ForeColor = System.Drawing.Color.White;
+            this.btnHistorial.Image = global::BarberShop.Properties.Resources.Historial2;
+            this.btnHistorial.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnHistorial.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnHistorial.Location = new System.Drawing.Point(0, 158);
+            this.btnHistorial.Name = "btnHistorial";
+            this.btnHistorial.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnHistorial.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnHistorial.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnHistorial.OnHoverImage = null;
+            this.btnHistorial.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnHistorial.OnPressedColor = System.Drawing.Color.Black;
+            this.btnHistorial.Size = new System.Drawing.Size(291, 69);
+            this.btnHistorial.TabIndex = 12;
+            this.btnHistorial.Text = "Historial de datos";
+            this.btnHistorial.TextOffsetX = 20;
+            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+            // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.AnimationHoverSpeed = 0.07F;
+            this.btnCerrarSesion.AnimationSpeed = 0.03F;
+            this.btnCerrarSesion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnCerrarSesion.BorderColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnCerrarSesion.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.CheckedForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.CheckedImage")));
+            this.btnCerrarSesion.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.btnCerrarSesion.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnCerrarSesion.FocusedColor = System.Drawing.Color.Empty;
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.Image = global::BarberShop.Properties.Resources.CerrarSesion2;
+            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnCerrarSesion.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 981);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnCerrarSesion.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.OnHoverImage = null;
+            this.btnCerrarSesion.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnCerrarSesion.OnPressedColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.Size = new System.Drawing.Size(291, 69);
+            this.btnCerrarSesion.TabIndex = 11;
+            this.btnCerrarSesion.Text = "Cerrar Sesión";
+            this.btnCerrarSesion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnCerrarSesion.TextOffsetX = 20;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
             // lineaDatos
             // 
@@ -136,6 +203,39 @@ namespace BarberShop
             this.lblNombreP.Text = "Nombre: ";
             this.lblNombreP.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // btnIngresarDatos
+            // 
+            this.btnIngresarDatos.AnimationHoverSpeed = 0.07F;
+            this.btnIngresarDatos.AnimationSpeed = 0.03F;
+            this.btnIngresarDatos.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnIngresarDatos.BorderColor = System.Drawing.Color.Black;
+            this.btnIngresarDatos.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnIngresarDatos.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnIngresarDatos.CheckedForeColor = System.Drawing.Color.White;
+            this.btnIngresarDatos.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnIngresarDatos.CheckedImage")));
+            this.btnIngresarDatos.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.btnIngresarDatos.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnIngresarDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIngresarDatos.FocusedColor = System.Drawing.Color.Empty;
+            this.btnIngresarDatos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresarDatos.ForeColor = System.Drawing.Color.White;
+            this.btnIngresarDatos.Image = global::BarberShop.Properties.Resources.ventas;
+            this.btnIngresarDatos.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnIngresarDatos.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnIngresarDatos.Location = new System.Drawing.Point(0, 89);
+            this.btnIngresarDatos.Name = "btnIngresarDatos";
+            this.btnIngresarDatos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnIngresarDatos.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnIngresarDatos.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnIngresarDatos.OnHoverImage = null;
+            this.btnIngresarDatos.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnIngresarDatos.OnPressedColor = System.Drawing.Color.Black;
+            this.btnIngresarDatos.Size = new System.Drawing.Size(291, 69);
+            this.btnIngresarDatos.TabIndex = 3;
+            this.btnIngresarDatos.Text = "Registrar Servicio";
+            this.btnIngresarDatos.TextOffsetX = 20;
+            this.btnIngresarDatos.Click += new System.EventHandler(this.btnIngresarDatos_Click);
+            // 
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -159,6 +259,18 @@ namespace BarberShop
             this.gunaLabel3.Text = "Arte Barber Shop";
             this.gunaLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // picLogo
+            // 
+            this.picLogo.BaseColor = System.Drawing.Color.White;
+            this.picLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.picLogo.Image = global::BarberShop.Properties.Resources.logo2;
+            this.picLogo.Location = new System.Drawing.Point(0, 0);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(84, 89);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picLogo.TabIndex = 3;
+            this.picLogo.TabStop = false;
+            // 
             // PanelSuperior
             // 
             this.PanelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
@@ -172,18 +284,6 @@ namespace BarberShop
             this.PanelSuperior.Name = "PanelSuperior";
             this.PanelSuperior.Size = new System.Drawing.Size(1109, 51);
             this.PanelSuperior.TabIndex = 1;
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(291, 51);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1109, 999);
-            this.PanelContenedor.TabIndex = 2;
-            // 
-            // gunaDragControl1
-            // 
-            this.gunaDragControl1.TargetControl = this.PanelSuperior;
             // 
             // btnMinimizar
             // 
@@ -346,117 +446,18 @@ namespace BarberShop
             this.btnMenu.TabIndex = 9;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
-            // btnHistorial
+            // PanelContenedor
             // 
-            this.btnHistorial.AnimationHoverSpeed = 0.07F;
-            this.btnHistorial.AnimationSpeed = 0.03F;
-            this.btnHistorial.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnHistorial.BorderColor = System.Drawing.Color.Black;
-            this.btnHistorial.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnHistorial.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnHistorial.CheckedForeColor = System.Drawing.Color.White;
-            this.btnHistorial.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnHistorial.CheckedImage")));
-            this.btnHistorial.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btnHistorial.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnHistorial.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnHistorial.FocusedColor = System.Drawing.Color.Empty;
-            this.btnHistorial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHistorial.ForeColor = System.Drawing.Color.White;
-            this.btnHistorial.Image = global::BarberShop.Properties.Resources.Historial2;
-            this.btnHistorial.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnHistorial.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHistorial.Location = new System.Drawing.Point(0, 158);
-            this.btnHistorial.Name = "btnHistorial";
-            this.btnHistorial.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnHistorial.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnHistorial.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnHistorial.OnHoverImage = null;
-            this.btnHistorial.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHistorial.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHistorial.Size = new System.Drawing.Size(291, 69);
-            this.btnHistorial.TabIndex = 12;
-            this.btnHistorial.Text = "Historial de datos";
-            this.btnHistorial.TextOffsetX = 20;
-            this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
+            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
+            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelContenedor.Location = new System.Drawing.Point(291, 51);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.Size = new System.Drawing.Size(1109, 999);
+            this.PanelContenedor.TabIndex = 2;
             // 
-            // btnCerrarSesion
+            // gunaDragControl1
             // 
-            this.btnCerrarSesion.AnimationHoverSpeed = 0.07F;
-            this.btnCerrarSesion.AnimationSpeed = 0.03F;
-            this.btnCerrarSesion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnCerrarSesion.BorderColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnCerrarSesion.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.CheckedForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnCerrarSesion.CheckedImage")));
-            this.btnCerrarSesion.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btnCerrarSesion.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCerrarSesion.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnCerrarSesion.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.Image = global::BarberShop.Properties.Resources.CerrarSesion2;
-            this.btnCerrarSesion.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnCerrarSesion.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(0, 981);
-            this.btnCerrarSesion.Name = "btnCerrarSesion";
-            this.btnCerrarSesion.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnCerrarSesion.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnCerrarSesion.OnHoverImage = null;
-            this.btnCerrarSesion.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCerrarSesion.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCerrarSesion.Size = new System.Drawing.Size(291, 69);
-            this.btnCerrarSesion.TabIndex = 11;
-            this.btnCerrarSesion.Text = "Cerrar Sesión";
-            this.btnCerrarSesion.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btnCerrarSesion.TextOffsetX = 20;
-            this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
-            // 
-            // btnIngresarDatos
-            // 
-            this.btnIngresarDatos.AnimationHoverSpeed = 0.07F;
-            this.btnIngresarDatos.AnimationSpeed = 0.03F;
-            this.btnIngresarDatos.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.btnIngresarDatos.BorderColor = System.Drawing.Color.Black;
-            this.btnIngresarDatos.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnIngresarDatos.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnIngresarDatos.CheckedForeColor = System.Drawing.Color.White;
-            this.btnIngresarDatos.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnIngresarDatos.CheckedImage")));
-            this.btnIngresarDatos.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.btnIngresarDatos.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnIngresarDatos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIngresarDatos.FocusedColor = System.Drawing.Color.Empty;
-            this.btnIngresarDatos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarDatos.ForeColor = System.Drawing.Color.White;
-            this.btnIngresarDatos.Image = global::BarberShop.Properties.Resources.ventas;
-            this.btnIngresarDatos.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnIngresarDatos.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnIngresarDatos.Location = new System.Drawing.Point(0, 89);
-            this.btnIngresarDatos.Name = "btnIngresarDatos";
-            this.btnIngresarDatos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnIngresarDatos.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnIngresarDatos.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnIngresarDatos.OnHoverImage = null;
-            this.btnIngresarDatos.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnIngresarDatos.OnPressedColor = System.Drawing.Color.Black;
-            this.btnIngresarDatos.Size = new System.Drawing.Size(291, 69);
-            this.btnIngresarDatos.TabIndex = 3;
-            this.btnIngresarDatos.Text = "Registrar Servicio";
-            this.btnIngresarDatos.TextOffsetX = 20;
-            this.btnIngresarDatos.Click += new System.EventHandler(this.btnIngresarDatos_Click);
-            // 
-            // picLogo
-            // 
-            this.picLogo.BaseColor = System.Drawing.Color.White;
-            this.picLogo.Dock = System.Windows.Forms.DockStyle.Left;
-            this.picLogo.Image = global::BarberShop.Properties.Resources.logo2;
-            this.picLogo.Location = new System.Drawing.Point(0, 0);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(84, 89);
-            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 3;
-            this.picLogo.TabStop = false;
+            this.gunaDragControl1.TargetControl = this.PanelSuperior;
             // 
             // Principal
             // 
@@ -475,8 +476,8 @@ namespace BarberShop
             this.PanelLateral.PerformLayout();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
-            this.PanelSuperior.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.PanelSuperior.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

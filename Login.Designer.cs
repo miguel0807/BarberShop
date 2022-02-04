@@ -35,10 +35,10 @@ namespace BarberShop
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.PanelSuperior = new Guna.UI.WinForms.GunaPanel();
+            this.btnCerrar = new Guna.UI.WinForms.GunaImageButton();
             this.txtContraseña = new Guna.UI.WinForms.GunaTextBox();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.btnCerrar = new Guna.UI.WinForms.GunaImageButton();
             this.btnIngresar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.PanelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
@@ -106,6 +106,22 @@ namespace BarberShop
             this.PanelSuperior.Size = new System.Drawing.Size(1041, 38);
             this.PanelSuperior.TabIndex = 5;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnCerrar.Image = global::BarberShop.Properties.Resources.Close;
+            this.btnCerrar.ImageSize = new System.Drawing.Size(22, 22);
+            this.btnCerrar.Location = new System.Drawing.Point(985, 5);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.OnHoverImage = null;
+            this.btnCerrar.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.btnCerrar.Size = new System.Drawing.Size(53, 30);
+            this.btnCerrar.TabIndex = 8;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // txtContraseña
             // 
             this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -147,22 +163,6 @@ namespace BarberShop
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 7;
             this.gunaPictureBox1.TabStop = false;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnCerrar.Image = global::BarberShop.Properties.Resources.Close;
-            this.btnCerrar.ImageSize = new System.Drawing.Size(22, 22);
-            this.btnCerrar.Location = new System.Drawing.Point(985, 5);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.OnHoverImage = null;
-            this.btnCerrar.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.btnCerrar.Size = new System.Drawing.Size(53, 30);
-            this.btnCerrar.TabIndex = 8;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnIngresar
             // 
