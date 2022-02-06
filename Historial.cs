@@ -24,7 +24,23 @@ namespace BarberShop
         private void Historial_Load(object sender, EventArgs e)
         {
             dataGridView1.DataSource = datosNegocio.ObtenerHistorial();
-            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            lblCantidad.Text = ContarFilas(dataGridView1);
+        }
+
+        //Devuelve la cantidad de filas totales en un datagridview.
+        public string ContarFilas(DataGridView dataGrid)
+        {
+            string resultado;
+            int cantidad = 0;
+
+            foreach (DataGridViewRow fila in dataGrid.Rows)
+            {
+                cantidad = cantidad + 1;
+            }
+
+            resultado = "Cantidad: " + cantidad; 
+            return resultado; ;
         }
     }
 }

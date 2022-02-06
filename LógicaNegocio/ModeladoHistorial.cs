@@ -17,5 +17,6 @@ namespace LógicaNegocio
         {
             return datos.ConsultarHistorial();
         }
+
     }
 }
