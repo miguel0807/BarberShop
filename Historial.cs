@@ -25,6 +25,9 @@ namespace BarberShop
         {
             dataGridView1.DataSource = datosNegocio.ObtenerHistorial();
 
+            cboTipoBusqueda.DataSource = datosNegocio.ObtenerColumnasHistorial();
+            cboTipoBusqueda.DisplayMember = "COLUMN_NAME";
+
             lblCantidad.Text = ContarFilas(dataGridView1);
         }
 
@@ -41,6 +44,56 @@ namespace BarberShop
 
             resultado = "Cantidad: " + cantidad; 
             return resultado; ;
+        }
+
+        private void cboTipoBusqueda_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboTipoBusqueda.Text == "Barbero")
+            {
+                cboOpciones.DataSource = datosNegocio.ObtenerBarberos();
+                cboOpciones.DisplayMember = "Barbero";
+            }
+
+            else if (cboTipoBusqueda.Text == "Servicio")
+            {
+                cboOpciones.DataSource = datosNegocio.ObtenerServicios();
+                cboOpciones.DisplayMember = "Servicio";
+            }
+
+            else if (cboTipoBusqueda.Text == "MetodoPago")
+            {
+                cboOpciones.DataSource = datosNegocio.ObtenerMetodoPago();
+                cboOpciones.DisplayMember = "MetodoPago";
+            }
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (cboTipoBusqueda.Text == "Barbero")
+            {
+                dataGridView1.DataSource = datosNegocio.ObtenerHistorialBarbero(cboOpciones.Text);
+            }
+
+            else if (cboTipoBusqueda.Text == "Servicio")
+            {
+                cboOpciones.DataSource = datosNegocio.ObtenerServicios();
+                cboOpciones.DisplayMember = "Servicio";
+            }
+
+            else if (cboTipoBusqueda.Text == "MetodoPago")
+            {
+                cboOpciones.DataSource = datosNegocio.ObtenerMetodoPago();
+                cboOpciones.DisplayMember = "MetodoPago";
+            }
+
+            lblCantidad.Text = ContarFilas(dataGridView1);
+
+        }
+
+        private void gunaAdvenceButton1_Click(object sender, EventArgs e)
+        {
+            cboOpciones.Visible = false;
+            cboTipoBusqueda.Visible = false;
         }
     }
 }

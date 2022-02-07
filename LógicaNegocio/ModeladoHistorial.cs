@@ -18,5 +18,29 @@ namespace LógicaNegocio
             return datos.ConsultarHistorial();
         }
 
+        public DataTable ObtenerColumnasHistorial()
+        {
+            return datos.ConsultarNombresColumnas();
+        }
+
+        public DataTable ObtenerBarberos()
+        {
+            return datos.ConsultarBarbero();
+        }
+
+        public DataTable ObtenerMetodoPago()
+        {
+            return datos.ConsultarMetodoPago();
+        }
+
+        public DataTable ObtenerServicios()
+        {
+            return datos.ConsultarSevicios();
+        }
+
+        public DataTable ObtenerHistorialBarbero(string barbero)
+        {
+            return datos.ConsultarHistorialBarbero(barbero);
+        }
     }
 }
