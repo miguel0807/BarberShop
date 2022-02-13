@@ -74,6 +74,41 @@ namespace AccesoDatos
             }
         }
 
+
+        //Realiza una consulta sql para obtener el historial filtrado por rango de fechas.
+        public DataTable ConsultarHistorialRangoFechas(string FechaInicial, string  FechaFinal)
+        {
+
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            {
+                try
+                {
+                    cn.Open(); //Se procede abrir la conexión SQL.
+
+                    using (var comando = new SqlCommand()) //Establecemos un comando SQL.
+                    {
+                        comando.Connection = cn;
+                        comando.CommandText = "HistorialFechas";
+                        comando.CommandType = CommandType.StoredProcedure;
+                        comando.Parameters.AddWithValue("@FechaInicial", FechaInicial);
+                        comando.Parameters.AddWithValue("@FechaFinal", FechaFinal);
+
+                        DataTable datos = new DataTable();
+
+                        SqlDataAdapter adaptador = new SqlDataAdapter(comando); //Se ejecuta el comando.
+
+                        adaptador.Fill(datos);
+
+                        return datos;
+                    }
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+        }
+
         //Realiza una consulta sql para obtener las columnas de Historial.
         public DataTable ConsultarNombresColumnas()
         {

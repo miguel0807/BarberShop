@@ -41,6 +41,9 @@ namespace BarberShop
             cboMetodoPago.SelectedIndex = 0;
             cboMetodoPago.Enabled = false;
 
+            //Carga el historial de cortes del día.
+            dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
+            dataGridView1.Columns[0].Visible = false;
 
 
             lblCantidad.Text = ContarFilas(dataGridView1);
@@ -59,9 +62,9 @@ namespace BarberShop
 
             resultado = "Cantidad: " + cantidad; 
             return resultado; ;
-        }      
+        }
 
-      
+
 
         private void checkBarbero_CheckedChanged(object sender, EventArgs e)
         {
@@ -116,14 +119,31 @@ namespace BarberShop
 
         private void btnBuscar_Click_1(object sender, EventArgs e)
         {
-            if (cboBarbero.Text != "Todos")
-            {
-                dataGridView1.DataSource = datosNegocio.ObtenerHistorialBarbero(cboBarbero.Text);
+             
+                dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
+                dataGridView1.Columns[0].Visible = false;
 
-            }
-
-
+            
+            lblDinero.Text = ContarDinero(dataGridView1);
             lblCantidad.Text = ContarFilas(dataGridView1);
         }
+
+        //Suma la cantidad de dinero en el datagridview..
+        public string ContarDinero(DataGridView dataGrid)
+        {
+            const int columna = 3;
+            string resultado;
+            int suma = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                suma += (int)row.Cells[columna].Value;
+            }
+
+            resultado = "Total Dinero: " + suma;
+
+            return resultado;
+        }
+
+
     }
 }

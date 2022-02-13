@@ -54,6 +54,7 @@ namespace BarberShop
             this.cboBarbero = new Guna.UI.WinForms.GunaComboBox();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lblDinero = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
@@ -344,6 +345,7 @@ namespace BarberShop
             // 
             // gunaPanel2
             // 
+            this.gunaPanel2.Controls.Add(this.lblDinero);
             this.gunaPanel2.Controls.Add(this.dataGridView1);
             this.gunaPanel2.Controls.Add(this.lblCantidad);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -413,6 +415,18 @@ namespace BarberShop
             this.dataGridView1.Size = new System.Drawing.Size(1054, 526);
             this.dataGridView1.TabIndex = 2;
             // 
+            // lblDinero
+            // 
+            this.lblDinero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblDinero.AutoSize = true;
+            this.lblDinero.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDinero.ForeColor = System.Drawing.Color.White;
+            this.lblDinero.Location = new System.Drawing.Point(25, 565);
+            this.lblDinero.Name = "lblDinero";
+            this.lblDinero.Size = new System.Drawing.Size(151, 30);
+            this.lblDinero.TabIndex = 3;
+            this.lblDinero.Text = "Total Dinero: ";
+            // 
             // Historial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,5 +471,6 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaMediumCheckBox checkBarbero;
         private Guna.UI.WinForms.GunaMediumCheckBox checkServicio;
         private Guna.UI.WinForms.GunaMediumCheckBox checkMetodoPago;
+        private Guna.UI.WinForms.GunaLabel lblDinero;
     }
 }

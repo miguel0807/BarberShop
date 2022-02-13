@@ -42,5 +42,10 @@ namespace LógicaNegocio
         {
             return datos.ConsultarHistorialBarbero(barbero);
         }
+
+        public DataTable ObtenerHistorialRangoFechas(string fechaInicial, string fechaFinal)
+        {
+            return datos.ConsultarHistorialRangoFechas(fechaInicial + " 00:00",fechaFinal + " 23:59");
+        }
     }
 }
