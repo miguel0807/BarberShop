@@ -159,7 +159,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select MetodoPago from MetodoPago";
+                        comando.CommandText = "select RTRIM(MetodoPago) as 'Metodo de pago' from MetodoPago";
                         comando.CommandType = CommandType.Text;
 
                         DataTable datos = new DataTable();
@@ -193,7 +193,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select Barbero from Barbero";
+                        comando.CommandText = "select RTRIM(Barbero) as Barbero from Barbero";
                         comando.CommandType = CommandType.Text;                        
 
                         DataTable datos = new DataTable();
@@ -227,7 +227,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select Servicio from Servicios";
+                        comando.CommandText = "select RTRIM(Servicio) as Servicio from Servicios";
                         comando.CommandType = CommandType.Text;
 
                         DataTable datos = new DataTable();

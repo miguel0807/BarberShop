@@ -42,15 +42,19 @@ namespace BarberShop
             cboMetodoPago.Enabled = false;
 
             //Carga el historial de cortes del día.
-            dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
-            dataGridView1.Columns[0].Visible = false;
+            //dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
+            
+               dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
 
+           
+            
+            
 
-            lblCantidad.Text = ContarFilas(dataGridView1);
+            ConfiguracionDatagrid();
         }
 
         //Devuelve la cantidad de filas totales en un datagridview.
-        public string ContarFilas(DataGridView dataGrid)
+        private string ContarFilas(DataGridView dataGrid)
         {
             string resultado;
             int cantidad = 0;
@@ -64,6 +68,30 @@ namespace BarberShop
             return resultado; ;
         }
 
+        //Suma la cantidad de dinero en el datagridview..
+        private string ContarDinero(DataGridView dataGrid)
+        {
+            const int columna = 3;
+            string resultado;
+            int suma = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                suma += (int)row.Cells[columna].Value;
+            }
+
+            resultado = "Total Dinero: " + suma;
+
+            return resultado;
+        }
+
+        //Configurar el datagridview1
+        private void ConfiguracionDatagrid()
+        {
+            dataGridView1.Columns[0].Visible = false;
+
+            lblDinero.Text = ContarDinero(dataGridView1);
+            lblCantidad.Text = ContarFilas(dataGridView1);
+        }
 
 
         private void checkBarbero_CheckedChanged(object sender, EventArgs e)
@@ -117,33 +145,21 @@ namespace BarberShop
             }
         }
 
-        private void btnBuscar_Click_1(object sender, EventArgs e)
+        private void btnBuscar_Click(object sender, EventArgs e)
         {
-             
-                dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
-                dataGridView1.Columns[0].Visible = false;
+            dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
 
-            
-            lblDinero.Text = ContarDinero(dataGridView1);
-            lblCantidad.Text = ContarFilas(dataGridView1);
+
+            string columna = "Barbero";
+            ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format(""+ columna + " LIKE '%{0}%'", cboBarbero.Text);
+           
+
+            ConfiguracionDatagrid();
         }
 
-        //Suma la cantidad de dinero en el datagridview..
-        public string ContarDinero(DataGridView dataGrid)
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
         {
-            const int columna = 3;
-            string resultado;
-            int suma = 0;
-            foreach (DataGridViewRow row in dataGridView1.Rows)
-            {
-                suma += (int)row.Cells[columna].Value;
-            }
 
-            resultado = "Total Dinero: " + suma;
-
-            return resultado;
         }
-
-
     }
 }
