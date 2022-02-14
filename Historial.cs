@@ -64,11 +64,11 @@ namespace BarberShop
                 cantidad = cantidad + 1;
             }
 
-            resultado = "Cantidad: " + cantidad; 
+            resultado = "Total de servicios: " + cantidad; 
             return resultado; ;
         }
 
-        //Suma la cantidad de dinero en el datagridview..
+        //Suma la cantidad de dinero en el datagridview.
         private string ContarDinero(DataGridView dataGrid)
         {
             const int columna = 3;
@@ -84,6 +84,26 @@ namespace BarberShop
             return resultado;
         }
 
+        //Cuenta los servicios especificados.
+        private string ContarServicio(DataGridView dataGrid,string servicio)
+        {
+            const int columna = 2;
+            string resultado;
+            int suma = 0;
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if ((string)row.Cells[columna].Value == servicio)
+                {
+                    suma = suma + 1;
+                }
+                
+            }
+
+            resultado = servicio + ": " + suma;
+
+            return resultado;
+        }
+
         //Configurar el datagridview1
         private void ConfiguracionDatagrid()
         {
@@ -91,6 +111,11 @@ namespace BarberShop
 
             lblDinero.Text = ContarDinero(dataGridView1);
             lblCantidad.Text = ContarFilas(dataGridView1);
+            lblBarba.Text = ContarServicio(dataGridView1, "Barba");
+            lblCorteYbarba.Text = ContarServicio(dataGridView1, "Corte y barba");
+            lblCorte.Text = ContarServicio(dataGridView1, "Corte");
+            lblNiños.Text = ContarServicio(dataGridView1, "Niños");
+            lblMarcado.Text = ContarServicio(dataGridView1, "Marcado");
         }
 
 
@@ -116,7 +141,7 @@ namespace BarberShop
             if (checkMetodoPago.Checked)
             {
                 cboMetodoPago.DataSource = datosNegocio.ObtenerMetodoPago();
-                cboMetodoPago.DisplayMember = "MetodoPago";
+                cboMetodoPago.DisplayMember = "me";
                 cboMetodoPago.Enabled = true;
             }
             else
@@ -147,12 +172,53 @@ namespace BarberShop
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            textBox1.Text = ((DataTable)dataGridView1.DataSource).Columns[4].ToString();
             dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
+            string filtro1,filtro2,filtro3;
+            string f1, f2, f3;
+            int filtros = 0;
+            filtro1 = "";
+            filtro2= "";
+            filtro3 = "";
+            f1 = "";
+            f2 = "";
+            f3 = "";
 
 
-            string columna = "Barbero";
-            ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format(""+ columna + " LIKE '%{0}%'", cboBarbero.Text);
+            if (checkBarbero.Checked)
+            {
+                
+                filtro1 = "[Barbero]= '{" + filtros + "}'";
+                f1 = cboBarbero.Text;
+                filtros = filtros + 1;
+
+                // ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("[Barbero]= '{0}' and Servicio = '{1}' ", cboBarbero.Text,cboServicio.Text);
+
+            }
+
+            if (checkMetodoPago.Checked)
+            {
+                filtro2 = "[Metodo de pago]= '{" + filtros + "}'";
+                f2 = cboMetodoPago.Text;
+                filtros = filtros + 1;
+               // ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("[Metodo de pago]= '{0}'", cboMetodoPago.Text);
+
+            }
+
+            if (checkServicio.Checked)
+            {
+                filtro3 = "Servicio = '{" + filtros + "}'";
+                f3 = cboServicio.Text;
+                filtros = filtros + 1;
+                //    ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("Servicio = '{0}'", cboServicio.Text);
+
+            }
            
+            
+
+
+            ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter  = string.Format(filtro1 + "or " + filtro2 + "or " + filtro3 , f1, f2, f3);
+
 
             ConfiguracionDatagrid();
         }

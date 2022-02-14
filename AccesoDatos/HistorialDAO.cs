@@ -159,7 +159,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select RTRIM(MetodoPago) as 'Metodo de pago' from MetodoPago";
+                        comando.CommandText = "select RTRIM(MetodoPago) as me from MetodoPago";
                         comando.CommandType = CommandType.Text;
 
                         DataTable datos = new DataTable();
