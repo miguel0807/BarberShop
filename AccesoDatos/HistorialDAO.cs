@@ -41,6 +41,7 @@ namespace AccesoDatos
                 }
             }
         }
+
         //Realiza una consulta sql para obtener el historial filtrado por nombre de barbero.
         public DataTable ConsultarHistorialBarbero(string barbero)
         {
@@ -159,7 +160,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select RTRIM(MetodoPago) as me from MetodoPago";
+                        comando.CommandText = "select RTRIM(MetodoPago) as MetodosPago from MetodoPago";
                         comando.CommandType = CommandType.Text;
 
                         DataTable datos = new DataTable();
