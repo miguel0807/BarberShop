@@ -114,26 +114,31 @@ namespace BarberShop
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            
-            dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());        
+            Buscar();
+        
+        }   
+
+        private void Buscar()
+        {
+            dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());
 
             if (rbBarbero.Checked)
-            {                
-              ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("[Barbero]= '{0}'", cboBarbero.Text);
+            {
+                ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("[Barbero]= '{0}'", cboBarbero.Text);
             }
 
             else if (rbMetodoPago.Checked)
             {
-              ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("[Metodo de pago]= '{0}'", cboMetodoPago.Text);
+                ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("[Metodo de pago]= '{0}'", cboMetodoPago.Text);
             }
 
             else if (rbServicio.Checked)
             {
-               ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("Servicio = '{0}'", cboServicio.Text);
+                ((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("Servicio = '{0}'", cboServicio.Text);
             }
 
             ConfiguracionDatagrid();
-        }   
+        }
 
         private void rbBarbero_CheckedChanged(object sender, EventArgs e)
         {
@@ -193,6 +198,7 @@ namespace BarberShop
 
                 if (e.Button == MouseButtons.Right)
                 {
+                  //  MessageBox.Show(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
                     int id,Total;
                     String Barbero, Servicio, MetodoPago;
                     id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
@@ -236,7 +242,8 @@ namespace BarberShop
         private void Modificar(int id, String Barbero, String Servicio,int Total,String MetodoPago)
         {
             ModificarHistorial frm = new ModificarHistorial(id,Barbero,Servicio,Total,MetodoPago);
-            frm.Show();
+            frm.ShowDialog();
+            Buscar();
         }
 
         

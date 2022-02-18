@@ -38,7 +38,7 @@ namespace BarberShop
             this.cboBarbero = new Guna.UI.WinForms.GunaComboBox();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.btnIngresar = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnActualizar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.SuspendLayout();
             // 
             // txtTotal
@@ -61,6 +61,7 @@ namespace BarberShop
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.White;
             this.gunaLabel4.Location = new System.Drawing.Point(78, 223);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(78, 32);
@@ -71,6 +72,7 @@ namespace BarberShop
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
             this.gunaLabel3.Location = new System.Drawing.Point(520, 96);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(216, 32);
@@ -112,6 +114,7 @@ namespace BarberShop
             this.cboServicios.OnHoverItemForeColor = System.Drawing.Color.White;
             this.cboServicios.Size = new System.Drawing.Size(204, 35);
             this.cboServicios.TabIndex = 25;
+            this.cboServicios.SelectedIndexChanged += new System.EventHandler(this.cboServicios_SelectedIndexChanged);
             // 
             // cboBarbero
             // 
@@ -135,6 +138,7 @@ namespace BarberShop
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
             this.gunaLabel2.Location = new System.Drawing.Point(318, 96);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(117, 32);
@@ -145,50 +149,52 @@ namespace BarberShop
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
             this.gunaLabel1.Location = new System.Drawing.Point(78, 96);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(106, 32);
             this.gunaLabel1.TabIndex = 22;
             this.gunaLabel1.Text = "Barbero";
             // 
-            // btnIngresar
+            // btnActualizar
             // 
-            this.btnIngresar.AnimationHoverSpeed = 0.07F;
-            this.btnIngresar.AnimationSpeed = 0.03F;
-            this.btnIngresar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnIngresar.BorderColor = System.Drawing.Color.Black;
-            this.btnIngresar.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnIngresar.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnIngresar.CheckedForeColor = System.Drawing.Color.White;
-            this.btnIngresar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnIngresar.CheckedImage")));
-            this.btnIngresar.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnIngresar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnIngresar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Image = null;
-            this.btnIngresar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnIngresar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnIngresar.Location = new System.Drawing.Point(333, 258);
-            this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnIngresar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnIngresar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnIngresar.OnHoverImage = null;
-            this.btnIngresar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnIngresar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnIngresar.Size = new System.Drawing.Size(180, 42);
-            this.btnIngresar.TabIndex = 30;
-            this.btnIngresar.Text = "Actualizar";
-            this.btnIngresar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            this.btnActualizar.AnimationHoverSpeed = 0.07F;
+            this.btnActualizar.AnimationSpeed = 0.03F;
+            this.btnActualizar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnActualizar.BorderColor = System.Drawing.Color.Black;
+            this.btnActualizar.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnActualizar.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnActualizar.CheckedForeColor = System.Drawing.Color.White;
+            this.btnActualizar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.CheckedImage")));
+            this.btnActualizar.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnActualizar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnActualizar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnActualizar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.Color.White;
+            this.btnActualizar.Image = null;
+            this.btnActualizar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnActualizar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnActualizar.Location = new System.Drawing.Point(333, 258);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnActualizar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnActualizar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnActualizar.OnHoverImage = null;
+            this.btnActualizar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnActualizar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnActualizar.Size = new System.Drawing.Size(180, 42);
+            this.btnActualizar.TabIndex = 30;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // ModificarHistorial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.gunaLabel3);
@@ -197,9 +203,10 @@ namespace BarberShop
             this.Controls.Add(this.cboBarbero);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ModificarHistorial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ModificarHistorial";
+            this.Text = "Modificar Historial";
             this.Load += new System.EventHandler(this.ModificarHistorial_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -208,7 +215,7 @@ namespace BarberShop
 
         #endregion
 
-        private Guna.UI.WinForms.GunaAdvenceButton btnIngresar;
+        private Guna.UI.WinForms.GunaAdvenceButton btnActualizar;
         private Guna.UI.WinForms.GunaTextBox txtTotal;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;

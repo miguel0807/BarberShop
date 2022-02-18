@@ -29,5 +29,16 @@ namespace LógicaNegocio
             return datos.ConsultarSevicios();
         }
 
+        public float ObtenerPrecio(string servicio)
+        {
+            return ((float)datos.ConsultarPrecio(servicio));
+
+        }
+
+        public void ActualizarDatos(int id,string Barbero, string Servicio, int Precio, string MetodoPago)
+        {
+            datos.ActualizarDatos(id,Barbero, Servicio, Precio, MetodoPago);
+        }
+
     }
 }

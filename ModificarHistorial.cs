@@ -50,9 +50,15 @@ namespace BarberShop
 
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
+        private void btnActualizar_Click(object sender, EventArgs e)
         {
-            txtTotal.Text = cboBarbero.Text;
+            datosNegocio.ActualizarDatos(id,cboBarbero.Text, cboServicios.Text, Convert.ToInt32(txtTotal.Text), cboMetodosPago.Text);
+            this.Close();
+        }
+
+        private void cboServicios_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtTotal.Text = datosNegocio.ObtenerPrecio(cboServicios.Text).ToString();
         }
     }
 }
