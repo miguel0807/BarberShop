@@ -65,6 +65,7 @@ namespace BarberShop
             this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.Size = new System.Drawing.Size(378, 45);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.Text = "malvarado";
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtUsuario_KeyDown);
             // 
@@ -143,6 +144,7 @@ namespace BarberShop
             this.txtContraseña.PasswordChar = '●';
             this.txtContraseña.Size = new System.Drawing.Size(378, 45);
             this.txtContraseña.TabIndex = 6;
+            this.txtContraseña.Text = "123";
             this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtContraseña.UseSystemPasswordChar = true;
             this.txtContraseña.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtContraseña_KeyDown);

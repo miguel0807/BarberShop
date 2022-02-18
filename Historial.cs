@@ -37,6 +37,8 @@ namespace BarberShop
             cboMetodoPago.Items.Add("Todos");
             cboMetodoPago.SelectedIndex = 0;
             cboMetodoPago.Enabled = false;
+            dt1.Value = DateTime.Now.Date;
+            dt2.Value = DateTime.Now.Date;
 
             //Carga el historial de cortes del día.
             dataGridView1.DataSource = datosNegocio.ObtenerHistorialRangoFechas(dt1.Value.ToShortDateString(), dt2.Value.ToShortDateString());             
@@ -66,9 +68,13 @@ namespace BarberShop
             int suma = 0;
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                suma += (int)row.Cells[columna].Value;
+                if ((string)row.Cells[2].Value != "Vales")
+                {
+                    suma += (int)row.Cells[columna].Value;
+                }               
+                    
             }
-            resultado = "Total Dinero: " + suma;
+            resultado = "Total Dinero: ₡" + suma;
 
             return resultado;
         }
@@ -179,5 +185,60 @@ namespace BarberShop
                 cboServicio.Enabled = false;
             }
         }
+
+        private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+
+                if (e.Button == MouseButtons.Right)
+                {
+                    int id,Total;
+                    String Barbero, Servicio, MetodoPago;
+                    id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                    Barbero = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                    Servicio = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                    Total = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString());
+                    MetodoPago = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                    dataGridView1.CurrentCell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex]; //Selecciona la fila del datagridview.
+
+
+                    ContextMenuStrip menu = new ContextMenuStrip();
+
+                    menu.Items.Add("Modificar", default(Image), (snd, evt) => { Modificar(id,Barbero,Servicio,Total,MetodoPago); });
+                    menu.Items[0].BackColor = Color.FromArgb(151, 143, 255);
+
+                    menu.Items.Add("Eliminar", default(Image), (snd, evt) => { });
+                    menu.Items[1].BackColor = Color.FromArgb(151, 143, 255);
+
+
+                    //Obtienes las coordenadas de la celda seleccionada. 
+                    Rectangle coordenada = dataGridView1.GetCellDisplayRectangle(e.ColumnIndex, e.RowIndex, false);
+
+                    int anchoCelda = coordenada.Location.X; //Ancho de la localizacion de la celda
+                    int altoCelda = coordenada.Location.Y;  //Alto de la localizacion de la celda
+
+                    //Y para mostrar el menú lo haces de esta forma:  
+                    int X = anchoCelda + dataGridView1.Location.X+20;
+                    int Y = altoCelda + dataGridView1.Location.Y + 20;
+
+                    menu.Show(dataGridView1, new Point(X, Y));
+                }
+
+
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void Modificar(int id, String Barbero, String Servicio,int Total,String MetodoPago)
+        {
+            ModificarHistorial frm = new ModificarHistorial(id,Barbero,Servicio,Total,MetodoPago);
+            frm.Show();
+        }
+
+        
     }
 }

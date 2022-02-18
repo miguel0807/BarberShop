@@ -29,11 +29,11 @@ namespace BarberShop
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Historial));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblCantidad = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.rbServicio = new Guna.UI.WinForms.GunaRadioButton();
@@ -47,7 +47,6 @@ namespace BarberShop
             this.cboBarbero = new Guna.UI.WinForms.GunaComboBox();
             this.rbFecha = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.btnBuscar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.dt1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.dt2 = new Guna.UI.WinForms.GunaDateTimePicker();
@@ -63,6 +62,7 @@ namespace BarberShop
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.lblDinero = new Guna.UI.WinForms.GunaLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnBuscar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
@@ -258,40 +258,6 @@ namespace BarberShop
             this.gunaLabel4.TabIndex = 28;
             this.gunaLabel4.Text = "Fecha";
             // 
-            // btnBuscar
-            // 
-            this.btnBuscar.AnimationHoverSpeed = 0.07F;
-            this.btnBuscar.AnimationSpeed = 0.03F;
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnBuscar.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.CheckedForeColor = System.Drawing.Color.White;
-            this.btnBuscar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.CheckedImage")));
-            this.btnBuscar.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = null;
-            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBuscar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBuscar.Location = new System.Drawing.Point(21, 167);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBuscar.OnHoverImage = null;
-            this.btnBuscar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBuscar.Radius = 20;
-            this.btnBuscar.Size = new System.Drawing.Size(207, 50);
-            this.btnBuscar.TabIndex = 27;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
             // gunaPanel3
             // 
             this.gunaPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -381,8 +347,8 @@ namespace BarberShop
             this.gunaPanel2.Controls.Add(this.flowLayoutPanel1);
             this.gunaPanel2.Controls.Add(this.gunaLabel3);
             this.gunaPanel2.Controls.Add(this.lblDinero);
-            this.gunaPanel2.Controls.Add(this.dataGridView1);
             this.gunaPanel2.Controls.Add(this.lblCantidad);
+            this.gunaPanel2.Controls.Add(this.dataGridView1);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 224);
             this.gunaPanel2.Name = "gunaPanel2";
@@ -496,24 +462,24 @@ namespace BarberShop
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeight = 60;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
             this.dataGridView1.Location = new System.Drawing.Point(21, 6);
@@ -521,27 +487,62 @@ namespace BarberShop
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1054, 594);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.AnimationHoverSpeed = 0.07F;
+            this.btnBuscar.AnimationSpeed = 0.03F;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnBuscar.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.CheckedForeColor = System.Drawing.Color.White;
+            this.btnBuscar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.CheckedImage")));
+            this.btnBuscar.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = null;
+            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBuscar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBuscar.Location = new System.Drawing.Point(21, 167);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBuscar.OnHoverImage = null;
+            this.btnBuscar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBuscar.Radius = 20;
+            this.btnBuscar.Size = new System.Drawing.Size(207, 50);
+            this.btnBuscar.TabIndex = 27;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // Historial
             // 
