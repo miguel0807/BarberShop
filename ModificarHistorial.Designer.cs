@@ -56,6 +56,7 @@ namespace BarberShop
             this.txtTotal.Size = new System.Drawing.Size(160, 37);
             this.txtTotal.TabIndex = 29;
             this.txtTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTotal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTotal_KeyPress);
             // 
             // gunaLabel4
             // 

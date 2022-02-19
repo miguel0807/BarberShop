@@ -214,7 +214,7 @@ namespace BarberShop
                     menu.Items.Add("Modificar", default(Image), (snd, evt) => { Modificar(id,Barbero,Servicio,Total,MetodoPago); });
                     menu.Items[0].BackColor = Color.FromArgb(151, 143, 255);
 
-                    menu.Items.Add("Eliminar", default(Image), (snd, evt) => { });
+                    menu.Items.Add("Eliminar", default(Image), (snd, evt) => { Eliminar(id); });
                     menu.Items[1].BackColor = Color.FromArgb(151, 143, 255);
 
 
@@ -246,6 +246,20 @@ namespace BarberShop
             Buscar();
         }
 
-        
+        private void Eliminar(int id)
+        {
+            DialogResult resultado = MessageBox.Show("Esta seguro de eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
+
+
+            if (resultado == DialogResult.Yes)
+            {
+
+                datosNegocio.EliminarDatos(id);
+            }
+            
+            Buscar();
+        }
+
+
     }
 }

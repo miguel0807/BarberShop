@@ -47,5 +47,10 @@ namespace LógicaNegocio
         {
             return datos.ConsultarHistorialRangoFechas(fechaInicial + " 00:00",fechaFinal + " 23:59");
         }
+
+        public void EliminarDatos(int id)
+        {
+            datos.EliminarDatos(id);
+        }
     }
 }

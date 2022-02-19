@@ -157,7 +157,7 @@ namespace AccesoDatos
             }
         }
 
-        //Inserta los datos en la tabla historial.
+        //Actualizar los datos en la tabla historial.
         public void ActualizarDatos(int id,string Barbero, string Servicio, int Precio, string MetodoPago)
         {
 
@@ -192,6 +192,6 @@ namespace AccesoDatos
 
         }
 
-
+     
     }
 }

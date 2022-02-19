@@ -248,5 +248,36 @@ namespace AccesoDatos
             }
         }
 
+        //Inserta los datos en la tabla historial.
+        public void EliminarDatos(int id)
+        {
+
+            using (var cn = ObtenerConexión()) //Asignamos la ubicación de la base de datos a la variable connection.
+            {
+                try
+                {
+                    cn.Open(); //Se procede abrir la conexión SQL.
+
+                    using (var comando = new SqlCommand()) //Establecemos un comando SQL.
+                    {
+                        comando.Connection = cn;
+                        comando.CommandText = "EliminarDatos";
+                        comando.Parameters.AddWithValue("@id", id);
+
+                        comando.CommandType = CommandType.StoredProcedure;
+                        comando.ExecuteNonQuery();
+
+                    }
+
+                }
+                catch (SqlException ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+
+        }
+
+
     }
 }

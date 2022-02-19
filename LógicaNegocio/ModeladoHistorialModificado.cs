@@ -40,5 +40,7 @@ namespace LógicaNegocio
             datos.ActualizarDatos(id,Barbero, Servicio, Precio, MetodoPago);
         }
 
+        
+
     }
 }

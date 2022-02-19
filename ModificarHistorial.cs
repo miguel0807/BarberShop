@@ -60,5 +60,13 @@ namespace BarberShop
         {
             txtTotal.Text = datosNegocio.ObtenerPrecio(cboServicios.Text).ToString();
         }
+
+        private void txtTotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

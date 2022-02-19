@@ -45,5 +45,13 @@ namespace BarberShop
             datosNegocio.InsertarHistorial(cboBarbero.Text, cboServicios.Text,Convert.ToInt32(txtTotal.Text), cboMetodosPago.Text, DateTime.Now);
             MessageBox.Show("Datos cargados correctamente.");
         }
+
+        private void txtTotal_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }          
+        }
     }
 }
