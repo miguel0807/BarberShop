@@ -11,64 +11,64 @@ using Común.Cache;
 using LógicaNegocio;
 using BarberShop.Modificar_Datos;
 
-namespace BarberShop
+namespace BarberShop.Modificar_Datos
 {
-    public partial class ModificarDatos : Form
+    public partial class ModificarMetodoPago : Form
     {
         private Point posicionMouse;
         readonly ModeladoModificarDatos datosNegocio = new ModeladoModificarDatos();
 
-        public ModificarDatos()
+        public ModificarMetodoPago()
         {
             InitializeComponent();
-        }        
-
-        private void ModificarDatos_Load(object sender, EventArgs e)
-        {
-            CargarBarberos();
         }
 
-       
-        public void CargarBarberos()
+        private void ModificarMetodoPago_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = datosNegocio.ObtenerBarberos();
-
-            dataGridView1.Columns[0].Visible = false;            
+            CargarMetodoPago();
         }
 
-        private void btnAgregar_Click_1(object sender, EventArgs e)
+        public void CargarMetodoPago()
         {
-            if (txtBarbero.Text != "") 
-            { 
-                datosNegocio.AgregarBarbero(txtBarbero.Text);
+            dataGridView1.DataSource = datosNegocio.ObtenerMetodoPago();
+
+            dataGridView1.Columns[0].Visible = false;
+            
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtMetodoPago.Text != "")
+            {
+                datosNegocio.AgregarMetodoPago(txtMetodoPago.Text);
                 MessageBox.Show("Barbero agregado con exito!!");
-                CargarBarberos();
+                CargarMetodoPago();
             }
         }
 
         private void dataGridView1_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            try 
-            { 
+            try
+            {
                 if (e.Button == MouseButtons.Right)
                 {
                     //  MessageBox.Show(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
                     int id;
-                    String Barbero;
+                    String metodoPago;
                     id = Int32.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
-                    Barbero = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();     
-                
+                    metodoPago = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+
                     dataGridView1.CurrentCell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex]; //Selecciona la fila del datagridview.
 
                     ContextMenuStrip menu = new ContextMenuStrip();
 
-                    menu.Items.Add("Modificar", default(Image), (snd, evt) => { Modificar(id, Barbero); });
+                    menu.Items.Add("Modificar", default(Image), (snd, evt) => { Modificar(id, metodoPago); });
                     menu.Items[0].BackColor = Color.FromArgb(151, 143, 255);
 
                     menu.Items.Add("Eliminar", default(Image), (snd, evt) => { Eliminar(id); });
                     menu.Items[1].BackColor = Color.FromArgb(151, 143, 255);
-                           
-                    menu.Show(dataGridView1,  posicionMouse);
+
+                    menu.Show(dataGridView1, posicionMouse);
 
                 }
             }
@@ -76,14 +76,12 @@ namespace BarberShop
             {
 
             }
-
-        }                
-
-        private void Modificar(int id, String Barbero)
+        }
+        private void Modificar(int id, String metodoPago)
         {
-            ModificarOpciones frm = new ModificarOpciones(id, Barbero,"Barbero");
+            ModificarOpciones frm = new ModificarOpciones(id, metodoPago, "Barbero","");
             frm.ShowDialog();
-            CargarBarberos();
+            CargarMetodoPago();
 
         }
 
@@ -95,13 +93,11 @@ namespace BarberShop
             if (resultado == DialogResult.Yes)
             {
 
-                datosNegocio.EliminarBarbero(id);
+                datosNegocio.EliminarMetodoPago(id);
             }
 
-            CargarBarberos();
+            CargarMetodoPago();
         }
-
-
 
         private void dataGridView1_MouseMove(object sender, MouseEventArgs e)
         {

@@ -16,6 +16,7 @@ namespace BarberShop.Modificar_Datos
         private int id;
         private readonly bool barbero,servicio,MetodoPago;
         ModeladoModificarDatos datosNegocio = new ModeladoModificarDatos();
+
         public ModificarOpciones(int id,String barbero,String lbl1)
         {
             InitializeComponent();
@@ -35,6 +36,15 @@ namespace BarberShop.Modificar_Datos
             this.lbl2.Text = lbl2;
             this.servicio = true;
 
+        }
+
+        public ModificarOpciones(int id, String metodoPago, String lbl1 ,String MetodoPago)
+        {
+            InitializeComponent();
+            this.id = id;
+            this.txt1.Text = metodoPago;
+            this.lbl1.Text = lbl1;
+            this.MetodoPago = true;
         }
 
         private void txt2_KeyPress(object sender, KeyPressEventArgs e)
@@ -75,7 +85,7 @@ namespace BarberShop.Modificar_Datos
 
             else if(MetodoPago == true)
             {
-                datosNegocio.ActualizarBarbero(id, txt1.Text);
+                datosNegocio.ActualizarMetodoPago(id, txt1.Text);
                 this.Close();
             }
             

@@ -75,6 +75,12 @@
     <Compile Include="Modificar Datos\ModificarBarbero.Designer.cs">
       <DependentUpon>ModificarBarbero.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modificar Datos\ModificarMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Datos\ModificarMetodoPago.Designer.cs">
+      <DependentUpon>ModificarMetodoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modificar Datos\ModificarOpciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar Datos\ModificarBarbero.resx">
       <DependentUpon>ModificarBarbero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Datos\ModificarMetodoPago.resx">
+      <DependentUpon>ModificarMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modificar Datos\ModificarOpciones.resx">
       <DependentUpon>ModificarOpciones.cs</DependentUpon>

@@ -68,7 +68,7 @@ namespace BarberShop
             int suma = 0;
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-                if ((string)row.Cells[2].Value != "Vales")
+                if ((string)row.Cells[2].Value != "Vale")
                 {
                     suma += (int)row.Cells[columna].Value;
                 }               

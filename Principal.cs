@@ -116,7 +116,7 @@ namespace BarberShop
 
         private void btnModificarDatos_Click(object sender, EventArgs e)
         {
-            abrirFormHijo(new ModificarServicio());
+            abrirFormHijo(new ModificarMetodoPago());
         }
     }
 }
