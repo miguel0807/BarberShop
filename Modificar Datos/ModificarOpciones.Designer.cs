@@ -113,6 +113,7 @@ namespace BarberShop.Modificar_Datos
             this.txt2.TabIndex = 34;
             this.txt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt2.Visible = false;
+            this.txt2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt2_KeyPress);
             // 
             // lbl2
             // 

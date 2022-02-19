@@ -29,7 +29,6 @@ namespace BarberShop
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,11 +38,7 @@ namespace BarberShop
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtBarbero = new Guna.UI.WinForms.GunaTextBox();
             this.btnAgregar = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.contextMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.casaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.perroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.contextMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -108,7 +103,6 @@ namespace BarberShop
             this.dataGridView1.TabIndex = 25;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseMove);
-            
             // 
             // gunaLabel1
             // 
@@ -169,27 +163,6 @@ namespace BarberShop
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click_1);
             // 
-            // contextMenu
-            // 
-            this.contextMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.casaToolStripMenuItem,
-            this.perroToolStripMenuItem});
-            this.contextMenu.Name = "contextMenu";
-            this.contextMenu.Size = new System.Drawing.Size(115, 52);
-            // 
-            // casaToolStripMenuItem
-            // 
-            this.casaToolStripMenuItem.Name = "casaToolStripMenuItem";
-            this.casaToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
-            this.casaToolStripMenuItem.Text = "casa";
-            // 
-            // perroToolStripMenuItem
-            // 
-            this.perroToolStripMenuItem.Name = "perroToolStripMenuItem";
-            this.perroToolStripMenuItem.Size = new System.Drawing.Size(114, 24);
-            this.perroToolStripMenuItem.Text = "perro";
-            // 
             // ModificarDatos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,7 +178,6 @@ namespace BarberShop
             this.Text = "ModificarDatos";
             this.Load += new System.EventHandler(this.ModificarDatos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.contextMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,8 +188,5 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaAdvenceButton btnAgregar;
         private Guna.UI.WinForms.GunaTextBox txtBarbero;
-        private System.Windows.Forms.ContextMenuStrip contextMenu;
-        private System.Windows.Forms.ToolStripMenuItem casaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem perroToolStripMenuItem;
     }
 }

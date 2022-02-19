@@ -23,9 +23,15 @@ namespace BarberShop.Modificar_Datos
 
         private void ModificarServicio_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource =  datosNegocio.ObtenerServicio();
+            CargarServicios();
         }
+        public void CargarServicios()
+        {
+            dataGridView1.DataSource = datosNegocio.ObtenerServicio();
 
+            dataGridView1.Columns[0].Visible = false;
+           
+        }
         private void dataGridView1_MouseMove(object sender, MouseEventArgs e)
         {
             posicionMouse = new Point(e.X, e.Y);
@@ -61,12 +67,39 @@ namespace BarberShop.Modificar_Datos
         {
             ModificarOpciones frm = new ModificarOpciones(id,servicio,precio,"Servicio","Precio");
             frm.ShowDialog();
+            CargarServicios();
                 
         }
 
         private void Eliminar(int id)
         {
+            DialogResult resultado = MessageBox.Show("Esta seguro de eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
 
+            if (resultado == DialogResult.Yes)
+            {
+
+                datosNegocio.EliminarServicio(id);
+            }
+
+            CargarServicios();
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if (txtServicio.Text != "" && txtPrecio.Text != "")
+            {
+                datosNegocio.AgregarServicio(txtServicio.Text , Int32.Parse(txtPrecio.Text));
+                MessageBox.Show("Servicio agregado con exito!!");
+                CargarServicios();
+            }
+        }
+
+        private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

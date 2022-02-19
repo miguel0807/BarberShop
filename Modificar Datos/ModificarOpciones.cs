@@ -37,6 +37,14 @@ namespace BarberShop.Modificar_Datos
 
         }
 
+        private void txt2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
         private void ModificarOpciones_Load(object sender, EventArgs e)
         {
             if (barbero == true)
@@ -44,6 +52,12 @@ namespace BarberShop.Modificar_Datos
                 txt2.Visible = true;
                 lbl2.Visible = true;
             }
+            else if(servicio == true)
+            {
+                txt2.Visible = true;
+                lbl2.Visible = true;
+            }
+            
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
