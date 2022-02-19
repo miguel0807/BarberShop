@@ -245,7 +245,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "EliminarBarbero";
+                        comando.CommandText = "EliminarServicios";
                         comando.Parameters.AddWithValue("@id", id);
 
                         comando.CommandType = CommandType.StoredProcedure;

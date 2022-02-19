@@ -169,6 +169,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Recursos\ajustes.png" />
+    <Content Include="Recursos\Barbero.jpg" />
+    <Content Include="Recursos\Barbero2.png" />
     <Content Include="Recursos\Cerrar.png" />
     <Content Include="Recursos\Cerrar2.png" />
     <Content Include="Recursos\CerrarSesion.png" />
@@ -183,12 +185,17 @@
     <Content Include="Recursos\Menu2.png" />
     <Content Include="Recursos\Menu3.png" />
     <Content Include="Recursos\menu4.png" />
+    <Content Include="Recursos\MetodoPago.png" />
     <Content Include="Recursos\Minimizar.png" />
     <Content Include="Recursos\minimizar2.png" />
     <Content Include="Recursos\Restaurar.png" />
+    <Content Include="Recursos\Servicios.png" />
+    <Content Include="Recursos\Servicios2.png" />
     <Content Include="Recursos\usuario.png" />
     <Content Include="Recursos\usuario2.png" />
     <Content Include="Recursos\usuario3.png" />
+    <Content Include="Recursos\Usuario4.png" />
+    <Content Include="Recursos\Usuario5.png" />
     <Content Include="Recursos\ventas.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -13,20 +13,20 @@ using BarberShop.Modificar_Datos;
 
 namespace BarberShop
 {
-    public partial class ModificarDatos : Form
+    public partial class ModificarBarbero : Form
     {
         private Point posicionMouse;
         readonly ModeladoModificarDatos datosNegocio = new ModeladoModificarDatos();
 
-        public ModificarDatos()
+        public ModificarBarbero()
         {
             InitializeComponent();
-        }        
+        }
 
-        private void ModificarDatos_Load(object sender, EventArgs e)
+        private void ModificarBarbero_Load(object sender, EventArgs e)
         {
             CargarBarberos();
-        }
+        }       
 
        
         public void CargarBarberos()
@@ -107,5 +107,6 @@ namespace BarberShop
         {
             posicionMouse = new Point(e.X, e.Y);
         }
+
     }
 }

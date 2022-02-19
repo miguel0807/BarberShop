@@ -114,7 +114,19 @@ namespace BarberShop
             abrirFormHijo(new Historial());
         }
 
-        private void btnModificarDatos_Click(object sender, EventArgs e)
+      
+
+        private void btnBarberos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new ModificarBarbero());
+        }
+
+        private void btnServicios_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new ModificarServicio());
+        }
+
+        private void btnMetodoPago_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new ModificarMetodoPago());
         }
