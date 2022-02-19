@@ -69,6 +69,24 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modificar Datos\ModificarBarbero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Datos\ModificarBarbero.Designer.cs">
+      <DependentUpon>ModificarBarbero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Datos\ModificarOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Datos\ModificarOpciones.Designer.cs">
+      <DependentUpon>ModificarOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modificar Datos\ModificarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar Datos\ModificarServicio.Designer.cs">
+      <DependentUpon>ModificarServicio.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarHistorial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +109,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Datos\ModificarBarbero.resx">
+      <DependentUpon>ModificarBarbero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Datos\ModificarOpciones.resx">
+      <DependentUpon>ModificarOpciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificar Datos\ModificarServicio.resx">
+      <DependentUpon>ModificarServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarHistorial.resx">
       <DependentUpon>ModificarHistorial.cs</DependentUpon>

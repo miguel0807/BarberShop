@@ -248,7 +248,7 @@ namespace AccesoDatos
             }
         }
 
-        //Inserta los datos en la tabla historial.
+        //Eliminar los datos en la tabla historial.
         public void EliminarDatos(int id)
         {
 
@@ -261,7 +261,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "EliminarDatos";
+                        comando.CommandText = "EliminarHistorial";
                         comando.Parameters.AddWithValue("@id", id);
 
                         comando.CommandType = CommandType.StoredProcedure;

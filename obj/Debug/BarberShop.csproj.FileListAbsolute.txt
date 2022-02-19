@@ -20,3 +20,6 @@ C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.Principal.resour
 C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.IngresarDatos.resources
 C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.Historial.resources
 C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.ModificarHistorial.resources
+C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.ModificarDatos.resources
+C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.Modificar_Datos.ModificarOpciones.resources
+C:\Users\malvarado\source\repos\BarberShop\obj\Debug\BarberShop.Modificar_Datos.ModificarServicio.resources

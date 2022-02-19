@@ -44,6 +44,7 @@
     <Compile Include="ModeladoHistorial.cs" />
     <Compile Include="ModeladoHistorialModificado.cs" />
     <Compile Include="ModeladoIngresarDatos.cs" />
+    <Compile Include="ModeladoModificarDatos.cs" />
     <Compile Include="ModeladoUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

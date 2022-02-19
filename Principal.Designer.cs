@@ -51,6 +51,7 @@ namespace BarberShop
             this.btnMenu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.PanelContenedor = new System.Windows.Forms.Panel();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.btnModificarDatos = new Guna.UI.WinForms.GunaAdvenceButton();
             this.PanelLateral.SuspendLayout();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -60,6 +61,7 @@ namespace BarberShop
             // PanelLateral
             // 
             this.PanelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
+            this.PanelLateral.Controls.Add(this.btnModificarDatos);
             this.PanelLateral.Controls.Add(this.btnHistorial);
             this.PanelLateral.Controls.Add(this.btnCerrarSesion);
             this.PanelLateral.Controls.Add(this.lineaDatos);
@@ -459,6 +461,39 @@ namespace BarberShop
             // 
             this.gunaDragControl1.TargetControl = this.PanelSuperior;
             // 
+            // btnModificarDatos
+            // 
+            this.btnModificarDatos.AnimationHoverSpeed = 0.07F;
+            this.btnModificarDatos.AnimationSpeed = 0.03F;
+            this.btnModificarDatos.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnModificarDatos.BorderColor = System.Drawing.Color.Black;
+            this.btnModificarDatos.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnModificarDatos.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnModificarDatos.CheckedForeColor = System.Drawing.Color.White;
+            this.btnModificarDatos.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnModificarDatos.CheckedImage")));
+            this.btnModificarDatos.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.btnModificarDatos.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnModificarDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModificarDatos.FocusedColor = System.Drawing.Color.Empty;
+            this.btnModificarDatos.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarDatos.ForeColor = System.Drawing.Color.White;
+            this.btnModificarDatos.Image = global::BarberShop.Properties.Resources.ajustes;
+            this.btnModificarDatos.ImageSize = new System.Drawing.Size(50, 50);
+            this.btnModificarDatos.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnModificarDatos.Location = new System.Drawing.Point(0, 227);
+            this.btnModificarDatos.Name = "btnModificarDatos";
+            this.btnModificarDatos.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnModificarDatos.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnModificarDatos.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnModificarDatos.OnHoverImage = null;
+            this.btnModificarDatos.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnModificarDatos.OnPressedColor = System.Drawing.Color.Black;
+            this.btnModificarDatos.Size = new System.Drawing.Size(291, 69);
+            this.btnModificarDatos.TabIndex = 13;
+            this.btnModificarDatos.Text = "Modificar Datos";
+            this.btnModificarDatos.TextOffsetX = 20;
+            this.btnModificarDatos.Click += new System.EventHandler(this.btnModificarDatos_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -504,5 +539,6 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaSeparator lineaDatos;
         private Guna.UI.WinForms.GunaAdvenceButton btnCerrarSesion;
         private Guna.UI.WinForms.GunaAdvenceButton btnHistorial;
+        private Guna.UI.WinForms.GunaAdvenceButton btnModificarDatos;
     }
 }

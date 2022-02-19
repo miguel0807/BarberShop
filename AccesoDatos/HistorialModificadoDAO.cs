@@ -91,7 +91,7 @@ namespace AccesoDatos
                     using (var comando = new SqlCommand()) //Establecemos un comando SQL.
                     {
                         comando.Connection = cn;
-                        comando.CommandText = "select*from Servicios where Servicio = @Servicio and [Estado] = 1";
+                        comando.CommandText = "select*from Servicios where Servicio = @Servicio";
                         comando.Parameters.AddWithValue("@Servicio", servicio);
 
                         comando.CommandType = CommandType.Text;
@@ -102,7 +102,7 @@ namespace AccesoDatos
                         {
                             while (lector.Read()) //Mientras haya información en el reader, la enviara a la capa Común para guardarla en el cache.
                             {
-                                precio = lector.GetDecimal(2);
+                                precio = lector.GetInt32(2);
 
 
                             }

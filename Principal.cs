@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Común.Cache;
+using BarberShop.Modificar_Datos;
 
 namespace BarberShop
 {
@@ -111,6 +112,11 @@ namespace BarberShop
         private void btnHistorial_Click(object sender, EventArgs e)
         {
             abrirFormHijo(new Historial());
+        }
+
+        private void btnModificarDatos_Click(object sender, EventArgs e)
+        {
+            abrirFormHijo(new ModificarServicio());
         }
     }
 }
