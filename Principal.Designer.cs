@@ -81,7 +81,7 @@ namespace BarberShop
             this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.GradientColor1 = System.Drawing.Color.SteelBlue;
-            this.panelContenedor.GradientColor2 = System.Drawing.SystemColors.InactiveCaption;
+            this.panelContenedor.GradientColor2 = System.Drawing.SystemColors.InactiveCaptionText;
             this.panelContenedor.GradientColor3 = System.Drawing.SystemColors.ControlDarkDark;
             this.panelContenedor.GradientColor4 = System.Drawing.Color.SteelBlue;
             this.panelContenedor.Location = new System.Drawing.Point(291, 51);
