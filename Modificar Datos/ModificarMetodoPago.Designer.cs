@@ -49,7 +49,7 @@ namespace BarberShop.Modificar_Datos
             this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(-4, 0);
+            this.gunaLabel1.Location = new System.Drawing.Point(4, 10);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(287, 32);
             this.gunaLabel1.TabIndex = 30;
@@ -57,7 +57,6 @@ namespace BarberShop.Modificar_Datos
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.AnimationHoverSpeed = 0.07F;
             this.btnAgregar.AnimationSpeed = 0.03F;
             this.btnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -74,7 +73,7 @@ namespace BarberShop.Modificar_Datos
             this.btnAgregar.Image = null;
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAgregar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAgregar.Location = new System.Drawing.Point(339, 29);
+            this.btnAgregar.Location = new System.Drawing.Point(332, 19);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -82,7 +81,7 @@ namespace BarberShop.Modificar_Datos
             this.btnAgregar.OnHoverImage = null;
             this.btnAgregar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnAgregar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAgregar.Size = new System.Drawing.Size(188, 43);
+            this.btnAgregar.Size = new System.Drawing.Size(185, 63);
             this.btnAgregar.TabIndex = 32;
             this.btnAgregar.Text = "Agregar Nuevo";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -97,10 +96,10 @@ namespace BarberShop.Modificar_Datos
             this.txtMetodoPago.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMetodoPago.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMetodoPago.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtMetodoPago.Location = new System.Drawing.Point(2, 35);
+            this.txtMetodoPago.Location = new System.Drawing.Point(10, 45);
             this.txtMetodoPago.Name = "txtMetodoPago";
             this.txtMetodoPago.PasswordChar = '\0';
-            this.txtMetodoPago.Size = new System.Drawing.Size(261, 37);
+            this.txtMetodoPago.Size = new System.Drawing.Size(241, 37);
             this.txtMetodoPago.TabIndex = 31;
             this.txtMetodoPago.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -138,7 +137,7 @@ namespace BarberShop.Modificar_Datos
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 78);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 88);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -162,7 +161,7 @@ namespace BarberShop.Modificar_Datos
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1091, 545);
+            this.dataGridView1.Size = new System.Drawing.Size(1071, 525);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseMove);
