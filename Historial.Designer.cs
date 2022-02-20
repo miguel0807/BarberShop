@@ -29,13 +29,11 @@ namespace BarberShop
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Historial));
-            this.lblCantidad = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.rbServicio = new Guna.UI.WinForms.GunaRadioButton();
             this.rbMetodoPago = new Guna.UI.WinForms.GunaRadioButton();
             this.rbBarbero = new Guna.UI.WinForms.GunaRadioButton();
@@ -47,13 +45,14 @@ namespace BarberShop
             this.cboBarbero = new Guna.UI.WinForms.GunaComboBox();
             this.rbFecha = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
+            this.btnBuscar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
             this.dt1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.dt2 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gunaGradientPanel2 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
             this.lblBarba = new Guna.UI.WinForms.GunaLabel();
             this.lblCorteYbarba = new Guna.UI.WinForms.GunaLabel();
             this.lblCorte = new Guna.UI.WinForms.GunaLabel();
@@ -61,56 +60,35 @@ namespace BarberShop
             this.lblMarcado = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.lblDinero = new Guna.UI.WinForms.GunaLabel();
+            this.lblCantidad = new Guna.UI.WinForms.GunaLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnBuscar = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPanel1.SuspendLayout();
+            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
+            this.txtEfectivo = new Guna.UI.WinForms.GunaLabel();
+            this.txtTarjeta = new Guna.UI.WinForms.GunaLabel();
+            this.txtSinpe = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
+            this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
+            this.txtFabricio = new Guna.UI.WinForms.GunaLabel();
+            this.txtJosua = new Guna.UI.WinForms.GunaLabel();
+            this.txtKevin = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3.SuspendLayout();
-            this.gunaPanel2.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.gunaGradientPanel2.SuspendLayout();
+            this.gunaGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gunaLinePanel1.SuspendLayout();
+            this.gunaLinePanel2.SuspendLayout();
+            this.gunaLinePanel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.ForeColor = System.Drawing.Color.White;
-            this.lblCantidad.Location = new System.Drawing.Point(572, 628);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(204, 30);
-            this.lblCantidad.TabIndex = 2;
-            this.lblCantidad.Text = "Total de servicios: ";
-            // 
-            // gunaPanel1
-            // 
-            this.gunaPanel1.Controls.Add(this.rbServicio);
-            this.gunaPanel1.Controls.Add(this.rbMetodoPago);
-            this.gunaPanel1.Controls.Add(this.rbBarbero);
-            this.gunaPanel1.Controls.Add(this.gunaLabel7);
-            this.gunaPanel1.Controls.Add(this.gunaLabel5);
-            this.gunaPanel1.Controls.Add(this.cboServicio);
-            this.gunaPanel1.Controls.Add(this.cboMetodoPago);
-            this.gunaPanel1.Controls.Add(this.gunaLabel6);
-            this.gunaPanel1.Controls.Add(this.cboBarbero);
-            this.gunaPanel1.Controls.Add(this.rbFecha);
-            this.gunaPanel1.Controls.Add(this.gunaLabel4);
-            this.gunaPanel1.Controls.Add(this.btnBuscar);
-            this.gunaPanel1.Controls.Add(this.gunaPanel3);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1109, 224);
-            this.gunaPanel1.TabIndex = 23;
             // 
             // rbServicio
             // 
             this.rbServicio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbServicio.BackColor = System.Drawing.Color.Transparent;
             this.rbServicio.BaseColor = System.Drawing.SystemColors.Control;
             this.rbServicio.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbServicio.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbServicio.FillColor = System.Drawing.Color.White;
-            this.rbServicio.Location = new System.Drawing.Point(1060, 130);
+            this.rbServicio.Location = new System.Drawing.Point(1067, 189);
             this.rbServicio.Name = "rbServicio";
             this.rbServicio.Size = new System.Drawing.Size(20, 20);
             this.rbServicio.TabIndex = 61;
@@ -119,11 +97,12 @@ namespace BarberShop
             // rbMetodoPago
             // 
             this.rbMetodoPago.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbMetodoPago.BackColor = System.Drawing.Color.Transparent;
             this.rbMetodoPago.BaseColor = System.Drawing.SystemColors.Control;
             this.rbMetodoPago.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbMetodoPago.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbMetodoPago.FillColor = System.Drawing.Color.White;
-            this.rbMetodoPago.Location = new System.Drawing.Point(1060, 86);
+            this.rbMetodoPago.Location = new System.Drawing.Point(1067, 145);
             this.rbMetodoPago.Name = "rbMetodoPago";
             this.rbMetodoPago.Size = new System.Drawing.Size(20, 20);
             this.rbMetodoPago.TabIndex = 60;
@@ -132,11 +111,12 @@ namespace BarberShop
             // rbBarbero
             // 
             this.rbBarbero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbBarbero.BackColor = System.Drawing.Color.Transparent;
             this.rbBarbero.BaseColor = System.Drawing.SystemColors.Control;
             this.rbBarbero.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbBarbero.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbBarbero.FillColor = System.Drawing.Color.White;
-            this.rbBarbero.Location = new System.Drawing.Point(1060, 25);
+            this.rbBarbero.Location = new System.Drawing.Point(1067, 84);
             this.rbBarbero.Name = "rbBarbero";
             this.rbBarbero.Size = new System.Drawing.Size(20, 20);
             this.rbBarbero.TabIndex = 59;
@@ -146,9 +126,10 @@ namespace BarberShop
             // 
             this.gunaLabel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel7.Location = new System.Drawing.Point(617, 19);
+            this.gunaLabel7.Location = new System.Drawing.Point(637, 75);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(106, 32);
             this.gunaLabel7.TabIndex = 58;
@@ -158,9 +139,10 @@ namespace BarberShop
             // 
             this.gunaLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel5.Location = new System.Drawing.Point(617, 127);
+            this.gunaLabel5.Location = new System.Drawing.Point(637, 183);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(106, 32);
             this.gunaLabel5.TabIndex = 57;
@@ -178,7 +160,7 @@ namespace BarberShop
             this.cboServicio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboServicio.ForeColor = System.Drawing.Color.Black;
             this.cboServicio.FormattingEnabled = true;
-            this.cboServicio.Location = new System.Drawing.Point(850, 124);
+            this.cboServicio.Location = new System.Drawing.Point(857, 183);
             this.cboServicio.Name = "cboServicio";
             this.cboServicio.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboServicio.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -197,7 +179,7 @@ namespace BarberShop
             this.cboMetodoPago.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMetodoPago.ForeColor = System.Drawing.Color.Black;
             this.cboMetodoPago.FormattingEnabled = true;
-            this.cboMetodoPago.Location = new System.Drawing.Point(850, 73);
+            this.cboMetodoPago.Location = new System.Drawing.Point(857, 132);
             this.cboMetodoPago.Name = "cboMetodoPago";
             this.cboMetodoPago.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboMetodoPago.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -208,9 +190,10 @@ namespace BarberShop
             // 
             this.gunaLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaLabel6.AutoSize = true;
+            this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel6.Location = new System.Drawing.Point(614, 74);
+            this.gunaLabel6.Location = new System.Drawing.Point(634, 130);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(205, 32);
             this.gunaLabel6.TabIndex = 54;
@@ -228,7 +211,7 @@ namespace BarberShop
             this.cboBarbero.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboBarbero.ForeColor = System.Drawing.Color.Black;
             this.cboBarbero.FormattingEnabled = true;
-            this.cboBarbero.Location = new System.Drawing.Point(850, 19);
+            this.cboBarbero.Location = new System.Drawing.Point(857, 78);
             this.cboBarbero.Name = "cboBarbero";
             this.cboBarbero.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboBarbero.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -237,12 +220,13 @@ namespace BarberShop
             // 
             // rbFecha
             // 
+            this.rbFecha.BackColor = System.Drawing.Color.Transparent;
             this.rbFecha.BaseColor = System.Drawing.SystemColors.Control;
             this.rbFecha.Checked = true;
             this.rbFecha.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbFecha.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbFecha.FillColor = System.Drawing.Color.White;
-            this.rbFecha.Location = new System.Drawing.Point(324, 19);
+            this.rbFecha.Location = new System.Drawing.Point(351, 46);
             this.rbFecha.Name = "rbFecha";
             this.rbFecha.Size = new System.Drawing.Size(20, 20);
             this.rbFecha.TabIndex = 52;
@@ -250,22 +234,58 @@ namespace BarberShop
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(239, 10);
+            this.gunaLabel4.Location = new System.Drawing.Point(266, 37);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(79, 32);
             this.gunaLabel4.TabIndex = 28;
             this.gunaLabel4.Text = "Fecha";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.AnimationHoverSpeed = 0.07F;
+            this.btnBuscar.AnimationSpeed = 0.03F;
+            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(50)))), ((int)(((byte)(200)))));
+            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnBuscar.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.CheckedForeColor = System.Drawing.Color.White;
+            this.btnBuscar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.CheckedImage")));
+            this.btnBuscar.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.ForeColor = System.Drawing.Color.White;
+            this.btnBuscar.Image = null;
+            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnBuscar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBuscar.Location = new System.Drawing.Point(56, 183);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnBuscar.OnHoverImage = null;
+            this.btnBuscar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
+            this.btnBuscar.Radius = 20;
+            this.btnBuscar.Size = new System.Drawing.Size(207, 50);
+            this.btnBuscar.TabIndex = 27;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // gunaPanel3
             // 
+            this.gunaPanel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.gunaPanel3.Controls.Add(this.dt1);
             this.gunaPanel3.Controls.Add(this.dt2);
             this.gunaPanel3.Controls.Add(this.gunaLabel2);
             this.gunaPanel3.Controls.Add(this.gunaLabel1);
-            this.gunaPanel3.Location = new System.Drawing.Point(12, 45);
+            this.gunaPanel3.Location = new System.Drawing.Point(39, 72);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(580, 103);
             this.gunaPanel3.TabIndex = 42;
@@ -342,85 +362,108 @@ namespace BarberShop
             this.gunaLabel1.TabIndex = 37;
             this.gunaLabel1.Text = "De";
             // 
-            // gunaPanel2
+            // gunaGradientPanel2
             // 
-            this.gunaPanel2.Controls.Add(this.flowLayoutPanel1);
-            this.gunaPanel2.Controls.Add(this.gunaLabel3);
-            this.gunaPanel2.Controls.Add(this.lblDinero);
-            this.gunaPanel2.Controls.Add(this.lblCantidad);
-            this.gunaPanel2.Controls.Add(this.dataGridView1);
-            this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel2.Location = new System.Drawing.Point(0, 224);
-            this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(1109, 793);
-            this.gunaPanel2.TabIndex = 24;
+            this.gunaGradientPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel2.BackgroundImage")));
+            this.gunaGradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel2.Controls.Add(this.gunaPanel3);
+            this.gunaGradientPanel2.Controls.Add(this.rbServicio);
+            this.gunaGradientPanel2.Controls.Add(this.btnBuscar);
+            this.gunaGradientPanel2.Controls.Add(this.rbMetodoPago);
+            this.gunaGradientPanel2.Controls.Add(this.gunaLabel4);
+            this.gunaGradientPanel2.Controls.Add(this.rbBarbero);
+            this.gunaGradientPanel2.Controls.Add(this.rbFecha);
+            this.gunaGradientPanel2.Controls.Add(this.gunaLabel7);
+            this.gunaGradientPanel2.Controls.Add(this.cboBarbero);
+            this.gunaGradientPanel2.Controls.Add(this.gunaLabel5);
+            this.gunaGradientPanel2.Controls.Add(this.gunaLabel6);
+            this.gunaGradientPanel2.Controls.Add(this.cboServicio);
+            this.gunaGradientPanel2.Controls.Add(this.cboMetodoPago);
+            this.gunaGradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaGradientPanel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.gunaGradientPanel2.GradientColor2 = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaGradientPanel2.GradientColor3 = System.Drawing.SystemColors.WindowFrame;
+            this.gunaGradientPanel2.GradientColor4 = System.Drawing.SystemColors.WindowFrame;
+            this.gunaGradientPanel2.Location = new System.Drawing.Point(0, 0);
+            this.gunaGradientPanel2.Name = "gunaGradientPanel2";
+            this.gunaGradientPanel2.Size = new System.Drawing.Size(1109, 246);
+            this.gunaGradientPanel2.TabIndex = 62;
+            this.gunaGradientPanel2.Text = "gunaGradientPanel2";
             // 
-            // flowLayoutPanel1
+            // gunaGradientPanel1
             // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.flowLayoutPanel1.Controls.Add(this.lblBarba);
-            this.flowLayoutPanel1.Controls.Add(this.lblCorteYbarba);
-            this.flowLayoutPanel1.Controls.Add(this.lblCorte);
-            this.flowLayoutPanel1.Controls.Add(this.lblNiños);
-            this.flowLayoutPanel1.Controls.Add(this.lblMarcado);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(16, 633);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(237, 152);
-            this.flowLayoutPanel1.TabIndex = 10;
+            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
+            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel3);
+            this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel2);
+            this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel1);
+            this.gunaGradientPanel1.Controls.Add(this.gunaLabel3);
+            this.gunaGradientPanel1.Controls.Add(this.lblDinero);
+            this.gunaGradientPanel1.Controls.Add(this.lblCantidad);
+            this.gunaGradientPanel1.Controls.Add(this.dataGridView1);
+            this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
+            this.gunaGradientPanel1.GradientColor2 = System.Drawing.SystemColors.WindowFrame;
+            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.WhiteSmoke;
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.SystemColors.WindowFrame;
+            this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 246);
+            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
+            this.gunaGradientPanel1.Size = new System.Drawing.Size(1109, 771);
+            this.gunaGradientPanel1.TabIndex = 63;
+            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             // 
             // lblBarba
             // 
-            this.lblBarba.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblBarba.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblBarba.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBarba.ForeColor = System.Drawing.Color.White;
-            this.lblBarba.Location = new System.Drawing.Point(3, 0);
+            this.lblBarba.Location = new System.Drawing.Point(5, 125);
             this.lblBarba.Name = "lblBarba";
-            this.lblBarba.Size = new System.Drawing.Size(234, 30);
+            this.lblBarba.Size = new System.Drawing.Size(250, 30);
             this.lblBarba.TabIndex = 5;
             this.lblBarba.Text = "Barba: ";
             // 
             // lblCorteYbarba
             // 
-            this.lblCorteYbarba.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblCorteYbarba.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblCorteYbarba.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorteYbarba.ForeColor = System.Drawing.Color.White;
-            this.lblCorteYbarba.Location = new System.Drawing.Point(3, 30);
+            this.lblCorteYbarba.Location = new System.Drawing.Point(5, 65);
             this.lblCorteYbarba.Name = "lblCorteYbarba";
-            this.lblCorteYbarba.Size = new System.Drawing.Size(234, 30);
+            this.lblCorteYbarba.Size = new System.Drawing.Size(250, 30);
             this.lblCorteYbarba.TabIndex = 6;
             this.lblCorteYbarba.Text = "Corte y barba:";
             // 
             // lblCorte
             // 
-            this.lblCorte.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblCorte.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblCorte.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorte.ForeColor = System.Drawing.Color.White;
-            this.lblCorte.Location = new System.Drawing.Point(3, 60);
+            this.lblCorte.Location = new System.Drawing.Point(5, 5);
             this.lblCorte.Name = "lblCorte";
-            this.lblCorte.Size = new System.Drawing.Size(234, 30);
+            this.lblCorte.Size = new System.Drawing.Size(250, 30);
             this.lblCorte.TabIndex = 7;
             this.lblCorte.Text = "Corte:";
             // 
             // lblNiños
             // 
-            this.lblNiños.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblNiños.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblNiños.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNiños.ForeColor = System.Drawing.Color.White;
-            this.lblNiños.Location = new System.Drawing.Point(3, 90);
+            this.lblNiños.Location = new System.Drawing.Point(5, 35);
             this.lblNiños.Name = "lblNiños";
-            this.lblNiños.Size = new System.Drawing.Size(234, 30);
+            this.lblNiños.Size = new System.Drawing.Size(250, 30);
             this.lblNiños.TabIndex = 8;
             this.lblNiños.Text = "Niños: ";
             // 
             // lblMarcado
             // 
-            this.lblMarcado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblMarcado.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblMarcado.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarcado.ForeColor = System.Drawing.Color.White;
-            this.lblMarcado.Location = new System.Drawing.Point(3, 120);
+            this.lblMarcado.Location = new System.Drawing.Point(5, 95);
             this.lblMarcado.Name = "lblMarcado";
-            this.lblMarcado.Size = new System.Drawing.Size(234, 30);
+            this.lblMarcado.Size = new System.Drawing.Size(250, 30);
             this.lblMarcado.TabIndex = 9;
             this.lblMarcado.Text = "Marcado:";
             // 
@@ -428,25 +471,40 @@ namespace BarberShop
             // 
             this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel3.Location = new System.Drawing.Point(16, 600);
+            this.gunaLabel3.Location = new System.Drawing.Point(656, 554);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(111, 30);
-            this.gunaLabel3.TabIndex = 4;
-            this.gunaLabel3.Text = "Servicios:";
+            this.gunaLabel3.Size = new System.Drawing.Size(72, 30);
+            this.gunaLabel3.TabIndex = 14;
+            this.gunaLabel3.Text = "Vales:";
             // 
             // lblDinero
             // 
             this.lblDinero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDinero.AutoSize = true;
+            this.lblDinero.BackColor = System.Drawing.Color.Transparent;
             this.lblDinero.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDinero.ForeColor = System.Drawing.Color.White;
-            this.lblDinero.Location = new System.Drawing.Point(572, 671);
+            this.lblDinero.Location = new System.Drawing.Point(333, 557);
             this.lblDinero.Name = "lblDinero";
             this.lblDinero.Size = new System.Drawing.Size(151, 30);
-            this.lblDinero.TabIndex = 3;
+            this.lblDinero.TabIndex = 13;
             this.lblDinero.Text = "Total Dinero: ";
+            // 
+            // lblCantidad
+            // 
+            this.lblCantidad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblCantidad.AutoSize = true;
+            this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
+            this.lblCantidad.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidad.ForeColor = System.Drawing.Color.White;
+            this.lblCantidad.Location = new System.Drawing.Point(34, 554);
+            this.lblCantidad.Name = "lblCantidad";
+            this.lblCantidad.Size = new System.Drawing.Size(204, 30);
+            this.lblCantidad.TabIndex = 11;
+            this.lblCantidad.Text = "Total de servicios: ";
             // 
             // dataGridView1
             // 
@@ -462,87 +520,184 @@ namespace BarberShop
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeight = 60;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 6);
+            this.dataGridView1.Location = new System.Drawing.Point(43, 32);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1054, 594);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            this.dataGridView1.Size = new System.Drawing.Size(1018, 522);
+            this.dataGridView1.TabIndex = 12;
             // 
-            // btnBuscar
+            // gunaLinePanel1
             // 
-            this.btnBuscar.AnimationHoverSpeed = 0.07F;
-            this.btnBuscar.AnimationSpeed = 0.03F;
-            this.btnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.btnBuscar.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnBuscar.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.CheckedForeColor = System.Drawing.Color.White;
-            this.btnBuscar.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnBuscar.CheckedImage")));
-            this.btnBuscar.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnBuscar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnBuscar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.ForeColor = System.Drawing.Color.White;
-            this.btnBuscar.Image = null;
-            this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnBuscar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBuscar.Location = new System.Drawing.Point(21, 167);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnBuscar.OnHoverImage = null;
-            this.btnBuscar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBuscar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnBuscar.Radius = 20;
-            this.btnBuscar.Size = new System.Drawing.Size(207, 50);
-            this.btnBuscar.TabIndex = 27;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.gunaLinePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel1.Controls.Add(this.lblBarba);
+            this.gunaLinePanel1.Controls.Add(this.lblMarcado);
+            this.gunaLinePanel1.Controls.Add(this.lblCorteYbarba);
+            this.gunaLinePanel1.Controls.Add(this.lblNiños);
+            this.gunaLinePanel1.Controls.Add(this.lblCorte);
+            this.gunaLinePanel1.LineBottom = 2;
+            this.gunaLinePanel1.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel1.LineLeft = 2;
+            this.gunaLinePanel1.LineRight = 2;
+            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel1.LineTop = 2;
+            this.gunaLinePanel1.Location = new System.Drawing.Point(39, 587);
+            this.gunaLinePanel1.Name = "gunaLinePanel1";
+            this.gunaLinePanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.gunaLinePanel1.Size = new System.Drawing.Size(260, 161);
+            this.gunaLinePanel1.TabIndex = 15;
+            // 
+            // txtEfectivo
+            // 
+            this.txtEfectivo.AutoSize = true;
+            this.txtEfectivo.BackColor = System.Drawing.Color.Transparent;
+            this.txtEfectivo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtEfectivo.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEfectivo.ForeColor = System.Drawing.Color.White;
+            this.txtEfectivo.Location = new System.Drawing.Point(0, 60);
+            this.txtEfectivo.Name = "txtEfectivo";
+            this.txtEfectivo.Size = new System.Drawing.Size(102, 30);
+            this.txtEfectivo.TabIndex = 16;
+            this.txtEfectivo.Text = "Efectivo:";
+            // 
+            // txtTarjeta
+            // 
+            this.txtTarjeta.AutoSize = true;
+            this.txtTarjeta.BackColor = System.Drawing.Color.Transparent;
+            this.txtTarjeta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtTarjeta.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTarjeta.ForeColor = System.Drawing.Color.White;
+            this.txtTarjeta.Location = new System.Drawing.Point(0, 0);
+            this.txtTarjeta.Name = "txtTarjeta";
+            this.txtTarjeta.Size = new System.Drawing.Size(90, 30);
+            this.txtTarjeta.TabIndex = 17;
+            this.txtTarjeta.Text = "Tarjeta:";
+            // 
+            // txtSinpe
+            // 
+            this.txtSinpe.AutoSize = true;
+            this.txtSinpe.BackColor = System.Drawing.Color.Transparent;
+            this.txtSinpe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtSinpe.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSinpe.ForeColor = System.Drawing.Color.White;
+            this.txtSinpe.Location = new System.Drawing.Point(0, 30);
+            this.txtSinpe.Name = "txtSinpe";
+            this.txtSinpe.Size = new System.Drawing.Size(76, 30);
+            this.txtSinpe.TabIndex = 18;
+            this.txtSinpe.Text = "Sinpe:";
+            // 
+            // gunaLinePanel2
+            // 
+            this.gunaLinePanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel2.Controls.Add(this.txtEfectivo);
+            this.gunaLinePanel2.Controls.Add(this.txtSinpe);
+            this.gunaLinePanel2.Controls.Add(this.txtTarjeta);
+            this.gunaLinePanel2.LineBottom = 2;
+            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel2.LineLeft = 2;
+            this.gunaLinePanel2.LineRight = 2;
+            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel2.LineTop = 2;
+            this.gunaLinePanel2.Location = new System.Drawing.Point(333, 587);
+            this.gunaLinePanel2.Name = "gunaLinePanel2";
+            this.gunaLinePanel2.Size = new System.Drawing.Size(270, 161);
+            this.gunaLinePanel2.TabIndex = 19;
+            // 
+            // gunaLinePanel3
+            // 
+            this.gunaLinePanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel3.Controls.Add(this.txtFabricio);
+            this.gunaLinePanel3.Controls.Add(this.txtJosua);
+            this.gunaLinePanel3.Controls.Add(this.txtKevin);
+            this.gunaLinePanel3.LineBottom = 2;
+            this.gunaLinePanel3.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel3.LineLeft = 2;
+            this.gunaLinePanel3.LineRight = 2;
+            this.gunaLinePanel3.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel3.LineTop = 2;
+            this.gunaLinePanel3.Location = new System.Drawing.Point(661, 587);
+            this.gunaLinePanel3.Name = "gunaLinePanel3";
+            this.gunaLinePanel3.Size = new System.Drawing.Size(270, 161);
+            this.gunaLinePanel3.TabIndex = 20;
+            // 
+            // txtFabricio
+            // 
+            this.txtFabricio.AutoSize = true;
+            this.txtFabricio.BackColor = System.Drawing.Color.Transparent;
+            this.txtFabricio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtFabricio.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFabricio.ForeColor = System.Drawing.Color.White;
+            this.txtFabricio.Location = new System.Drawing.Point(0, 60);
+            this.txtFabricio.Name = "txtFabricio";
+            this.txtFabricio.Size = new System.Drawing.Size(100, 30);
+            this.txtFabricio.TabIndex = 16;
+            this.txtFabricio.Text = "Fabricio:";
+            // 
+            // txtJosua
+            // 
+            this.txtJosua.AutoSize = true;
+            this.txtJosua.BackColor = System.Drawing.Color.Transparent;
+            this.txtJosua.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtJosua.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJosua.ForeColor = System.Drawing.Color.White;
+            this.txtJosua.Location = new System.Drawing.Point(0, 30);
+            this.txtJosua.Name = "txtJosua";
+            this.txtJosua.Size = new System.Drawing.Size(77, 30);
+            this.txtJosua.TabIndex = 18;
+            this.txtJosua.Text = "Josua:";
+            // 
+            // txtKevin
+            // 
+            this.txtKevin.AutoSize = true;
+            this.txtKevin.BackColor = System.Drawing.Color.Transparent;
+            this.txtKevin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtKevin.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKevin.ForeColor = System.Drawing.Color.White;
+            this.txtKevin.Location = new System.Drawing.Point(0, 0);
+            this.txtKevin.Name = "txtKevin";
+            this.txtKevin.Size = new System.Drawing.Size(76, 30);
+            this.txtKevin.TabIndex = 17;
+            this.txtKevin.Text = "Kevin:";
             // 
             // Historial
             // 
@@ -550,44 +705,36 @@ namespace BarberShop
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
             this.ClientSize = new System.Drawing.Size(1109, 1017);
-            this.Controls.Add(this.gunaPanel2);
-            this.Controls.Add(this.gunaPanel1);
+            this.Controls.Add(this.gunaGradientPanel1);
+            this.Controls.Add(this.gunaGradientPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Historial";
             this.Text = "Historial";
             this.Load += new System.EventHandler(this.Historial_Load);
-            this.gunaPanel1.ResumeLayout(false);
-            this.gunaPanel1.PerformLayout();
             this.gunaPanel3.ResumeLayout(false);
             this.gunaPanel3.PerformLayout();
-            this.gunaPanel2.ResumeLayout(false);
-            this.gunaPanel2.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.gunaGradientPanel2.ResumeLayout(false);
+            this.gunaGradientPanel2.PerformLayout();
+            this.gunaGradientPanel1.ResumeLayout(false);
+            this.gunaGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gunaLinePanel1.ResumeLayout(false);
+            this.gunaLinePanel2.ResumeLayout(false);
+            this.gunaLinePanel2.PerformLayout();
+            this.gunaLinePanel3.ResumeLayout(false);
+            this.gunaLinePanel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI.WinForms.GunaLabel lblCantidad;
-        private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaAdvenceButton btnBuscar;
-        private Guna.UI.WinForms.GunaPanel gunaPanel2;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private Guna.UI.WinForms.GunaDateTimePicker dt2;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaDateTimePicker dt1;
-        private Guna.UI.WinForms.GunaLabel lblDinero;
-        private Guna.UI.WinForms.GunaLabel lblBarba;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private Guna.UI.WinForms.GunaLabel lblCorteYbarba;
-        private Guna.UI.WinForms.GunaLabel lblCorte;
-        private Guna.UI.WinForms.GunaLabel lblNiños;
-        private Guna.UI.WinForms.GunaLabel lblMarcado;
         private Guna.UI.WinForms.GunaRadioButton rbFecha;
         private Guna.UI.WinForms.GunaRadioButton rbServicio;
         private Guna.UI.WinForms.GunaRadioButton rbMetodoPago;
@@ -598,5 +745,25 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaComboBox cboMetodoPago;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaComboBox cboBarbero;
+        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel2;
+        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
+        private Guna.UI.WinForms.GunaLabel lblBarba;
+        private Guna.UI.WinForms.GunaLabel lblCorteYbarba;
+        private Guna.UI.WinForms.GunaLabel lblCorte;
+        private Guna.UI.WinForms.GunaLabel lblNiños;
+        private Guna.UI.WinForms.GunaLabel lblMarcado;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lblDinero;
+        private Guna.UI.WinForms.GunaLabel lblCantidad;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
+        private Guna.UI.WinForms.GunaLabel txtSinpe;
+        private Guna.UI.WinForms.GunaLabel txtTarjeta;
+        private Guna.UI.WinForms.GunaLabel txtEfectivo;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel2;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel3;
+        private Guna.UI.WinForms.GunaLabel txtFabricio;
+        private Guna.UI.WinForms.GunaLabel txtJosua;
+        private Guna.UI.WinForms.GunaLabel txtKevin;
     }
 }
