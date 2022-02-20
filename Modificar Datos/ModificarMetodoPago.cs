@@ -40,9 +40,18 @@ namespace BarberShop.Modificar_Datos
         {
             if (txtMetodoPago.Text != "")
             {
-                datosNegocio.AgregarMetodoPago(txtMetodoPago.Text);
-                MessageBox.Show("Barbero agregado con exito!!");
-                CargarMetodoPago();
+                
+                DialogResult resultado = MessageBox.Show("Esta seguro de crear el metodo de pago?", "Validación de datos", MessageBoxButtons.YesNo);
+
+                if (resultado == DialogResult.Yes)
+                {
+
+                    datosNegocio.AgregarMetodoPago(txtMetodoPago.Text);
+                    MessageBox.Show("Datos cargados correctamente.", "Registro");
+                    txtMetodoPago.Text = "";
+                    CargarMetodoPago();
+
+                }
             }
         }
 

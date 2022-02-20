@@ -57,10 +57,17 @@ namespace BarberShop
         {
             if (txtBarbero.Text != "") 
             { 
-                datosNegocio.AgregarBarbero(txtBarbero.Text);
-                MessageBox.Show("Barbero agregado con exito!!","Registro");
-                txtBarbero.Text = "";
-                CargarBarberos();
+                
+                DialogResult resultado = MessageBox.Show("Esta seguro de crear el metodo de pago?", "Validación de datos", MessageBoxButtons.YesNo);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    datosNegocio.AgregarBarbero(txtBarbero.Text);
+                    MessageBox.Show("Datos cargados correctamente.", "Registro");
+                    txtBarbero.Text = "";
+                    CargarBarberos();                                                            
+
+                }
             }
         }
 
