@@ -130,5 +130,7 @@ namespace BarberShop
         {
             abrirFormHijo(new ModificarMetodoPago());
         }
+
+     
     }
 }
