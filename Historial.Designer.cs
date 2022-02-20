@@ -53,31 +53,31 @@ namespace BarberShop
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGradientPanel2 = new Guna.UI.WinForms.GunaGradientPanel();
             this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
+            this.lblFabricio = new Guna.UI.WinForms.GunaLabel();
+            this.lblJosua = new Guna.UI.WinForms.GunaLabel();
+            this.lblKevin = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
+            this.lblEfectivo = new Guna.UI.WinForms.GunaLabel();
+            this.lblSinpe = new Guna.UI.WinForms.GunaLabel();
+            this.lblTarjeta = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
             this.lblBarba = new Guna.UI.WinForms.GunaLabel();
-            this.lblCorteYbarba = new Guna.UI.WinForms.GunaLabel();
-            this.lblCorte = new Guna.UI.WinForms.GunaLabel();
-            this.lblNiños = new Guna.UI.WinForms.GunaLabel();
             this.lblMarcado = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
+            this.lblCorteYbarba = new Guna.UI.WinForms.GunaLabel();
+            this.lblNiños = new Guna.UI.WinForms.GunaLabel();
+            this.lblCorte = new Guna.UI.WinForms.GunaLabel();
+            this.lblVale = new Guna.UI.WinForms.GunaLabel();
             this.lblDinero = new Guna.UI.WinForms.GunaLabel();
             this.lblCantidad = new Guna.UI.WinForms.GunaLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gunaLinePanel1 = new Guna.UI.WinForms.GunaLinePanel();
-            this.txtEfectivo = new Guna.UI.WinForms.GunaLabel();
-            this.txtTarjeta = new Guna.UI.WinForms.GunaLabel();
-            this.txtSinpe = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLinePanel2 = new Guna.UI.WinForms.GunaLinePanel();
-            this.gunaLinePanel3 = new Guna.UI.WinForms.GunaLinePanel();
-            this.txtFabricio = new Guna.UI.WinForms.GunaLabel();
-            this.txtJosua = new Guna.UI.WinForms.GunaLabel();
-            this.txtKevin = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3.SuspendLayout();
             this.gunaGradientPanel2.SuspendLayout();
             this.gunaGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.gunaLinePanel1.SuspendLayout();
-            this.gunaLinePanel2.SuspendLayout();
             this.gunaLinePanel3.SuspendLayout();
+            this.gunaLinePanel2.SuspendLayout();
+            this.gunaLinePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // rbServicio
@@ -397,7 +397,7 @@ namespace BarberShop
             this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel3);
             this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel2);
             this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel1);
-            this.gunaGradientPanel1.Controls.Add(this.gunaLabel3);
+            this.gunaGradientPanel1.Controls.Add(this.lblVale);
             this.gunaGradientPanel1.Controls.Add(this.lblDinero);
             this.gunaGradientPanel1.Controls.Add(this.lblCantidad);
             this.gunaGradientPanel1.Controls.Add(this.dataGridView1);
@@ -412,6 +412,138 @@ namespace BarberShop
             this.gunaGradientPanel1.TabIndex = 63;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             // 
+            // gunaLinePanel3
+            // 
+            this.gunaLinePanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel3.Controls.Add(this.lblFabricio);
+            this.gunaLinePanel3.Controls.Add(this.lblJosua);
+            this.gunaLinePanel3.Controls.Add(this.lblKevin);
+            this.gunaLinePanel3.LineBottom = 2;
+            this.gunaLinePanel3.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel3.LineLeft = 2;
+            this.gunaLinePanel3.LineRight = 2;
+            this.gunaLinePanel3.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel3.LineTop = 2;
+            this.gunaLinePanel3.Location = new System.Drawing.Point(661, 587);
+            this.gunaLinePanel3.Name = "gunaLinePanel3";
+            this.gunaLinePanel3.Size = new System.Drawing.Size(270, 161);
+            this.gunaLinePanel3.TabIndex = 20;
+            // 
+            // lblFabricio
+            // 
+            this.lblFabricio.AutoSize = true;
+            this.lblFabricio.BackColor = System.Drawing.Color.Transparent;
+            this.lblFabricio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblFabricio.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFabricio.ForeColor = System.Drawing.Color.White;
+            this.lblFabricio.Location = new System.Drawing.Point(0, 60);
+            this.lblFabricio.Name = "lblFabricio";
+            this.lblFabricio.Size = new System.Drawing.Size(100, 30);
+            this.lblFabricio.TabIndex = 16;
+            this.lblFabricio.Text = "Fabricio:";
+            // 
+            // lblJosua
+            // 
+            this.lblJosua.AutoSize = true;
+            this.lblJosua.BackColor = System.Drawing.Color.Transparent;
+            this.lblJosua.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblJosua.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJosua.ForeColor = System.Drawing.Color.White;
+            this.lblJosua.Location = new System.Drawing.Point(0, 30);
+            this.lblJosua.Name = "lblJosua";
+            this.lblJosua.Size = new System.Drawing.Size(77, 30);
+            this.lblJosua.TabIndex = 18;
+            this.lblJosua.Text = "Josua:";
+            // 
+            // lblKevin
+            // 
+            this.lblKevin.AutoSize = true;
+            this.lblKevin.BackColor = System.Drawing.Color.Transparent;
+            this.lblKevin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblKevin.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblKevin.ForeColor = System.Drawing.Color.White;
+            this.lblKevin.Location = new System.Drawing.Point(0, 0);
+            this.lblKevin.Name = "lblKevin";
+            this.lblKevin.Size = new System.Drawing.Size(76, 30);
+            this.lblKevin.TabIndex = 17;
+            this.lblKevin.Text = "Kevin:";
+            // 
+            // gunaLinePanel2
+            // 
+            this.gunaLinePanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel2.Controls.Add(this.lblEfectivo);
+            this.gunaLinePanel2.Controls.Add(this.lblSinpe);
+            this.gunaLinePanel2.Controls.Add(this.lblTarjeta);
+            this.gunaLinePanel2.LineBottom = 2;
+            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel2.LineLeft = 2;
+            this.gunaLinePanel2.LineRight = 2;
+            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel2.LineTop = 2;
+            this.gunaLinePanel2.Location = new System.Drawing.Point(333, 587);
+            this.gunaLinePanel2.Name = "gunaLinePanel2";
+            this.gunaLinePanel2.Size = new System.Drawing.Size(270, 161);
+            this.gunaLinePanel2.TabIndex = 19;
+            // 
+            // lblEfectivo
+            // 
+            this.lblEfectivo.AutoSize = true;
+            this.lblEfectivo.BackColor = System.Drawing.Color.Transparent;
+            this.lblEfectivo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblEfectivo.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEfectivo.ForeColor = System.Drawing.Color.White;
+            this.lblEfectivo.Location = new System.Drawing.Point(0, 60);
+            this.lblEfectivo.Name = "lblEfectivo";
+            this.lblEfectivo.Size = new System.Drawing.Size(102, 30);
+            this.lblEfectivo.TabIndex = 16;
+            this.lblEfectivo.Text = "Efectivo:";
+            // 
+            // lblSinpe
+            // 
+            this.lblSinpe.AutoSize = true;
+            this.lblSinpe.BackColor = System.Drawing.Color.Transparent;
+            this.lblSinpe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblSinpe.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinpe.ForeColor = System.Drawing.Color.White;
+            this.lblSinpe.Location = new System.Drawing.Point(0, 30);
+            this.lblSinpe.Name = "lblSinpe";
+            this.lblSinpe.Size = new System.Drawing.Size(76, 30);
+            this.lblSinpe.TabIndex = 18;
+            this.lblSinpe.Text = "Sinpe:";
+            // 
+            // lblTarjeta
+            // 
+            this.lblTarjeta.AutoSize = true;
+            this.lblTarjeta.BackColor = System.Drawing.Color.Transparent;
+            this.lblTarjeta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTarjeta.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTarjeta.ForeColor = System.Drawing.Color.White;
+            this.lblTarjeta.Location = new System.Drawing.Point(0, 0);
+            this.lblTarjeta.Name = "lblTarjeta";
+            this.lblTarjeta.Size = new System.Drawing.Size(90, 30);
+            this.lblTarjeta.TabIndex = 17;
+            this.lblTarjeta.Text = "Tarjeta:";
+            // 
+            // gunaLinePanel1
+            // 
+            this.gunaLinePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel1.Controls.Add(this.lblBarba);
+            this.gunaLinePanel1.Controls.Add(this.lblMarcado);
+            this.gunaLinePanel1.Controls.Add(this.lblCorteYbarba);
+            this.gunaLinePanel1.Controls.Add(this.lblNiños);
+            this.gunaLinePanel1.Controls.Add(this.lblCorte);
+            this.gunaLinePanel1.LineBottom = 2;
+            this.gunaLinePanel1.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel1.LineLeft = 2;
+            this.gunaLinePanel1.LineRight = 2;
+            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel1.LineTop = 2;
+            this.gunaLinePanel1.Location = new System.Drawing.Point(39, 587);
+            this.gunaLinePanel1.Name = "gunaLinePanel1";
+            this.gunaLinePanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.gunaLinePanel1.Size = new System.Drawing.Size(260, 161);
+            this.gunaLinePanel1.TabIndex = 15;
+            // 
             // lblBarba
             // 
             this.lblBarba.Dock = System.Windows.Forms.DockStyle.Top;
@@ -422,39 +554,6 @@ namespace BarberShop
             this.lblBarba.Size = new System.Drawing.Size(250, 30);
             this.lblBarba.TabIndex = 5;
             this.lblBarba.Text = "Barba: ";
-            // 
-            // lblCorteYbarba
-            // 
-            this.lblCorteYbarba.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCorteYbarba.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorteYbarba.ForeColor = System.Drawing.Color.White;
-            this.lblCorteYbarba.Location = new System.Drawing.Point(5, 65);
-            this.lblCorteYbarba.Name = "lblCorteYbarba";
-            this.lblCorteYbarba.Size = new System.Drawing.Size(250, 30);
-            this.lblCorteYbarba.TabIndex = 6;
-            this.lblCorteYbarba.Text = "Corte y barba:";
-            // 
-            // lblCorte
-            // 
-            this.lblCorte.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblCorte.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorte.ForeColor = System.Drawing.Color.White;
-            this.lblCorte.Location = new System.Drawing.Point(5, 5);
-            this.lblCorte.Name = "lblCorte";
-            this.lblCorte.Size = new System.Drawing.Size(250, 30);
-            this.lblCorte.TabIndex = 7;
-            this.lblCorte.Text = "Corte:";
-            // 
-            // lblNiños
-            // 
-            this.lblNiños.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblNiños.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNiños.ForeColor = System.Drawing.Color.White;
-            this.lblNiños.Location = new System.Drawing.Point(5, 35);
-            this.lblNiños.Name = "lblNiños";
-            this.lblNiños.Size = new System.Drawing.Size(250, 30);
-            this.lblNiños.TabIndex = 8;
-            this.lblNiños.Text = "Niños: ";
             // 
             // lblMarcado
             // 
@@ -467,18 +566,51 @@ namespace BarberShop
             this.lblMarcado.TabIndex = 9;
             this.lblMarcado.Text = "Marcado:";
             // 
-            // gunaLabel3
+            // lblCorteYbarba
             // 
-            this.gunaLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel3.Location = new System.Drawing.Point(656, 554);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(72, 30);
-            this.gunaLabel3.TabIndex = 14;
-            this.gunaLabel3.Text = "Vales:";
+            this.lblCorteYbarba.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCorteYbarba.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorteYbarba.ForeColor = System.Drawing.Color.White;
+            this.lblCorteYbarba.Location = new System.Drawing.Point(5, 65);
+            this.lblCorteYbarba.Name = "lblCorteYbarba";
+            this.lblCorteYbarba.Size = new System.Drawing.Size(250, 30);
+            this.lblCorteYbarba.TabIndex = 6;
+            this.lblCorteYbarba.Text = "Corte y barba:";
+            // 
+            // lblNiños
+            // 
+            this.lblNiños.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblNiños.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNiños.ForeColor = System.Drawing.Color.White;
+            this.lblNiños.Location = new System.Drawing.Point(5, 35);
+            this.lblNiños.Name = "lblNiños";
+            this.lblNiños.Size = new System.Drawing.Size(250, 30);
+            this.lblNiños.TabIndex = 8;
+            this.lblNiños.Text = "Niños: ";
+            // 
+            // lblCorte
+            // 
+            this.lblCorte.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCorte.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorte.ForeColor = System.Drawing.Color.White;
+            this.lblCorte.Location = new System.Drawing.Point(5, 5);
+            this.lblCorte.Name = "lblCorte";
+            this.lblCorte.Size = new System.Drawing.Size(250, 30);
+            this.lblCorte.TabIndex = 7;
+            this.lblCorte.Text = "Corte:";
+            // 
+            // lblVale
+            // 
+            this.lblVale.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblVale.AutoSize = true;
+            this.lblVale.BackColor = System.Drawing.Color.Transparent;
+            this.lblVale.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVale.ForeColor = System.Drawing.Color.White;
+            this.lblVale.Location = new System.Drawing.Point(656, 554);
+            this.lblVale.Name = "lblVale";
+            this.lblVale.Size = new System.Drawing.Size(72, 30);
+            this.lblVale.TabIndex = 14;
+            this.lblVale.Text = "Vales:";
             // 
             // lblDinero
             // 
@@ -566,138 +698,7 @@ namespace BarberShop
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(1018, 522);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // gunaLinePanel1
-            // 
-            this.gunaLinePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaLinePanel1.Controls.Add(this.lblBarba);
-            this.gunaLinePanel1.Controls.Add(this.lblMarcado);
-            this.gunaLinePanel1.Controls.Add(this.lblCorteYbarba);
-            this.gunaLinePanel1.Controls.Add(this.lblNiños);
-            this.gunaLinePanel1.Controls.Add(this.lblCorte);
-            this.gunaLinePanel1.LineBottom = 2;
-            this.gunaLinePanel1.LineColor = System.Drawing.Color.Black;
-            this.gunaLinePanel1.LineLeft = 2;
-            this.gunaLinePanel1.LineRight = 2;
-            this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel1.LineTop = 2;
-            this.gunaLinePanel1.Location = new System.Drawing.Point(39, 587);
-            this.gunaLinePanel1.Name = "gunaLinePanel1";
-            this.gunaLinePanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.gunaLinePanel1.Size = new System.Drawing.Size(260, 161);
-            this.gunaLinePanel1.TabIndex = 15;
-            // 
-            // txtEfectivo
-            // 
-            this.txtEfectivo.AutoSize = true;
-            this.txtEfectivo.BackColor = System.Drawing.Color.Transparent;
-            this.txtEfectivo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtEfectivo.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEfectivo.ForeColor = System.Drawing.Color.White;
-            this.txtEfectivo.Location = new System.Drawing.Point(0, 60);
-            this.txtEfectivo.Name = "txtEfectivo";
-            this.txtEfectivo.Size = new System.Drawing.Size(102, 30);
-            this.txtEfectivo.TabIndex = 16;
-            this.txtEfectivo.Text = "Efectivo:";
-            // 
-            // txtTarjeta
-            // 
-            this.txtTarjeta.AutoSize = true;
-            this.txtTarjeta.BackColor = System.Drawing.Color.Transparent;
-            this.txtTarjeta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTarjeta.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTarjeta.ForeColor = System.Drawing.Color.White;
-            this.txtTarjeta.Location = new System.Drawing.Point(0, 0);
-            this.txtTarjeta.Name = "txtTarjeta";
-            this.txtTarjeta.Size = new System.Drawing.Size(90, 30);
-            this.txtTarjeta.TabIndex = 17;
-            this.txtTarjeta.Text = "Tarjeta:";
-            // 
-            // txtSinpe
-            // 
-            this.txtSinpe.AutoSize = true;
-            this.txtSinpe.BackColor = System.Drawing.Color.Transparent;
-            this.txtSinpe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSinpe.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSinpe.ForeColor = System.Drawing.Color.White;
-            this.txtSinpe.Location = new System.Drawing.Point(0, 30);
-            this.txtSinpe.Name = "txtSinpe";
-            this.txtSinpe.Size = new System.Drawing.Size(76, 30);
-            this.txtSinpe.TabIndex = 18;
-            this.txtSinpe.Text = "Sinpe:";
-            // 
-            // gunaLinePanel2
-            // 
-            this.gunaLinePanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaLinePanel2.Controls.Add(this.txtEfectivo);
-            this.gunaLinePanel2.Controls.Add(this.txtSinpe);
-            this.gunaLinePanel2.Controls.Add(this.txtTarjeta);
-            this.gunaLinePanel2.LineBottom = 2;
-            this.gunaLinePanel2.LineColor = System.Drawing.Color.Black;
-            this.gunaLinePanel2.LineLeft = 2;
-            this.gunaLinePanel2.LineRight = 2;
-            this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel2.LineTop = 2;
-            this.gunaLinePanel2.Location = new System.Drawing.Point(333, 587);
-            this.gunaLinePanel2.Name = "gunaLinePanel2";
-            this.gunaLinePanel2.Size = new System.Drawing.Size(270, 161);
-            this.gunaLinePanel2.TabIndex = 19;
-            // 
-            // gunaLinePanel3
-            // 
-            this.gunaLinePanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaLinePanel3.Controls.Add(this.txtFabricio);
-            this.gunaLinePanel3.Controls.Add(this.txtJosua);
-            this.gunaLinePanel3.Controls.Add(this.txtKevin);
-            this.gunaLinePanel3.LineBottom = 2;
-            this.gunaLinePanel3.LineColor = System.Drawing.Color.Black;
-            this.gunaLinePanel3.LineLeft = 2;
-            this.gunaLinePanel3.LineRight = 2;
-            this.gunaLinePanel3.LineStyle = System.Windows.Forms.BorderStyle.None;
-            this.gunaLinePanel3.LineTop = 2;
-            this.gunaLinePanel3.Location = new System.Drawing.Point(661, 587);
-            this.gunaLinePanel3.Name = "gunaLinePanel3";
-            this.gunaLinePanel3.Size = new System.Drawing.Size(270, 161);
-            this.gunaLinePanel3.TabIndex = 20;
-            // 
-            // txtFabricio
-            // 
-            this.txtFabricio.AutoSize = true;
-            this.txtFabricio.BackColor = System.Drawing.Color.Transparent;
-            this.txtFabricio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtFabricio.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFabricio.ForeColor = System.Drawing.Color.White;
-            this.txtFabricio.Location = new System.Drawing.Point(0, 60);
-            this.txtFabricio.Name = "txtFabricio";
-            this.txtFabricio.Size = new System.Drawing.Size(100, 30);
-            this.txtFabricio.TabIndex = 16;
-            this.txtFabricio.Text = "Fabricio:";
-            // 
-            // txtJosua
-            // 
-            this.txtJosua.AutoSize = true;
-            this.txtJosua.BackColor = System.Drawing.Color.Transparent;
-            this.txtJosua.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtJosua.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJosua.ForeColor = System.Drawing.Color.White;
-            this.txtJosua.Location = new System.Drawing.Point(0, 30);
-            this.txtJosua.Name = "txtJosua";
-            this.txtJosua.Size = new System.Drawing.Size(77, 30);
-            this.txtJosua.TabIndex = 18;
-            this.txtJosua.Text = "Josua:";
-            // 
-            // txtKevin
-            // 
-            this.txtKevin.AutoSize = true;
-            this.txtKevin.BackColor = System.Drawing.Color.Transparent;
-            this.txtKevin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtKevin.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtKevin.ForeColor = System.Drawing.Color.White;
-            this.txtKevin.Location = new System.Drawing.Point(0, 0);
-            this.txtKevin.Name = "txtKevin";
-            this.txtKevin.Size = new System.Drawing.Size(76, 30);
-            this.txtKevin.TabIndex = 17;
-            this.txtKevin.Text = "Kevin:";
+            this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             // 
             // Historial
             // 
@@ -717,12 +718,12 @@ namespace BarberShop
             this.gunaGradientPanel2.PerformLayout();
             this.gunaGradientPanel1.ResumeLayout(false);
             this.gunaGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.gunaLinePanel1.ResumeLayout(false);
-            this.gunaLinePanel2.ResumeLayout(false);
-            this.gunaLinePanel2.PerformLayout();
             this.gunaLinePanel3.ResumeLayout(false);
             this.gunaLinePanel3.PerformLayout();
+            this.gunaLinePanel2.ResumeLayout(false);
+            this.gunaLinePanel2.PerformLayout();
+            this.gunaLinePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -752,18 +753,18 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaLabel lblCorte;
         private Guna.UI.WinForms.GunaLabel lblNiños;
         private Guna.UI.WinForms.GunaLabel lblMarcado;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaLabel lblVale;
         private Guna.UI.WinForms.GunaLabel lblDinero;
         private Guna.UI.WinForms.GunaLabel lblCantidad;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel1;
-        private Guna.UI.WinForms.GunaLabel txtSinpe;
-        private Guna.UI.WinForms.GunaLabel txtTarjeta;
-        private Guna.UI.WinForms.GunaLabel txtEfectivo;
+        private Guna.UI.WinForms.GunaLabel lblSinpe;
+        private Guna.UI.WinForms.GunaLabel lblTarjeta;
+        private Guna.UI.WinForms.GunaLabel lblEfectivo;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel2;
         private Guna.UI.WinForms.GunaLinePanel gunaLinePanel3;
-        private Guna.UI.WinForms.GunaLabel txtFabricio;
-        private Guna.UI.WinForms.GunaLabel txtJosua;
-        private Guna.UI.WinForms.GunaLabel txtKevin;
+        private Guna.UI.WinForms.GunaLabel lblFabricio;
+        private Guna.UI.WinForms.GunaLabel lblJosua;
+        private Guna.UI.WinForms.GunaLabel lblKevin;
     }
 }

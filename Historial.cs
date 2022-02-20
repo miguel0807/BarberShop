@@ -53,6 +53,10 @@ namespace BarberShop
 
             foreach (DataGridViewRow fila in dataGrid.Rows)
             {
+                if ((string)fila.Cells[2].Value != "Vale")
+                {
+                    cantidad = cantidad + 1;
+                }
                 cantidad = cantidad + 1;
             }
 
@@ -66,11 +70,11 @@ namespace BarberShop
             const int columna = 3;
             string resultado;
             int suma = 0;
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
-                if ((string)row.Cells[2].Value != "Vale")
+                if ((string)fila.Cells[2].Value != "Vale")
                 {
-                    suma += (int)row.Cells[columna].Value;
+                    suma += (int)fila.Cells[columna].Value;
                 }               
                     
             }
@@ -85,9 +89,9 @@ namespace BarberShop
             const int columna = 2;
             string resultado;
             int suma = 0;
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
-                if ((string)row.Cells[columna].Value == servicio)
+                if ((string)fila.Cells[columna].Value == servicio)
                 {
                     suma = suma + 1;
                 }                
@@ -96,6 +100,24 @@ namespace BarberShop
             resultado = servicio + ": " + suma;
 
             return resultado;
+        }
+
+        //Suma la cantidad de dinero en el datagridview.
+        private void Contar(DataGridView dataGrid,String palabra, int columna, string texto,Guna.UI.WinForms.GunaLabel label)
+        {
+                        
+            int suma = 0;
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                if ((string)fila.Cells[columna].Value == palabra)
+                {
+                    suma += (int)fila.Cells[3].Value;
+                }
+
+            }
+            label.Text = texto + " ₡" + suma;
+
+            
         }
 
         //Configurar el datagridview1
@@ -110,6 +132,13 @@ namespace BarberShop
             lblCorte.Text = ContarServicio(dataGridView1, "Corte");
             lblNiños.Text = ContarServicio(dataGridView1, "Niños");
             lblMarcado.Text = ContarServicio(dataGridView1, "Marcado");
+            Contar(dataGridView1, "Kevin", 1, "Kevin:", lblKevin);
+            Contar(dataGridView1, "Josua", 1, "Josua:", lblJosua);
+            Contar(dataGridView1, "Fabricio", 1, "Fabricio:", lblFabricio);
+            Contar(dataGridView1, "Tarjeta", 4, "Tarjeta:", lblTarjeta);
+            Contar(dataGridView1, "Sinpe", 4, "Sinpe:", lblSinpe);
+            Contar(dataGridView1, "Efectivo", 4, "Efectivo:", lblEfectivo);
+            Contar(dataGridView1, "Vale", 2, "Vales:", lblVale);
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -260,6 +289,6 @@ namespace BarberShop
             Buscar();
         }
 
-
+       
     }
 }
