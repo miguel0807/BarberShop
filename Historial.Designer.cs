@@ -71,6 +71,12 @@ namespace BarberShop
             this.lblDinero = new Guna.UI.WinForms.GunaLabel();
             this.lblCantidad = new Guna.UI.WinForms.GunaLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gunaLinePanel4 = new Guna.UI.WinForms.GunaLinePanel();
+            this.lblValeFabricio = new Guna.UI.WinForms.GunaLabel();
+            this.lblValeJosua = new Guna.UI.WinForms.GunaLabel();
+            this.lblValeKevin = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel10 = new Guna.UI.WinForms.GunaLabel();
+            this.lblCombo = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3.SuspendLayout();
             this.gunaGradientPanel2.SuspendLayout();
             this.gunaGradientPanel1.SuspendLayout();
@@ -78,6 +84,7 @@ namespace BarberShop
             this.gunaLinePanel2.SuspendLayout();
             this.gunaLinePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gunaLinePanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // rbServicio
@@ -88,7 +95,7 @@ namespace BarberShop
             this.rbServicio.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbServicio.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbServicio.FillColor = System.Drawing.Color.White;
-            this.rbServicio.Location = new System.Drawing.Point(1067, 189);
+            this.rbServicio.Location = new System.Drawing.Point(1067, 170);
             this.rbServicio.Name = "rbServicio";
             this.rbServicio.Size = new System.Drawing.Size(20, 20);
             this.rbServicio.TabIndex = 61;
@@ -102,7 +109,7 @@ namespace BarberShop
             this.rbMetodoPago.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbMetodoPago.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbMetodoPago.FillColor = System.Drawing.Color.White;
-            this.rbMetodoPago.Location = new System.Drawing.Point(1067, 145);
+            this.rbMetodoPago.Location = new System.Drawing.Point(1067, 126);
             this.rbMetodoPago.Name = "rbMetodoPago";
             this.rbMetodoPago.Size = new System.Drawing.Size(20, 20);
             this.rbMetodoPago.TabIndex = 60;
@@ -116,7 +123,7 @@ namespace BarberShop
             this.rbBarbero.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbBarbero.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbBarbero.FillColor = System.Drawing.Color.White;
-            this.rbBarbero.Location = new System.Drawing.Point(1067, 84);
+            this.rbBarbero.Location = new System.Drawing.Point(1067, 65);
             this.rbBarbero.Name = "rbBarbero";
             this.rbBarbero.Size = new System.Drawing.Size(20, 20);
             this.rbBarbero.TabIndex = 59;
@@ -129,7 +136,7 @@ namespace BarberShop
             this.gunaLabel7.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel7.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel7.Location = new System.Drawing.Point(637, 75);
+            this.gunaLabel7.Location = new System.Drawing.Point(637, 56);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(106, 32);
             this.gunaLabel7.TabIndex = 58;
@@ -142,7 +149,7 @@ namespace BarberShop
             this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel5.Location = new System.Drawing.Point(637, 183);
+            this.gunaLabel5.Location = new System.Drawing.Point(637, 164);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(106, 32);
             this.gunaLabel5.TabIndex = 57;
@@ -160,7 +167,7 @@ namespace BarberShop
             this.cboServicio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboServicio.ForeColor = System.Drawing.Color.Black;
             this.cboServicio.FormattingEnabled = true;
-            this.cboServicio.Location = new System.Drawing.Point(857, 183);
+            this.cboServicio.Location = new System.Drawing.Point(857, 164);
             this.cboServicio.Name = "cboServicio";
             this.cboServicio.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboServicio.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -179,7 +186,7 @@ namespace BarberShop
             this.cboMetodoPago.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboMetodoPago.ForeColor = System.Drawing.Color.Black;
             this.cboMetodoPago.FormattingEnabled = true;
-            this.cboMetodoPago.Location = new System.Drawing.Point(857, 132);
+            this.cboMetodoPago.Location = new System.Drawing.Point(857, 113);
             this.cboMetodoPago.Name = "cboMetodoPago";
             this.cboMetodoPago.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboMetodoPago.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -193,7 +200,7 @@ namespace BarberShop
             this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel6.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel6.Location = new System.Drawing.Point(634, 130);
+            this.gunaLabel6.Location = new System.Drawing.Point(634, 111);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(205, 32);
             this.gunaLabel6.TabIndex = 54;
@@ -211,7 +218,7 @@ namespace BarberShop
             this.cboBarbero.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboBarbero.ForeColor = System.Drawing.Color.Black;
             this.cboBarbero.FormattingEnabled = true;
-            this.cboBarbero.Location = new System.Drawing.Point(857, 78);
+            this.cboBarbero.Location = new System.Drawing.Point(857, 59);
             this.cboBarbero.Name = "cboBarbero";
             this.cboBarbero.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cboBarbero.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -226,7 +233,7 @@ namespace BarberShop
             this.rbFecha.CheckedOffColor = System.Drawing.Color.Gray;
             this.rbFecha.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.rbFecha.FillColor = System.Drawing.Color.White;
-            this.rbFecha.Location = new System.Drawing.Point(351, 46);
+            this.rbFecha.Location = new System.Drawing.Point(351, 27);
             this.rbFecha.Name = "rbFecha";
             this.rbFecha.Size = new System.Drawing.Size(20, 20);
             this.rbFecha.TabIndex = 52;
@@ -237,7 +244,7 @@ namespace BarberShop
             this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(266, 37);
+            this.gunaLabel4.Location = new System.Drawing.Point(266, 18);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(79, 32);
             this.gunaLabel4.TabIndex = 28;
@@ -262,7 +269,7 @@ namespace BarberShop
             this.btnBuscar.Image = null;
             this.btnBuscar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnBuscar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnBuscar.Location = new System.Drawing.Point(56, 183);
+            this.btnBuscar.Location = new System.Drawing.Point(56, 164);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnBuscar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -285,7 +292,7 @@ namespace BarberShop
             this.gunaPanel3.Controls.Add(this.dt2);
             this.gunaPanel3.Controls.Add(this.gunaLabel2);
             this.gunaPanel3.Controls.Add(this.gunaLabel1);
-            this.gunaPanel3.Location = new System.Drawing.Point(39, 72);
+            this.gunaPanel3.Location = new System.Drawing.Point(39, 53);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(580, 103);
             this.gunaPanel3.TabIndex = 42;
@@ -386,7 +393,7 @@ namespace BarberShop
             this.gunaGradientPanel2.GradientColor4 = System.Drawing.SystemColors.WindowFrame;
             this.gunaGradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.gunaGradientPanel2.Name = "gunaGradientPanel2";
-            this.gunaGradientPanel2.Size = new System.Drawing.Size(1109, 246);
+            this.gunaGradientPanel2.Size = new System.Drawing.Size(1109, 224);
             this.gunaGradientPanel2.TabIndex = 62;
             this.gunaGradientPanel2.Text = "gunaGradientPanel2";
             // 
@@ -394,6 +401,8 @@ namespace BarberShop
             // 
             this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
             this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.gunaLabel10);
+            this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel4);
             this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel3);
             this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel2);
             this.gunaGradientPanel1.Controls.Add(this.gunaLinePanel1);
@@ -406,9 +415,9 @@ namespace BarberShop
             this.gunaGradientPanel1.GradientColor2 = System.Drawing.SystemColors.WindowFrame;
             this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.WhiteSmoke;
             this.gunaGradientPanel1.GradientColor4 = System.Drawing.SystemColors.WindowFrame;
-            this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 246);
+            this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 224);
             this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Size = new System.Drawing.Size(1109, 771);
+            this.gunaGradientPanel1.Size = new System.Drawing.Size(1109, 793);
             this.gunaGradientPanel1.TabIndex = 63;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             // 
@@ -424,10 +433,11 @@ namespace BarberShop
             this.gunaLinePanel3.LineRight = 2;
             this.gunaLinePanel3.LineStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaLinePanel3.LineTop = 2;
-            this.gunaLinePanel3.Location = new System.Drawing.Point(661, 587);
+            this.gunaLinePanel3.Location = new System.Drawing.Point(835, 560);
             this.gunaLinePanel3.Name = "gunaLinePanel3";
-            this.gunaLinePanel3.Size = new System.Drawing.Size(270, 161);
+            this.gunaLinePanel3.Size = new System.Drawing.Size(226, 193);
             this.gunaLinePanel3.TabIndex = 20;
+            this.gunaLinePanel3.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaLinePanel3_Paint);
             // 
             // lblFabricio
             // 
@@ -480,9 +490,9 @@ namespace BarberShop
             this.gunaLinePanel2.LineRight = 2;
             this.gunaLinePanel2.LineStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaLinePanel2.LineTop = 2;
-            this.gunaLinePanel2.Location = new System.Drawing.Point(333, 587);
+            this.gunaLinePanel2.Location = new System.Drawing.Point(284, 560);
             this.gunaLinePanel2.Name = "gunaLinePanel2";
-            this.gunaLinePanel2.Size = new System.Drawing.Size(270, 161);
+            this.gunaLinePanel2.Size = new System.Drawing.Size(255, 193);
             this.gunaLinePanel2.TabIndex = 19;
             // 
             // lblEfectivo
@@ -527,6 +537,7 @@ namespace BarberShop
             // gunaLinePanel1
             // 
             this.gunaLinePanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel1.Controls.Add(this.lblCombo);
             this.gunaLinePanel1.Controls.Add(this.lblBarba);
             this.gunaLinePanel1.Controls.Add(this.lblMarcado);
             this.gunaLinePanel1.Controls.Add(this.lblCorteYbarba);
@@ -538,10 +549,10 @@ namespace BarberShop
             this.gunaLinePanel1.LineRight = 2;
             this.gunaLinePanel1.LineStyle = System.Windows.Forms.BorderStyle.None;
             this.gunaLinePanel1.LineTop = 2;
-            this.gunaLinePanel1.Location = new System.Drawing.Point(39, 587);
+            this.gunaLinePanel1.Location = new System.Drawing.Point(43, 560);
             this.gunaLinePanel1.Name = "gunaLinePanel1";
             this.gunaLinePanel1.Padding = new System.Windows.Forms.Padding(5);
-            this.gunaLinePanel1.Size = new System.Drawing.Size(260, 161);
+            this.gunaLinePanel1.Size = new System.Drawing.Size(220, 193);
             this.gunaLinePanel1.TabIndex = 15;
             // 
             // lblBarba
@@ -551,7 +562,7 @@ namespace BarberShop
             this.lblBarba.ForeColor = System.Drawing.Color.White;
             this.lblBarba.Location = new System.Drawing.Point(5, 125);
             this.lblBarba.Name = "lblBarba";
-            this.lblBarba.Size = new System.Drawing.Size(250, 30);
+            this.lblBarba.Size = new System.Drawing.Size(210, 30);
             this.lblBarba.TabIndex = 5;
             this.lblBarba.Text = "Barba: ";
             // 
@@ -562,7 +573,7 @@ namespace BarberShop
             this.lblMarcado.ForeColor = System.Drawing.Color.White;
             this.lblMarcado.Location = new System.Drawing.Point(5, 95);
             this.lblMarcado.Name = "lblMarcado";
-            this.lblMarcado.Size = new System.Drawing.Size(250, 30);
+            this.lblMarcado.Size = new System.Drawing.Size(210, 30);
             this.lblMarcado.TabIndex = 9;
             this.lblMarcado.Text = "Marcado:";
             // 
@@ -573,7 +584,7 @@ namespace BarberShop
             this.lblCorteYbarba.ForeColor = System.Drawing.Color.White;
             this.lblCorteYbarba.Location = new System.Drawing.Point(5, 65);
             this.lblCorteYbarba.Name = "lblCorteYbarba";
-            this.lblCorteYbarba.Size = new System.Drawing.Size(250, 30);
+            this.lblCorteYbarba.Size = new System.Drawing.Size(210, 30);
             this.lblCorteYbarba.TabIndex = 6;
             this.lblCorteYbarba.Text = "Corte y barba:";
             // 
@@ -584,7 +595,7 @@ namespace BarberShop
             this.lblNiños.ForeColor = System.Drawing.Color.White;
             this.lblNiños.Location = new System.Drawing.Point(5, 35);
             this.lblNiños.Name = "lblNiños";
-            this.lblNiños.Size = new System.Drawing.Size(250, 30);
+            this.lblNiños.Size = new System.Drawing.Size(210, 30);
             this.lblNiños.TabIndex = 8;
             this.lblNiños.Text = "Niños: ";
             // 
@@ -595,7 +606,7 @@ namespace BarberShop
             this.lblCorte.ForeColor = System.Drawing.Color.White;
             this.lblCorte.Location = new System.Drawing.Point(5, 5);
             this.lblCorte.Name = "lblCorte";
-            this.lblCorte.Size = new System.Drawing.Size(250, 30);
+            this.lblCorte.Size = new System.Drawing.Size(210, 30);
             this.lblCorte.TabIndex = 7;
             this.lblCorte.Text = "Corte:";
             // 
@@ -606,7 +617,7 @@ namespace BarberShop
             this.lblVale.BackColor = System.Drawing.Color.Transparent;
             this.lblVale.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVale.ForeColor = System.Drawing.Color.White;
-            this.lblVale.Location = new System.Drawing.Point(656, 554);
+            this.lblVale.Location = new System.Drawing.Point(562, 756);
             this.lblVale.Name = "lblVale";
             this.lblVale.Size = new System.Drawing.Size(72, 30);
             this.lblVale.TabIndex = 14;
@@ -619,11 +630,11 @@ namespace BarberShop
             this.lblDinero.BackColor = System.Drawing.Color.Transparent;
             this.lblDinero.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDinero.ForeColor = System.Drawing.Color.White;
-            this.lblDinero.Location = new System.Drawing.Point(333, 557);
+            this.lblDinero.Location = new System.Drawing.Point(287, 754);
             this.lblDinero.Name = "lblDinero";
-            this.lblDinero.Size = new System.Drawing.Size(151, 30);
+            this.lblDinero.Size = new System.Drawing.Size(88, 30);
             this.lblDinero.TabIndex = 13;
-            this.lblDinero.Text = "Total Dinero: ";
+            this.lblDinero.Text = "Dinero:";
             // 
             // lblCantidad
             // 
@@ -632,11 +643,11 @@ namespace BarberShop
             this.lblCantidad.BackColor = System.Drawing.Color.Transparent;
             this.lblCantidad.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidad.ForeColor = System.Drawing.Color.White;
-            this.lblCantidad.Location = new System.Drawing.Point(34, 554);
+            this.lblCantidad.Location = new System.Drawing.Point(38, 754);
             this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(204, 30);
+            this.lblCantidad.Size = new System.Drawing.Size(111, 30);
             this.lblCantidad.TabIndex = 11;
-            this.lblCantidad.Text = "Total de servicios: ";
+            this.lblCantidad.Text = "Servicios:";
             // 
             // dataGridView1
             // 
@@ -696,9 +707,89 @@ namespace BarberShop
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1018, 522);
+            this.dataGridView1.Size = new System.Drawing.Size(1018, 510);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
+            // 
+            // gunaLinePanel4
+            // 
+            this.gunaLinePanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLinePanel4.Controls.Add(this.lblValeFabricio);
+            this.gunaLinePanel4.Controls.Add(this.lblValeJosua);
+            this.gunaLinePanel4.Controls.Add(this.lblValeKevin);
+            this.gunaLinePanel4.LineBottom = 2;
+            this.gunaLinePanel4.LineColor = System.Drawing.Color.Black;
+            this.gunaLinePanel4.LineLeft = 2;
+            this.gunaLinePanel4.LineRight = 2;
+            this.gunaLinePanel4.LineStyle = System.Windows.Forms.BorderStyle.None;
+            this.gunaLinePanel4.LineTop = 2;
+            this.gunaLinePanel4.Location = new System.Drawing.Point(562, 560);
+            this.gunaLinePanel4.Name = "gunaLinePanel4";
+            this.gunaLinePanel4.Size = new System.Drawing.Size(243, 193);
+            this.gunaLinePanel4.TabIndex = 21;
+            // 
+            // lblValeFabricio
+            // 
+            this.lblValeFabricio.AutoSize = true;
+            this.lblValeFabricio.BackColor = System.Drawing.Color.Transparent;
+            this.lblValeFabricio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblValeFabricio.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValeFabricio.ForeColor = System.Drawing.Color.White;
+            this.lblValeFabricio.Location = new System.Drawing.Point(0, 60);
+            this.lblValeFabricio.Name = "lblValeFabricio";
+            this.lblValeFabricio.Size = new System.Drawing.Size(100, 30);
+            this.lblValeFabricio.TabIndex = 16;
+            this.lblValeFabricio.Text = "Fabricio:";
+            // 
+            // lblValeJosua
+            // 
+            this.lblValeJosua.AutoSize = true;
+            this.lblValeJosua.BackColor = System.Drawing.Color.Transparent;
+            this.lblValeJosua.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblValeJosua.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValeJosua.ForeColor = System.Drawing.Color.White;
+            this.lblValeJosua.Location = new System.Drawing.Point(0, 30);
+            this.lblValeJosua.Name = "lblValeJosua";
+            this.lblValeJosua.Size = new System.Drawing.Size(77, 30);
+            this.lblValeJosua.TabIndex = 18;
+            this.lblValeJosua.Text = "Josua:";
+            // 
+            // lblValeKevin
+            // 
+            this.lblValeKevin.AutoSize = true;
+            this.lblValeKevin.BackColor = System.Drawing.Color.Transparent;
+            this.lblValeKevin.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblValeKevin.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValeKevin.ForeColor = System.Drawing.Color.White;
+            this.lblValeKevin.Location = new System.Drawing.Point(0, 0);
+            this.lblValeKevin.Name = "lblValeKevin";
+            this.lblValeKevin.Size = new System.Drawing.Size(76, 30);
+            this.lblValeKevin.TabIndex = 17;
+            this.lblValeKevin.Text = "Kevin:";
+            // 
+            // gunaLabel10
+            // 
+            this.gunaLabel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaLabel10.AutoSize = true;
+            this.gunaLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel10.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel10.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel10.Location = new System.Drawing.Point(830, 754);
+            this.gunaLabel10.Name = "gunaLabel10";
+            this.gunaLabel10.Size = new System.Drawing.Size(213, 30);
+            this.gunaLabel10.TabIndex = 22;
+            this.gunaLabel10.Text = "Dinero por barbero";
+            // 
+            // lblCombo
+            // 
+            this.lblCombo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblCombo.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCombo.ForeColor = System.Drawing.Color.White;
+            this.lblCombo.Location = new System.Drawing.Point(5, 155);
+            this.lblCombo.Name = "lblCombo";
+            this.lblCombo.Size = new System.Drawing.Size(210, 30);
+            this.lblCombo.TabIndex = 10;
+            this.lblCombo.Text = "Combo:";
             // 
             // Historial
             // 
@@ -724,6 +815,8 @@ namespace BarberShop
             this.gunaLinePanel2.PerformLayout();
             this.gunaLinePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gunaLinePanel4.ResumeLayout(false);
+            this.gunaLinePanel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -766,5 +859,11 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaLabel lblFabricio;
         private Guna.UI.WinForms.GunaLabel lblJosua;
         private Guna.UI.WinForms.GunaLabel lblKevin;
+        private Guna.UI.WinForms.GunaLabel gunaLabel10;
+        private Guna.UI.WinForms.GunaLinePanel gunaLinePanel4;
+        private Guna.UI.WinForms.GunaLabel lblValeFabricio;
+        private Guna.UI.WinForms.GunaLabel lblValeJosua;
+        private Guna.UI.WinForms.GunaLabel lblValeKevin;
+        private Guna.UI.WinForms.GunaLabel lblCombo;
     }
 }

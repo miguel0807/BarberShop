@@ -57,10 +57,10 @@ namespace BarberShop
                 {
                     cantidad = cantidad + 1;
                 }
-                cantidad = cantidad + 1;
+                
             }
 
-            resultado = "Total de servicios: " + cantidad; 
+            resultado = "Servicios: " + cantidad; 
             return resultado; ;
         }
 
@@ -78,7 +78,29 @@ namespace BarberShop
                 }               
                     
             }
-            resultado = "Total Dinero: ₡" + suma;
+            resultado = "Dinero: ₡" + suma;
+
+            return resultado;
+        }
+
+        //Cuenta la cantidad de servicios especificados.
+        private string ContarVales(DataGridView dataGrid, string barbero)
+        {
+            const int columna = 1;
+            string resultado;
+            int suma = 0;
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                if ((string)fila.Cells[2].Value == "Vale")
+                {
+                    if ((string)fila.Cells[columna].Value == barbero)
+                    {
+                        suma += (int)fila.Cells[3].Value;
+                    }
+                }
+            }
+
+            resultado = barbero + ": ₡" + suma;
 
             return resultado;
         }
@@ -91,10 +113,13 @@ namespace BarberShop
             int suma = 0;
             foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
-                if ((string)fila.Cells[columna].Value == servicio)
+                if ((string)fila.Cells[2].Value != "Vale")
                 {
-                    suma = suma + 1;
-                }                
+                    if ((string)fila.Cells[columna].Value == servicio)
+                    {                    
+                        suma = suma + 1;                                       
+                    }
+                }
             }
 
             resultado = servicio + ": " + suma;
@@ -103,17 +128,62 @@ namespace BarberShop
         }
 
         //Suma la cantidad de dinero en el datagridview.
-        private void Contar(DataGridView dataGrid,String palabra, int columna, string texto,Guna.UI.WinForms.GunaLabel label)
+        private void ContarDineroBarbero(DataGridView dataGrid, String palabra, int columna, string texto, Guna.UI.WinForms.GunaLabel label)
+        {
+
+            int suma = 0;
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                if ((string)fila.Cells[2].Value != "Vale")
+                {
+                    if ((string)fila.Cells[columna].Value == palabra)
+                    {
+                        suma += (int)fila.Cells[3].Value;
+                    }
+                }
+
+            }
+            suma = suma / 2;
+            label.Text = texto + " ₡" + suma;
+
+
+        }
+
+
+        //Suma la cantidad de dinero en el datagridview.
+        private void ContarDinero(DataGridView dataGrid, String palabra, int columna, string texto, Guna.UI.WinForms.GunaLabel label)
+        {
+
+            int suma = 0;
+            foreach (DataGridViewRow fila in dataGridView1.Rows)
+            {
+                if ((string)fila.Cells[2].Value != "Vale")
+                {
+                    if ((string)fila.Cells[columna].Value == palabra)
+                    {
+                        suma += (int)fila.Cells[3].Value;
+                    }
+                }
+
+            }
+            label.Text = texto + " ₡" + suma;
+
+
+        }
+
+        //Suma la cantidad de dinero en el datagridview.
+        private void ContarVale(DataGridView dataGrid,String palabra, int columna, string texto,Guna.UI.WinForms.GunaLabel label)
         {
                         
             int suma = 0;
             foreach (DataGridViewRow fila in dataGridView1.Rows)
             {
+               
                 if ((string)fila.Cells[columna].Value == palabra)
                 {
                     suma += (int)fila.Cells[3].Value;
                 }
-
+                
             }
             label.Text = texto + " ₡" + suma;
 
@@ -132,13 +202,21 @@ namespace BarberShop
             lblCorte.Text = ContarServicio(dataGridView1, "Corte");
             lblNiños.Text = ContarServicio(dataGridView1, "Niños");
             lblMarcado.Text = ContarServicio(dataGridView1, "Marcado");
-            Contar(dataGridView1, "Kevin", 1, "Kevin:", lblKevin);
-            Contar(dataGridView1, "Josua", 1, "Josua:", lblJosua);
-            Contar(dataGridView1, "Fabricio", 1, "Fabricio:", lblFabricio);
-            Contar(dataGridView1, "Tarjeta", 4, "Tarjeta:", lblTarjeta);
-            Contar(dataGridView1, "Sinpe", 4, "Sinpe:", lblSinpe);
-            Contar(dataGridView1, "Efectivo", 4, "Efectivo:", lblEfectivo);
-            Contar(dataGridView1, "Vale", 2, "Vales:", lblVale);
+            lblCombo.Text = ContarServicio(dataGridView1, "Combo");
+            
+            ContarDineroBarbero(dataGridView1, "Kevin", 1, "Kevin:", lblKevin);
+            ContarDineroBarbero(dataGridView1, "Josua", 1, "Josua:", lblJosua);
+            ContarDineroBarbero(dataGridView1, "Fabricio", 1, "Fabricio:", lblFabricio);
+
+            ContarDinero(dataGridView1, "Tarjeta", 4, "Tarjeta:", lblTarjeta);
+            ContarDinero(dataGridView1, "Sinpe", 4, "Sinpe:", lblSinpe);
+            ContarDinero(dataGridView1, "Efectivo", 4, "Efectivo:", lblEfectivo);
+            
+            ContarVale(dataGridView1, "Vale", 2, "Vales:", lblVale);
+
+            lblValeKevin.Text = ContarVales(dataGridView1, "Kevin");
+            lblValeJosua.Text = ContarVales(dataGridView1, "Josua");
+            lblValeFabricio.Text = ContarVales(dataGridView1, "Fabricio");
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -289,6 +367,9 @@ namespace BarberShop
             Buscar();
         }
 
-       
+        private void gunaLinePanel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
