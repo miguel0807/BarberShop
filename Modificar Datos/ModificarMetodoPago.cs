@@ -33,7 +33,22 @@ namespace BarberShop.Modificar_Datos
             dataGridView1.DataSource = datosNegocio.ObtenerMetodoPago();
 
             dataGridView1.Columns[0].Visible = false;
+            txtCantidad.Text = ContarFilas(dataGridView1);
             
+        }
+        //Devuelve la cantidad de filas totales en un datagridview.
+        private string ContarFilas(DataGridView dataGrid)
+        {
+            string resultado;
+            int cantidad = 0;
+
+            foreach (DataGridViewRow fila in dataGrid.Rows)
+            {
+                cantidad = cantidad + 1;
+            }
+
+            resultado = "Cantidad de registros: " + cantidad;
+            return resultado; ;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)

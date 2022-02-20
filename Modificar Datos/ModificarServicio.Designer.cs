@@ -86,7 +86,7 @@ namespace BarberShop.Modificar_Datos
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.DimGray;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -125,7 +125,7 @@ namespace BarberShop.Modificar_Datos
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSlateGray;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DimGray;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
@@ -144,7 +144,7 @@ namespace BarberShop.Modificar_Datos
             this.btnAgregar.AnimationHoverSpeed = 0.07F;
             this.btnAgregar.AnimationSpeed = 0.03F;
             this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.BaseColor = System.Drawing.Color.PaleVioletRed;
+            this.btnAgregar.BaseColor = System.Drawing.Color.MediumBlue;
             this.btnAgregar.BorderColor = System.Drawing.Color.Black;
             this.btnAgregar.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnAgregar.CheckedBorderColor = System.Drawing.Color.Black;
@@ -215,10 +215,10 @@ namespace BarberShop.Modificar_Datos
             this.gunaGradientPanel1.Controls.Add(this.txtServicio);
             this.gunaGradientPanel1.Controls.Add(this.dataGridView1);
             this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.SteelBlue;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.Gray;
             this.gunaGradientPanel1.GradientColor2 = System.Drawing.SystemColors.InactiveCaptionText;
-            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.Maroon;
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.LightSteelBlue;
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.DimGray;
             this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaGradientPanel1.Name = "gunaGradientPanel1";
             this.gunaGradientPanel1.Padding = new System.Windows.Forms.Padding(40);
@@ -266,7 +266,7 @@ namespace BarberShop.Modificar_Datos
         private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaTextBox txtPrecio;
-        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
         private Guna.UI.WinForms.GunaLabel txtCantidad;
+        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
     }
 }
