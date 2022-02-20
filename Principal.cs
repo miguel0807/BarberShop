@@ -101,7 +101,13 @@ namespace BarberShop
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
         {
+            DialogResult resultado = MessageBox.Show("Esta seguro de cerrar sesión?", "Cerrar Sesión", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
             this.Close();
+            }
+            
         }
 
         private void btnIngresarDatos_Click(object sender, EventArgs e)

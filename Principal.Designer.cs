@@ -32,6 +32,7 @@ namespace BarberShop
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.PanelTotal = new System.Windows.Forms.Panel();
+            this.panelContenedor = new Guna.UI.WinForms.GunaGradientPanel();
             this.PanelSuperior = new Guna.UI.WinForms.GunaGradientPanel();
             this.btnMinimizar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRestaurar = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -55,7 +56,6 @@ namespace BarberShop
             this.lblPuesto = new Guna.UI.WinForms.GunaLabel();
             this.lblNombreP = new Guna.UI.WinForms.GunaLabel();
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.panelContenedor = new Guna.UI.WinForms.GunaGradientPanel();
             this.PanelTotal.SuspendLayout();
             this.PanelSuperior.SuspendLayout();
             this.PanelLateral.SuspendLayout();
@@ -75,6 +75,21 @@ namespace BarberShop
             this.PanelTotal.Size = new System.Drawing.Size(1400, 1050);
             this.PanelTotal.TabIndex = 2;
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
+            this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.GradientColor1 = System.Drawing.Color.SteelBlue;
+            this.panelContenedor.GradientColor2 = System.Drawing.SystemColors.InactiveCaption;
+            this.panelContenedor.GradientColor3 = System.Drawing.SystemColors.ControlDarkDark;
+            this.panelContenedor.GradientColor4 = System.Drawing.Color.SteelBlue;
+            this.panelContenedor.Location = new System.Drawing.Point(291, 51);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1109, 999);
+            this.panelContenedor.TabIndex = 3;
+            this.panelContenedor.Text = "gunaGradientPanel1";
+            // 
             // PanelSuperior
             // 
             this.PanelSuperior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
@@ -86,8 +101,8 @@ namespace BarberShop
             this.PanelSuperior.Controls.Add(this.btnMenu);
             this.PanelSuperior.Controls.Add(this.btnCerrar);
             this.PanelSuperior.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSuperior.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.PanelSuperior.GradientColor2 = System.Drawing.Color.White;
+            this.PanelSuperior.GradientColor1 = System.Drawing.Color.Gray;
+            this.PanelSuperior.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.PanelSuperior.GradientColor3 = System.Drawing.Color.White;
             this.PanelSuperior.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.PanelSuperior.Location = new System.Drawing.Point(291, 0);
@@ -457,7 +472,7 @@ namespace BarberShop
             this.btnHistorial.OnPressedColor = System.Drawing.Color.Black;
             this.btnHistorial.Size = new System.Drawing.Size(291, 69);
             this.btnHistorial.TabIndex = 33;
-            this.btnHistorial.Text = "Historial de datos";
+            this.btnHistorial.Text = "Historial ";
             this.btnHistorial.TextOffsetX = 20;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
             // 
@@ -491,7 +506,7 @@ namespace BarberShop
             this.btnIngresarDatos.OnPressedColor = System.Drawing.Color.Black;
             this.btnIngresarDatos.Size = new System.Drawing.Size(291, 69);
             this.btnIngresarDatos.TabIndex = 32;
-            this.btnIngresarDatos.Text = "Registrar Servicio";
+            this.btnIngresarDatos.Text = "Registrar Datos";
             this.btnIngresarDatos.TextOffsetX = 16;
             this.btnIngresarDatos.Click += new System.EventHandler(this.btnIngresarDatos_Click);
             // 
@@ -642,21 +657,6 @@ namespace BarberShop
             // gunaDragControl1
             // 
             this.gunaDragControl1.TargetControl = this.PanelSuperior;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
-            this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.GradientColor1 = System.Drawing.Color.DimGray;
-            this.panelContenedor.GradientColor2 = System.Drawing.Color.LightSkyBlue;
-            this.panelContenedor.GradientColor3 = System.Drawing.Color.OliveDrab;
-            this.panelContenedor.GradientColor4 = System.Drawing.Color.SteelBlue;
-            this.panelContenedor.Location = new System.Drawing.Point(291, 51);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1109, 999);
-            this.panelContenedor.TabIndex = 3;
-            this.panelContenedor.Text = "gunaGradientPanel1";
             // 
             // Principal
             // 

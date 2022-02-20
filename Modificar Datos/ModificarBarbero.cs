@@ -89,6 +89,7 @@ namespace BarberShop
 
         private void Eliminar(int id)
         {
+            
             DialogResult resultado = MessageBox.Show("Esta seguro de eliminar el registro?", "Eliminación", MessageBoxButtons.YesNo);
 
 

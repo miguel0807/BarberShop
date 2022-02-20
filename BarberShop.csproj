@@ -178,6 +178,7 @@
     <Content Include="Recursos\Close.png" />
     <Content Include="Recursos\Historial.png" />
     <Content Include="Recursos\Historial2.png" />
+    <Content Include="Recursos\Imagen.jpg" />
     <Content Include="Recursos\Logo.jpg" />
     <Content Include="Recursos\logo2.jpeg" />
     <Content Include="Recursos\Maximizar.png" />
@@ -188,6 +189,7 @@
     <Content Include="Recursos\MetodoPago.png" />
     <Content Include="Recursos\Minimizar.png" />
     <Content Include="Recursos\minimizar2.png" />
+    <Content Include="Recursos\Registro1.png" />
     <Content Include="Recursos\Restaurar.png" />
     <Content Include="Recursos\Servicios.png" />
     <Content Include="Recursos\Servicios2.png" />
