@@ -68,7 +68,7 @@ namespace AccesoDatos
                 catch (SqlException ex)
                 {
                     
-                    //throw new Exception(ex.Message);
+                    throw new Exception(ex.Message);
                 }
             }
 
@@ -99,7 +99,7 @@ namespace AccesoDatos
                 }
                 catch (SqlException ex)
                 {
-                    //throw new Exception(ex.Message);
+                    throw new Exception(ex.Message);
                 }
             }
 
@@ -194,7 +194,7 @@ namespace AccesoDatos
                 catch (SqlException ex)
                 {
 
-                    //throw new Exception(ex.Message);
+                    throw new Exception(ex.Message);
                 }
             }
 
@@ -226,7 +226,7 @@ namespace AccesoDatos
                 }
                 catch (SqlException ex)
                 {
-                    //throw new Exception(ex.Message);
+                    throw new Exception(ex.Message);
                 }
             }
 
@@ -351,7 +351,7 @@ namespace AccesoDatos
                 }
                 catch (SqlException ex)
                 {
-                    //throw new Exception(ex.Message);
+                    throw new Exception(ex.Message);
                 }
             }
 

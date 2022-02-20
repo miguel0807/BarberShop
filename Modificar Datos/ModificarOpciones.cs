@@ -59,14 +59,19 @@ namespace BarberShop.Modificar_Datos
         {
             if (barbero == true)
             {
-                txt2.Visible = true;
-                lbl2.Visible = true;
+                txt2.Visible = false;
+                lbl2.Visible = false;
             }
             else if(servicio == true)
             {
                 txt2.Visible = true;
                 lbl2.Visible = true;
             }
+            else if(MetodoPago == true)
+            {
+                txt2.Visible = false;
+                lbl2.Visible = false;
+            } 
             
         }
 

@@ -79,7 +79,7 @@ namespace BarberShop.Modificar_Datos
         }
         private void Modificar(int id, String metodoPago)
         {
-            ModificarOpciones frm = new ModificarOpciones(id, metodoPago, "Barbero","");
+            ModificarOpciones frm = new ModificarOpciones(id, metodoPago, "Metodo de Pago","");
             frm.ShowDialog();
             CargarMetodoPago();
 
