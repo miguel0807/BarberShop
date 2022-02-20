@@ -40,15 +40,18 @@ namespace BarberShop.Modificar_Datos
             this.btnAgregar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtPrecio = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.gunaGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel1.Location = new System.Drawing.Point(38, 30);
+            this.gunaLabel1.Location = new System.Drawing.Point(-6, 0);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(188, 32);
             this.gunaLabel1.TabIndex = 30;
@@ -63,10 +66,10 @@ namespace BarberShop.Modificar_Datos
             this.txtServicio.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtServicio.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtServicio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtServicio.Location = new System.Drawing.Point(44, 65);
+            this.txtServicio.Location = new System.Drawing.Point(0, 35);
             this.txtServicio.Name = "txtServicio";
             this.txtServicio.PasswordChar = '\0';
-            this.txtServicio.Size = new System.Drawing.Size(228, 37);
+            this.txtServicio.Size = new System.Drawing.Size(208, 37);
             this.txtServicio.TabIndex = 31;
             this.txtServicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -104,7 +107,7 @@ namespace BarberShop.Modificar_Datos
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.SteelBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 123);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 78);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -128,13 +131,14 @@ namespace BarberShop.Modificar_Datos
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1009, 469);
+            this.dataGridView1.Size = new System.Drawing.Size(1091, 545);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseMove);
             // 
             // btnAgregar
             // 
+            this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAgregar.AnimationHoverSpeed = 0.07F;
             this.btnAgregar.AnimationSpeed = 0.03F;
             this.btnAgregar.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -151,7 +155,7 @@ namespace BarberShop.Modificar_Datos
             this.btnAgregar.Image = null;
             this.btnAgregar.ImageSize = new System.Drawing.Size(20, 20);
             this.btnAgregar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAgregar.Location = new System.Drawing.Point(734, 39);
+            this.btnAgregar.Location = new System.Drawing.Point(494, 29);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.btnAgregar.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -159,7 +163,7 @@ namespace BarberShop.Modificar_Datos
             this.btnAgregar.OnHoverImage = null;
             this.btnAgregar.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnAgregar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAgregar.Size = new System.Drawing.Size(208, 63);
+            this.btnAgregar.Size = new System.Drawing.Size(188, 43);
             this.btnAgregar.TabIndex = 32;
             this.btnAgregar.Text = "Agregar Nuevo";
             this.btnAgregar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -168,9 +172,10 @@ namespace BarberShop.Modificar_Datos
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel2.Location = new System.Drawing.Point(340, 30);
+            this.gunaLabel2.Location = new System.Drawing.Point(217, 0);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(169, 32);
             this.gunaLabel2.TabIndex = 33;
@@ -185,13 +190,35 @@ namespace BarberShop.Modificar_Datos
             this.txtPrecio.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtPrecio.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtPrecio.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.txtPrecio.Location = new System.Drawing.Point(346, 65);
+            this.txtPrecio.Location = new System.Drawing.Point(223, 35);
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.PasswordChar = '\0';
-            this.txtPrecio.Size = new System.Drawing.Size(228, 37);
+            this.txtPrecio.Size = new System.Drawing.Size(208, 37);
             this.txtPrecio.TabIndex = 34;
             this.txtPrecio.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPrecio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecio_KeyPress);
+            // 
+            // gunaGradientPanel1
+            // 
+            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
+            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.Controls.Add(this.gunaLabel2);
+            this.gunaGradientPanel1.Controls.Add(this.txtPrecio);
+            this.gunaGradientPanel1.Controls.Add(this.gunaLabel1);
+            this.gunaGradientPanel1.Controls.Add(this.btnAgregar);
+            this.gunaGradientPanel1.Controls.Add(this.txtServicio);
+            this.gunaGradientPanel1.Controls.Add(this.dataGridView1);
+            this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.DimGray;
+            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.Maroon;
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
+            this.gunaGradientPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.gunaGradientPanel1.Size = new System.Drawing.Size(1091, 623);
+            this.gunaGradientPanel1.TabIndex = 35;
+            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
             // 
             // ModificarServicio
             // 
@@ -199,19 +226,15 @@ namespace BarberShop.Modificar_Datos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
             this.ClientSize = new System.Drawing.Size(1091, 623);
-            this.Controls.Add(this.gunaLabel2);
-            this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.txtServicio);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gunaGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModificarServicio";
             this.Text = "ModificarServicio";
             this.Load += new System.EventHandler(this.ModificarServicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.gunaGradientPanel1.ResumeLayout(false);
+            this.gunaGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -223,5 +246,6 @@ namespace BarberShop.Modificar_Datos
         private System.Windows.Forms.DataGridView dataGridView1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaTextBox txtPrecio;
+        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
     }
 }
