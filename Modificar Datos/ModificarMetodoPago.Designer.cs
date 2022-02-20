@@ -161,7 +161,7 @@ namespace BarberShop.Modificar_Datos
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1071, 525);
+            this.dataGridView1.Size = new System.Drawing.Size(1071, 495);
             this.dataGridView1.TabIndex = 29;
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
             this.dataGridView1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseMove);
@@ -181,7 +181,7 @@ namespace BarberShop.Modificar_Datos
             this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.White;
             this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Padding = new System.Windows.Forms.Padding(10);
+            this.gunaGradientPanel1.Padding = new System.Windows.Forms.Padding(10, 10, 10, 40);
             this.gunaGradientPanel1.Size = new System.Drawing.Size(1091, 623);
             this.gunaGradientPanel1.TabIndex = 33;
             this.gunaGradientPanel1.Text = "gunaGradientPanel1";
