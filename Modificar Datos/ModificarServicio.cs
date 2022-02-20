@@ -30,7 +30,24 @@ namespace BarberShop.Modificar_Datos
             dataGridView1.DataSource = datosNegocio.ObtenerServicio();
 
             dataGridView1.Columns[0].Visible = false;
+
+            txtCantidad.Text = ContarFilas(dataGridView1);
            
+        }
+
+        //Devuelve la cantidad de filas totales en un datagridview.
+        private string ContarFilas(DataGridView dataGrid)
+        {
+            string resultado;
+            int cantidad = 0;
+
+            foreach (DataGridViewRow fila in dataGrid.Rows)
+            {
+                cantidad = cantidad + 1;
+            }
+
+            resultado = "Cantidad de registros: " + cantidad;
+            return resultado; ;
         }
         private void dataGridView1_MouseMove(object sender, MouseEventArgs e)
         {
@@ -88,9 +105,20 @@ namespace BarberShop.Modificar_Datos
         {
             if (txtServicio.Text != "" && txtPrecio.Text != "")
             {
-                datosNegocio.AgregarServicio(txtServicio.Text , Int32.Parse(txtPrecio.Text));
-                MessageBox.Show("Servicio agregado con exito!!");
-                CargarServicios();
+
+                DialogResult resultado = MessageBox.Show("Esta seguro de crear el servicio?", "Validación de datos", MessageBoxButtons.YesNo);
+
+                if (resultado == DialogResult.Yes)
+                {
+
+                    datosNegocio.AgregarServicio(txtServicio.Text, Int32.Parse(txtPrecio.Text));
+                    MessageBox.Show("Datos cargados correctamente.","Registro");
+                    txtServicio.Text = "";
+                    txtPrecio.Text = "";
+                    CargarServicios();
+                }
+
+                
             }
         }
 
