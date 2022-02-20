@@ -31,79 +31,49 @@ namespace BarberShop
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            this.PanelContenedor = new System.Windows.Forms.Panel();
-            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.PanelLateral = new Guna.UI.WinForms.GunaGradientPanel();
+            this.PanelTotal = new System.Windows.Forms.Panel();
             this.PanelSuperior = new Guna.UI.WinForms.GunaGradientPanel();
             this.btnMinimizar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRestaurar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnMaximizar = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnMenu = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnCerrar = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.PanelLateral = new Guna.UI.WinForms.GunaGradientPanel();
             this.btnConfiguración = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnMetodoPago = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnServicios = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnBarberos = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHistorial = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnIngresarDatos = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.panelDatos = new Guna.UI.WinForms.GunaPanel();
+            this.panelDatos = new Guna.UI.WinForms.GunaGradientPanel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.picLogo = new Guna.UI.WinForms.GunaPictureBox();
+            this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.btnCerrarSesion = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lineaDatos = new Guna.UI.WinForms.GunaSeparator();
             this.lblPuestoP = new Guna.UI.WinForms.GunaLabel();
-            this.lblNombre = new Guna.UI.WinForms.GunaLabel();
             this.lblPuesto = new Guna.UI.WinForms.GunaLabel();
             this.lblNombreP = new Guna.UI.WinForms.GunaLabel();
-            this.PanelContenedor.SuspendLayout();
-            this.PanelLateral.SuspendLayout();
+            this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.panelContenedor = new Guna.UI.WinForms.GunaGradientPanel();
+            this.PanelTotal.SuspendLayout();
             this.PanelSuperior.SuspendLayout();
+            this.PanelLateral.SuspendLayout();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // PanelContenedor
+            // PanelTotal
             // 
-            this.PanelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
-            this.PanelContenedor.Controls.Add(this.PanelSuperior);
-            this.PanelContenedor.Controls.Add(this.PanelLateral);
-            this.PanelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.Size = new System.Drawing.Size(1400, 1050);
-            this.PanelContenedor.TabIndex = 2;
-            // 
-            // gunaDragControl1
-            // 
-            this.gunaDragControl1.TargetControl = this.PanelSuperior;
-            // 
-            // PanelLateral
-            // 
-            this.PanelLateral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelLateral.BackgroundImage")));
-            this.PanelLateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanelLateral.Controls.Add(this.lblNombre);
-            this.PanelLateral.Controls.Add(this.btnCerrarSesion);
-            this.PanelLateral.Controls.Add(this.lineaDatos);
-            this.PanelLateral.Controls.Add(this.lblPuestoP);
-            this.PanelLateral.Controls.Add(this.lblPuesto);
-            this.PanelLateral.Controls.Add(this.lblNombreP);
-            this.PanelLateral.Controls.Add(this.btnConfiguración);
-            this.PanelLateral.Controls.Add(this.btnMetodoPago);
-            this.PanelLateral.Controls.Add(this.btnServicios);
-            this.PanelLateral.Controls.Add(this.btnBarberos);
-            this.PanelLateral.Controls.Add(this.btnHistorial);
-            this.PanelLateral.Controls.Add(this.btnIngresarDatos);
-            this.PanelLateral.Controls.Add(this.panelDatos);
-            this.PanelLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PanelLateral.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.PanelLateral.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.PanelLateral.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.PanelLateral.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
-            this.PanelLateral.Location = new System.Drawing.Point(0, 0);
-            this.PanelLateral.Name = "PanelLateral";
-            this.PanelLateral.Size = new System.Drawing.Size(291, 1050);
-            this.PanelLateral.TabIndex = 1;
-            this.PanelLateral.Text = "gunaGradientPanel1";
+            this.PanelTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(58)))), ((int)(((byte)(81)))));
+            this.PanelTotal.Controls.Add(this.panelContenedor);
+            this.PanelTotal.Controls.Add(this.PanelSuperior);
+            this.PanelTotal.Controls.Add(this.PanelLateral);
+            this.PanelTotal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelTotal.Location = new System.Drawing.Point(0, 0);
+            this.PanelTotal.Name = "PanelTotal";
+            this.PanelTotal.Size = new System.Drawing.Size(1400, 1050);
+            this.PanelTotal.TabIndex = 2;
             // 
             // PanelSuperior
             // 
@@ -292,11 +262,40 @@ namespace BarberShop
             this.btnCerrar.TabIndex = 10;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // PanelLateral
+            // 
+            this.PanelLateral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelLateral.BackgroundImage")));
+            this.PanelLateral.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelLateral.Controls.Add(this.btnConfiguración);
+            this.PanelLateral.Controls.Add(this.btnMetodoPago);
+            this.PanelLateral.Controls.Add(this.btnServicios);
+            this.PanelLateral.Controls.Add(this.btnBarberos);
+            this.PanelLateral.Controls.Add(this.btnHistorial);
+            this.PanelLateral.Controls.Add(this.btnIngresarDatos);
+            this.PanelLateral.Controls.Add(this.panelDatos);
+            this.PanelLateral.Controls.Add(this.lblNombre);
+            this.PanelLateral.Controls.Add(this.btnCerrarSesion);
+            this.PanelLateral.Controls.Add(this.lineaDatos);
+            this.PanelLateral.Controls.Add(this.lblPuestoP);
+            this.PanelLateral.Controls.Add(this.lblPuesto);
+            this.PanelLateral.Controls.Add(this.lblNombreP);
+            this.PanelLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelLateral.GradientColor1 = System.Drawing.Color.White;
+            this.PanelLateral.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.PanelLateral.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.PanelLateral.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.PanelLateral.Location = new System.Drawing.Point(0, 0);
+            this.PanelLateral.Name = "PanelLateral";
+            this.PanelLateral.Size = new System.Drawing.Size(291, 1050);
+            this.PanelLateral.TabIndex = 1;
+            this.PanelLateral.Text = "gunaGradientPanel1";
+            // 
             // btnConfiguración
             // 
             this.btnConfiguración.AnimationHoverSpeed = 0.07F;
             this.btnConfiguración.AnimationSpeed = 0.03F;
-            this.btnConfiguración.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnConfiguración.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfiguración.BaseColor = System.Drawing.Color.Transparent;
             this.btnConfiguración.BorderColor = System.Drawing.Color.Black;
             this.btnConfiguración.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnConfiguración.CheckedBorderColor = System.Drawing.Color.Black;
@@ -320,7 +319,7 @@ namespace BarberShop
             this.btnConfiguración.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnConfiguración.OnPressedColor = System.Drawing.Color.Black;
             this.btnConfiguración.Size = new System.Drawing.Size(291, 69);
-            this.btnConfiguración.TabIndex = 24;
+            this.btnConfiguración.TabIndex = 37;
             this.btnConfiguración.Text = "Agregar Usuarios";
             this.btnConfiguración.TextOffsetX = 20;
             // 
@@ -328,7 +327,8 @@ namespace BarberShop
             // 
             this.btnMetodoPago.AnimationHoverSpeed = 0.07F;
             this.btnMetodoPago.AnimationSpeed = 0.03F;
-            this.btnMetodoPago.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnMetodoPago.BackColor = System.Drawing.Color.Transparent;
+            this.btnMetodoPago.BaseColor = System.Drawing.Color.Transparent;
             this.btnMetodoPago.BorderColor = System.Drawing.Color.Black;
             this.btnMetodoPago.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnMetodoPago.CheckedBorderColor = System.Drawing.Color.Black;
@@ -352,7 +352,7 @@ namespace BarberShop
             this.btnMetodoPago.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnMetodoPago.OnPressedColor = System.Drawing.Color.Black;
             this.btnMetodoPago.Size = new System.Drawing.Size(291, 69);
-            this.btnMetodoPago.TabIndex = 23;
+            this.btnMetodoPago.TabIndex = 36;
             this.btnMetodoPago.Text = "Metodos Pago";
             this.btnMetodoPago.TextOffsetX = 20;
             this.btnMetodoPago.Click += new System.EventHandler(this.btnMetodoPago_Click);
@@ -361,7 +361,8 @@ namespace BarberShop
             // 
             this.btnServicios.AnimationHoverSpeed = 0.07F;
             this.btnServicios.AnimationSpeed = 0.03F;
-            this.btnServicios.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnServicios.BackColor = System.Drawing.Color.Transparent;
+            this.btnServicios.BaseColor = System.Drawing.Color.Transparent;
             this.btnServicios.BorderColor = System.Drawing.Color.Black;
             this.btnServicios.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnServicios.CheckedBorderColor = System.Drawing.Color.Black;
@@ -386,7 +387,7 @@ namespace BarberShop
             this.btnServicios.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnServicios.OnPressedColor = System.Drawing.Color.Black;
             this.btnServicios.Size = new System.Drawing.Size(291, 69);
-            this.btnServicios.TabIndex = 22;
+            this.btnServicios.TabIndex = 35;
             this.btnServicios.Text = "Servicios";
             this.btnServicios.TextOffsetX = 11;
             this.btnServicios.Click += new System.EventHandler(this.btnServicios_Click);
@@ -395,7 +396,8 @@ namespace BarberShop
             // 
             this.btnBarberos.AnimationHoverSpeed = 0.07F;
             this.btnBarberos.AnimationSpeed = 0.03F;
-            this.btnBarberos.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnBarberos.BackColor = System.Drawing.Color.Transparent;
+            this.btnBarberos.BaseColor = System.Drawing.Color.Transparent;
             this.btnBarberos.BorderColor = System.Drawing.Color.Black;
             this.btnBarberos.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnBarberos.CheckedBorderColor = System.Drawing.Color.Black;
@@ -420,7 +422,7 @@ namespace BarberShop
             this.btnBarberos.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnBarberos.OnPressedColor = System.Drawing.Color.Black;
             this.btnBarberos.Size = new System.Drawing.Size(291, 69);
-            this.btnBarberos.TabIndex = 21;
+            this.btnBarberos.TabIndex = 34;
             this.btnBarberos.Text = "Barberos";
             this.btnBarberos.TextOffsetX = 20;
             this.btnBarberos.Click += new System.EventHandler(this.btnBarberos_Click);
@@ -429,7 +431,8 @@ namespace BarberShop
             // 
             this.btnHistorial.AnimationHoverSpeed = 0.07F;
             this.btnHistorial.AnimationSpeed = 0.03F;
-            this.btnHistorial.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnHistorial.BackColor = System.Drawing.Color.Transparent;
+            this.btnHistorial.BaseColor = System.Drawing.Color.Transparent;
             this.btnHistorial.BorderColor = System.Drawing.Color.Black;
             this.btnHistorial.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnHistorial.CheckedBorderColor = System.Drawing.Color.Black;
@@ -453,7 +456,7 @@ namespace BarberShop
             this.btnHistorial.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnHistorial.OnPressedColor = System.Drawing.Color.Black;
             this.btnHistorial.Size = new System.Drawing.Size(291, 69);
-            this.btnHistorial.TabIndex = 20;
+            this.btnHistorial.TabIndex = 33;
             this.btnHistorial.Text = "Historial de datos";
             this.btnHistorial.TextOffsetX = 20;
             this.btnHistorial.Click += new System.EventHandler(this.btnHistorial_Click);
@@ -462,7 +465,8 @@ namespace BarberShop
             // 
             this.btnIngresarDatos.AnimationHoverSpeed = 0.07F;
             this.btnIngresarDatos.AnimationSpeed = 0.03F;
-            this.btnIngresarDatos.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnIngresarDatos.BackColor = System.Drawing.Color.Transparent;
+            this.btnIngresarDatos.BaseColor = System.Drawing.Color.Transparent;
             this.btnIngresarDatos.BorderColor = System.Drawing.Color.Black;
             this.btnIngresarDatos.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnIngresarDatos.CheckedBorderColor = System.Drawing.Color.Black;
@@ -486,7 +490,7 @@ namespace BarberShop
             this.btnIngresarDatos.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnIngresarDatos.OnPressedColor = System.Drawing.Color.Black;
             this.btnIngresarDatos.Size = new System.Drawing.Size(291, 69);
-            this.btnIngresarDatos.TabIndex = 19;
+            this.btnIngresarDatos.TabIndex = 32;
             this.btnIngresarDatos.Text = "Registrar Servicio";
             this.btnIngresarDatos.TextOffsetX = 16;
             this.btnIngresarDatos.Click += new System.EventHandler(this.btnIngresarDatos_Click);
@@ -494,23 +498,31 @@ namespace BarberShop
             // panelDatos
             // 
             this.panelDatos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panelDatos.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelDatos.BackgroundImage")));
+            this.panelDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelDatos.Controls.Add(this.gunaLabel3);
             this.panelDatos.Controls.Add(this.picLogo);
             this.panelDatos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelDatos.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panelDatos.GradientColor2 = System.Drawing.Color.Black;
+            this.panelDatos.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
+            this.panelDatos.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.panelDatos.Location = new System.Drawing.Point(0, 0);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(291, 89);
-            this.panelDatos.TabIndex = 18;
+            this.panelDatos.TabIndex = 31;
+            this.panelDatos.Text = "gunaGradientPanel1";
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel3.Location = new System.Drawing.Point(101, 37);
+            this.gunaLabel3.Location = new System.Drawing.Point(101, 26);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(167, 25);
-            this.gunaLabel3.TabIndex = 7;
+            this.gunaLabel3.TabIndex = 9;
             this.gunaLabel3.Text = "Arte Barber Shop";
             this.gunaLabel3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -523,14 +535,29 @@ namespace BarberShop
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(84, 89);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picLogo.TabIndex = 3;
+            this.picLogo.TabIndex = 8;
             this.picLogo.TabStop = false;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
+            this.lblNombre.Location = new System.Drawing.Point(101, 917);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(151, 25);
+            this.lblNombre.TabIndex = 27;
+            this.lblNombre.Text = "Miguel Alvarado";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnCerrarSesion
             // 
             this.btnCerrarSesion.AnimationHoverSpeed = 0.07F;
             this.btnCerrarSesion.AnimationSpeed = 0.03F;
-            this.btnCerrarSesion.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(77)))), ((int)(((byte)(77)))));
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
+            this.btnCerrarSesion.BaseColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.BorderColor = System.Drawing.Color.Black;
             this.btnCerrarSesion.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnCerrarSesion.CheckedBorderColor = System.Drawing.Color.Black;
@@ -584,20 +611,6 @@ namespace BarberShop
             this.lblPuestoP.Text = "Puesto:";
             this.lblPuestoP.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblNombre
-            // 
-            this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(101, 917);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(151, 25);
-            this.lblNombre.TabIndex = 27;
-            this.lblNombre.Text = "Miguel Alvarado";
-            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // lblPuesto
             // 
             this.lblPuesto.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -626,21 +639,40 @@ namespace BarberShop
             this.lblNombreP.Text = "Nombre: ";
             this.lblNombreP.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // gunaDragControl1
+            // 
+            this.gunaDragControl1.TargetControl = this.PanelSuperior;
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelContenedor.BackgroundImage")));
+            this.panelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.GradientColor1 = System.Drawing.Color.DimGray;
+            this.panelContenedor.GradientColor2 = System.Drawing.Color.LightSkyBlue;
+            this.panelContenedor.GradientColor3 = System.Drawing.Color.OliveDrab;
+            this.panelContenedor.GradientColor4 = System.Drawing.Color.SteelBlue;
+            this.panelContenedor.Location = new System.Drawing.Point(291, 51);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1109, 999);
+            this.panelContenedor.TabIndex = 3;
+            this.panelContenedor.Text = "gunaGradientPanel1";
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1400, 1050);
-            this.Controls.Add(this.PanelContenedor);
+            this.Controls.Add(this.PanelTotal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.Principal_Load);
-            this.PanelContenedor.ResumeLayout(false);
+            this.PanelTotal.ResumeLayout(false);
+            this.PanelSuperior.ResumeLayout(false);
             this.PanelLateral.ResumeLayout(false);
             this.PanelLateral.PerformLayout();
-            this.PanelSuperior.ResumeLayout(false);
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
@@ -649,7 +681,7 @@ namespace BarberShop
         }
 
         #endregion
-        private System.Windows.Forms.Panel PanelContenedor;
+        private System.Windows.Forms.Panel PanelTotal;
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private Guna.UI.WinForms.GunaGradientPanel PanelSuperior;
         private Guna.UI.WinForms.GunaAdvenceButton btnMinimizar;
@@ -658,20 +690,21 @@ namespace BarberShop
         private Guna.UI.WinForms.GunaAdvenceButton btnMenu;
         private Guna.UI.WinForms.GunaAdvenceButton btnCerrar;
         private Guna.UI.WinForms.GunaGradientPanel PanelLateral;
-        private Guna.UI.WinForms.GunaAdvenceButton btnConfiguración;
-        private Guna.UI.WinForms.GunaAdvenceButton btnMetodoPago;
-        private Guna.UI.WinForms.GunaAdvenceButton btnServicios;
-        private Guna.UI.WinForms.GunaAdvenceButton btnBarberos;
-        private Guna.UI.WinForms.GunaAdvenceButton btnHistorial;
-        private Guna.UI.WinForms.GunaAdvenceButton btnIngresarDatos;
-        private Guna.UI.WinForms.GunaPanel panelDatos;
-        private Guna.UI.WinForms.GunaLabel gunaLabel3;
-        private Guna.UI.WinForms.GunaPictureBox picLogo;
         private Guna.UI.WinForms.GunaAdvenceButton btnCerrarSesion;
         private Guna.UI.WinForms.GunaSeparator lineaDatos;
         private Guna.UI.WinForms.GunaLabel lblPuestoP;
         private Guna.UI.WinForms.GunaLabel lblNombre;
         private Guna.UI.WinForms.GunaLabel lblPuesto;
         private Guna.UI.WinForms.GunaLabel lblNombreP;
+        private Guna.UI.WinForms.GunaGradientPanel panelDatos;
+        private Guna.UI.WinForms.GunaAdvenceButton btnConfiguración;
+        private Guna.UI.WinForms.GunaAdvenceButton btnMetodoPago;
+        private Guna.UI.WinForms.GunaAdvenceButton btnServicios;
+        private Guna.UI.WinForms.GunaAdvenceButton btnBarberos;
+        private Guna.UI.WinForms.GunaAdvenceButton btnHistorial;
+        private Guna.UI.WinForms.GunaAdvenceButton btnIngresarDatos;
+        private Guna.UI.WinForms.GunaLabel gunaLabel3;
+        private Guna.UI.WinForms.GunaPictureBox picLogo;
+        private Guna.UI.WinForms.GunaGradientPanel panelContenedor;
     }
 }

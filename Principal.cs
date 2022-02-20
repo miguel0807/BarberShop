@@ -85,16 +85,16 @@ namespace BarberShop
 
         private void abrirFormHijo(object formHijo)
         {
-            if (this.PanelContenedor.Controls.Count > 0)
+            if (this.panelContenedor.Controls.Count > 0)
             {
-                this.PanelContenedor.Controls.RemoveAt(0);
+                this.panelContenedor.Controls.RemoveAt(0);
             }
 
             Form fh = formHijo as Form;
             fh.TopLevel = false;
             fh.Dock = DockStyle.Fill;
-            this.PanelContenedor.Controls.Add(fh);
-            this.PanelContenedor.Tag = fh;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
             fh.Show();
 
         }
@@ -131,6 +131,6 @@ namespace BarberShop
             abrirFormHijo(new ModificarMetodoPago());
         }
 
-     
+        
     }
 }
